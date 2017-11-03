@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var users = require('./routes/users');
 var ponderar = require('./routes/ponderar');
 var tuni = require('./routes/tuni');
+var session = require('./routes/session');
 
 // Iniciar Aplicacion
 var app = express();
@@ -20,5 +21,6 @@ app.use(cookieParser());
 app.use('/api/v1/users', users);
 app.use('/api/v1/ponderar', ponderar);
 app.use('/api/v1/tuni', tuni);
+app.use('/api/v1/session', session);
 
 module.exports = app;
