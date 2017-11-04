@@ -30,8 +30,15 @@ class DataBase:
                         Opt(id serial primary key, name text);
                         """)
         self.cur.execute("""CREATE TABLE
-                        Ponderation(id serial primary key, pond int,
-                         university_id int, carreer_id int, user_id int);
+                        Ponderation(id serial primary key, value int,
+                         university text, carreer int, user_id int,
+                         university_id int, carreer_id int);
+                        """)
+        self.cur.execute("""CREATE TABLE
+                        Cities(id int, name text, region_id int)
+                        """)
+        self.cur.execute("""CREATE TABLE
+                        Region(id int, name text)
                         """)
         self.conn.commit()
 

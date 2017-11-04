@@ -12,6 +12,6 @@
     "pg-promise": "~7.0.3",
     "parameters-middleware": "",
     "randomstring": "",
-    "crypto": ""
+    "crypto":"1.0.1"
   }
 }
