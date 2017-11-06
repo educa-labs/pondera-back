@@ -5,10 +5,10 @@ class DataBase:
 
     def __init__(self):
         self.conn = psql.connect("""
-            dbname=pondera
+            dbname=ebdb
             user=educalabs
             password=Callampa123123
-            host=pondera.cjg6fuesbuu0.us-east-2.rds.amazonaws.com
+            host=aax2408q3rpj0w.cyfuyqdiovno.us-west-2.rds.amazonaws.com
             port=5432""")
         self.cur = self.conn.cursor()
 
