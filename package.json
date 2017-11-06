@@ -15,5 +15,10 @@
     "parameters-middleware": "",
     "pg-promise": "~7.0.3",
     "randomstring": ""
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   }
 }
