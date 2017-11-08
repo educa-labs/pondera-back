@@ -1,15 +1,16 @@
-var express = require('express');
-var router = express.Router();
-var db = require('../database/db');
-var parameters = require('parameters-middleware');
+const express = require('express');
+
+const router = express.Router();
+const db = require('../database/db');
+const parameters = require('parameters-middleware');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-    res.json({"message": "Nice try motherfucker"});
+router.get('/', (req, res, next) => {
+  res.json({ message: 'Nice try motherfucker' });
 });
 
-router.post('/', function(req, res, next) {
-    res.json({"message": req.body});
+router.post('/', (req, res, next) => {
+  res.json({ message: req.body });
 });
 
 module.exports = router;
