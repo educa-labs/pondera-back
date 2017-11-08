@@ -1,59 +1,55 @@
-var express = require('express');
-var router = express.Router();
-var db = require('../database/db');
-var randomstring = require("randomstring");
-var parameters = require('parameters-middleware');
-var crypt = require('crypto');
+const express = require('express');
+
+const router = express.Router();
+const db = require('../database/db');
+const randomstring = require('randomstring');
+const parameters = require('parameters-middleware');
+const crypt = require('crypto');
 
 // randomstring.generate();
 // Parameters requirements
 function getMessage(missing) {
-  return 'Missing params: ' + missing.join(', ');
+  return `Missing params: ${missing.join(', ')}`;
 }
-var loginParams = parameters({body: ["mail", "password"]},
-{message: getMessage},
-{statusCode: 400}
-)
+const loginParams = parameters(
+  { body: ['mail', 'password'] },
+  { message: getMessage },
+  { statusCode: 400 },
+);
 
 
 /* Login. */
-router.post('/', loginParams, function(req, res, next) {
-  var j = req.body;
-  var paswd = encryptPasswd(j.password);
+router.post('/', loginParams, (req, res, next) => {
+  const j = req.body;
+  const paswd = encryptPasswd(j.password);
   db.db_pond.one(`SELECT password_digest FROM Users WHERE mail=$1;
                 `, [j.mail])
-  .then(function(data){
+    .then((data) => {
       // Comprobar password
-      if (data.password_digest == paswd){
+      if (data.password_digest == paswd) {
         // Generar nuevo token
-        var new_token = randomstring.generate();
+        const new_token = randomstring.generate();
         db.db_pond.one(`UPDATE Users 
                         SET token = $1 
                         WHERE mail = $2`, [new_token, j.mail])
-        .success(function(data){
+          .success((data) => {
           // Mail y password correctos
-          res.status(201).json({"message": "Sesión creada correctamente"});
-          return
-        })
+            res.status(201).json({ message: 'Sesión creada correctamente' });
+          });
+      } else {
+        res.status(401).json({ message: 'Credenciales invalidas' });
       }
-      else{
-        res.status(401).json({"message": "Credenciales invalidas"});
-        return
-      }
-  })
-  .catch(function(obj){
-    res.status(401).json({"message": "Credenciales invalidas"});
-    return
-  });
+    })
+    .catch((obj) => {
+      res.status(401).json({ message: 'Credenciales invalidas' });
+    });
 });
 
 
 // Obtener datos de usuario loggeado
-router.get('/', function(req, res, next) {
-  res.status(400).json({"Message": "Not implemented"})
-})
-
-
+router.get('/', (req, res, next) => {
+  res.status(400).json({ Message: 'Not implemented' });
+});
 
 
 function encryptPasswd(data) {

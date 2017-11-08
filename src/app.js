@@ -1,17 +1,17 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
 
 // Modulos de rutas
-var users = require('./routes/users');
-var ponderar = require('./routes/ponderar');
-var tuni = require('./routes/tuni');
-var session = require('./routes/session');
+const users = require('./routes/users');
+const ponderar = require('./routes/ponderar');
+const tuni = require('./routes/tuni');
+const session = require('./routes/session');
 
 // Iniciar Aplicacion
-var app = express();
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

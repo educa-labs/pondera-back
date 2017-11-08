@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "lint": "eslint ./src index.js",
+    "lint:fix": "eslint --fix ./src index.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
