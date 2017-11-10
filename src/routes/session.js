@@ -30,7 +30,6 @@ router.post('/', loginParams, (req, res, next) => {
       console.log(data.password_digest);
       if (data.password_digest === paswd) {
         // Generar nuevo token
-        console.log('succesfull login');
         const newToken = randomstring.generate();
         db.db_pond.one(`UPDATE Users 
                         SET token = $1 

@@ -16,7 +16,8 @@
     "nodemon": "^1.12.1",
     "parameters-middleware": "",
     "pg-promise": "~7.0.3",
-    "randomstring": ""
+    "randomstring": "",
+    "dotenv": "4.0.0"
   },
   "devDependencies": {
     "eslint": "^4.10.0",
