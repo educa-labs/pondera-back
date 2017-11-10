@@ -1,5 +1,5 @@
 import psycopg2 as psql
-import json
+
 
 class DataBase:
 
