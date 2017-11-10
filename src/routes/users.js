@@ -41,7 +41,8 @@ router.post('/', userParams, (req, res, next) => {
         });
     })
     .catch((obj) => {
-      res.json({ message: 'hola' });
+      console.log(obj);
+      res.json({ message: 'could not create User' });
     });
 });
 
