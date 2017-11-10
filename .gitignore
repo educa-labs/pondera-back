@@ -61,7 +61,7 @@ typings/
 
 # dotenv environment variables file
 .env
-
+development.env
 
 ### OSX ###
 *.DS_Store
@@ -94,3 +94,6 @@ Temporary Items
 .ebextensions/
 .vscode/
 # End of https://www.gitignore.io/api/osx,node,elasticbeanstalk
+
+# Environment file
+.env
