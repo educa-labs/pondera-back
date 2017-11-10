@@ -1,6 +1,6 @@
 module.exports = {
   DB_NAME: process.env.DB_NAME || 'tuniversidad_production',
-  DB_USER: process.env.DB_USER || 'pgadmin',
+  DB_USER: process.env.DB_USER || 'pguser',
   DB_PASS: process.env.DB_PASS || 'tuniversidad',
   DB_HOST: process.env.DB_HOST || '192.241.172.51',
   DB_PORT: process.env.DB_PORT || '5432',
