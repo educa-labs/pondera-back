@@ -2,7 +2,15 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
 
+const ENV = process.env.ENV || 'development';
+
+if (ENV === 'development') {
+  dotenv.config({ path: 'development.env' });
+} else if (ENV === 'production') {
+  dotenv.config({ path: 'production.env' });
+}
 
 // Modulos de rutas
 const users = require('./routes/users');
