@@ -26,21 +26,21 @@ router.post('/', loginParams, (req, res, next) => {
                 `, [j.mail])
     .then((data) => {
       // Comprobar password
-      if (data.password_digest == paswd) {
+      console.log(paswd);
+      console.log(data.password_digest);
+      if (data.password_digest === paswd) {
         // Generar nuevo token
-        const new_token = randomstring.generate();
+        const newToken = randomstring.generate();
         db.db_pond.one(`UPDATE Users 
                         SET token = $1 
-                        WHERE mail = $2`, [new_token, j.mail])
-          .success((data) => {
-          // Mail y password correctos
-            res.status(201).json({ message: 'Sesión creada correctamente' });
-          });
+                        WHERE mail = $2`, [newToken, j.mail]);
+        res.status(201).json({ message: 'Sesión creada correctamente', token: newToken });
       } else {
         res.status(401).json({ message: 'Credenciales invalidas' });
       }
     })
     .catch((obj) => {
+      console.log(obj);
       res.status(401).json({ message: 'Credenciales invalidas' });
     });
 });
