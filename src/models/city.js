@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
         City.belongsTo(models.region);
       },
     },
+    // indexes: [
+    //   { fields: ['regionId'], name: 'regionId_index' },
+    // ],
   });
   return City;
 };
