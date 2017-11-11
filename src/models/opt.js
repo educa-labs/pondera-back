@@ -1,6 +1,6 @@
 
 module.exports = (sequelize, DataTypes) => {
-  var Opt = sequelize.define('Opt', {
+  const Opt = sequelize.define('Opt', {
     name: DataTypes.STRING,
   }, {
     classMethods: {

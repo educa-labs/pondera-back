@@ -7,7 +7,7 @@
 const app = require('../src/app');
 const debug = require('debug')('pondera:server');
 const http = require('http');
-const models = require('../models');
+const models = require('../src/models');
 
 /**
  * Get port from environment and store in Express.
