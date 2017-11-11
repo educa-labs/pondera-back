@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/osx,node,elasticbeanstalk
 
+.DS_Store
+
 ### ElasticBeanstalk ###
 .elasticbeanstalk/
 ### Node ###
@@ -94,6 +96,3 @@ Temporary Items
 .ebextensions/
 .vscode/
 # End of https://www.gitignore.io/api/osx,node,elasticbeanstalk
-
-# Environment file
-.env
