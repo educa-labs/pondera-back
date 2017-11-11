@@ -5,7 +5,7 @@ const db = require('../database/db');
 const randomstring = require('randomstring');
 const parameters = require('parameters-middleware');
 const crypt = require('crypto');
-const models = require('../../models')
+const models = require('../models');
 
 // randomstring.generate();
 // Parameters requirements

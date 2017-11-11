@@ -5,7 +5,7 @@ const parameters = require('parameters-middleware');
 const db = require('../database/db');
 const crypt = require('crypto');
 const randomstring = require('randomstring');
-const models = require('../../models')
+const models = require('../models');
 
 // In case of losing password
 // randomstring.generate();
