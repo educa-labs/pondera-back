@@ -6,7 +6,11 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "lint": "eslint . index.js",
-    "lint:fix": "eslint --fix . index.js"
+    "lint:fix": "eslint --fix . index.js",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate",
+    "model:generate": "node_modules/.bin/sequelize model:generate",
+    "db:create": "node_modules/.bin/sequelize db:create",
+    "db:drop": "node_modules/.bin/sequelize db:drop"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

@@ -5,8 +5,8 @@
     "database": "pondera_development",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "migrations-path": "src/database/migrations",
-    "models-path": "src/models"
+    "migrations-path": ".src/database/migrations",
+    "models-path": ".src/models"
   },
   "test": {
     "username": null,
@@ -14,8 +14,8 @@
     "database": "pondera_test",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "migrations-path": "src/database/migrations",
-    "models-path": "src/models"
+    "migrations-path": ".src/database/migrations",
+    "models-path": ".src/models"
   },
   "production": {
     "username": null,
@@ -23,7 +23,7 @@
     "database": "pondera_production",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "migrations-path": "src/database/migrations",
-    "models-path": "src/models"
+    "migrations-path": ".src/database/migrations",
+    "models-path": ".src/models"
   }
 }
