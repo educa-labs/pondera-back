@@ -1,5 +1,5 @@
 import psycopg2 as psql
-import json
+
 
 class DataBase:
 
@@ -31,7 +31,7 @@ class DataBase:
                         """)
         self.cur.execute("""CREATE TABLE
                         Ponderation(id serial primary key, value int,
-                         university text, carreer int, user_id int,
+                         university text, carreer text, user_id int,
                          university_id int, carreer_id int);
                         """)
         self.cur.execute("""CREATE TABLE
