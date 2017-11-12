@@ -32,7 +32,7 @@ function autorizar(credenciales, callback, data) {
     fs.readFile(TOKEN_PATH, function(err, token) {
         if(err) {
             // En el caso que no exista un token, se pide uno nuevo
-            recibir_token_nuevo(oauth2Client, callback, data);
+            recibirTokenNuevo(oauth2Client, callback, data);
         } else {
             // En el caso que si exista se ejecuta la funcion callback
             oauth2Client.credentials = JSON.parse(token);
@@ -42,7 +42,7 @@ function autorizar(credenciales, callback, data) {
 };
 
 
-function recibir_token_nuevo(oauth2Client, callback, data) {
+function recibirTokenNuevo(oauth2Client, callback, data) {
     /* funcion que solicita un nuevo token para validar al cliente y después
     de validar se ejecuta una funcion callback
 
@@ -69,7 +69,7 @@ function recibir_token_nuevo(oauth2Client, callback, data) {
             };
             oauth2Client.credentials = token;
             // Se llama a la funcion para guardar el token recibido en disco
-            guardar_token(token);
+            guardarToken(token);
             // Se ejecuta la funcion callback si se valida correctamente
             callback(oauth2Client, data);
         });
@@ -77,7 +77,7 @@ function recibir_token_nuevo(oauth2Client, callback, data) {
 };
 
 
-function guardar_token(token) {
+function guardarToken(token) {
     /* funcion para guardar el token en disco. Recibe y el token y lo 
     guarda en el path de la variable declarada más arriba
 
@@ -99,7 +99,7 @@ function guardar_token(token) {
 };
 
 
-function agregar_usuario(auth, data) {
+function agregarUsuario(auth, data) {
     /* funcion para agregar una fila con la informacion del usuario en la hoja
     de google sheets.
 
@@ -128,14 +128,14 @@ function agregar_usuario(auth, data) {
 };
 
 module.exports = {
-    subir_usuario: function(data_usuario) {
+    subirUsuario: function(data_usuario) {
         fs.readFile('client_secret.json' function procesar_secrets(err, content) {
             if (err) {
                 console.log('Ocurrió un error al intentar leer las credenciales: ' + err);
                 return;
             } else {
                 // Llamar a la funcion para autorizar al cliente
-                autorizar(JSON.parse(content), agregar_usuario, data_usuario);
+                autorizar(JSON.parse(content), agregarUsuario, data_usuario);
                 return;
             };
         }); 
