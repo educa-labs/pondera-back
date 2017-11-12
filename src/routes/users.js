@@ -46,12 +46,12 @@ router.post('/', userParams, (req, res, next) => {
 
 /* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
 
-const controlador_sheets = require('../controllers').google-sheets;
+const controladorSheets = require('../controllers').google-sheets;
 
 router.post('/test', userParams, (req, res, next) => {
   const jeison = req.body;
-  const data_a_guardar = [jeison.name, jeison.mail, jeison.password];
-  controlador_sheets.subir_usuario(data_a_guardar);
+  const dataEnviada = [jeison.name, jeison.mail, jeison.password];
+  controladorSheets.subirUsuario(dataEnviada);
 });
 
 /* FIN DE RUTA DE PRUEBA */

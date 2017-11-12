@@ -2,17 +2,17 @@
 el codigo está en spanglish. Cualquier reclamo o comentario sobre el 
 codigo se puede hacer en el siguiente link: http://fifa.com/reclamos */
 
-var fs = require('fs');
-var fs = require('fs');
-var readline = require('readline');
-var google = require('googleapis');
-var googleAuth = require('google-auth-library');
+const fs = require('fs');
+const fs = require('fs');
+const readline = require('readline');
+const google = require('googleapis');
+const googleAuth = require('google-auth-library');
 
 // Variables para guardar el token en el disco y después volver a usarlo
-var SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
-var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
+const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
+const TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
         process.env.USERPROFILE) + '/.credentials/';
-var TOKEN_PATH = TOKEN_DIR + 'sheets.googleapis.com-ponderador.json';
+const TOKEN_PATH = TOKEN_DIR + 'sheets.googleapis.com-ponderador.json';
 
 
 function autorizar(credenciales, callback, data) {
@@ -22,11 +22,11 @@ function autorizar(credenciales, callback, data) {
     @params {Object} credenciales: las credenciales para validar al cliente
     @params {function} callback: funcion que se ejecutara después de validar */
 
-    var clientSecret = credenciales.installed.client_secret;
-    var clientId = credenciales.installed.client_id;
-    var redirectUrl = credenciales.installed.redirect_uris[0];
-    var auth = new googleAuth();
-    var oauth2Client = new auth.OAuth2(clientId, clientSecret, redirectUrl);
+    let clientSecret = credenciales.installed.client_secret;
+    let clientId = credenciales.installed.client_id;
+    let redirectUrl = credenciales.installed.redirect_uris[0];
+    let auth = new googleAuth();
+    let oauth2Client = new auth.OAuth2(clientId, clientSecret, redirectUrl);
 
     // Revisar si ya existe un token guardado en disco
     fs.readFile(TOKEN_PATH, function(err, token) {
@@ -50,13 +50,13 @@ function recibirTokenNuevo(oauth2Client, callback, data) {
     @params {function} callback: funcion que se ejecutara después de validar */
 
     // Generar un link aleatorio para validar al cliente
-    var authUrl = oauth2Client.generateAuthUrl({
+    let authUrl = oauth2Client.generateAuthUrl({
         access_type: 'offline',
         scope: SCOPES
     });
     // Se despliega el link en la consola y se pide ingresar el codigo
     console.log('Autorizar esta aplicación desde esta pagina: ', authUrl);
-    var rl = readline.createInterface({
+    let rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
     });
@@ -106,8 +106,8 @@ function agregarUsuario(auth, data) {
     @params {Object} auth: el objeto de autentificacion de google sheets
     @params {Array} data:  lista con los datos de la fila a agregar */
 
-    var sheets = google.sheets('v4');
-    var opciones = {
+    let sheets = google.sheets('v4');
+    let opciones = {
         auth: auth,
         spreadsheetId: '1P1AG8b8PIA_Q8xmczUkR_DFa3zPdnZ2-dbgZ0jIkI-o',
         range: 'Hoja 1',
