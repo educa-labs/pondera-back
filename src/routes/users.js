@@ -50,8 +50,8 @@ const controladorSheets = require('../controllers').google-sheets;
 
 router.post('/test', userParams, (req, res, next) => {
   const jeison = req.body;
-  const dataEnviada = [jeison.name, jeison.mail, jeison.password];
-  controladorSheets.subirUsuario(dataEnviada);
+  const data = [jeison.name, jeison.mail, jeison.password];
+  controladorSheets.uploadUser(data);
 });
 
 /* FIN DE RUTA DE PRUEBA */

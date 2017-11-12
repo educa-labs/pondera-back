@@ -15,7 +15,7 @@ const TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
 const TOKEN_PATH = TOKEN_DIR + 'sheets.googleapis.com-ponderador.json';
 
 
-function autorizar(credenciales, callback, data) {
+function authorize(credenciales, callback, data) {
     /* funcion que recibe las credenciales y una funcion que se ejecutara
     en el caso que las credenciales estén correctas.
 
@@ -32,7 +32,7 @@ function autorizar(credenciales, callback, data) {
     fs.readFile(TOKEN_PATH, function(err, token) {
         if(err) {
             // En el caso que no exista un token, se pide uno nuevo
-            recibirTokenNuevo(oauth2Client, callback, data);
+            getNewToken(oauth2Client, callback, data);
         } else {
             // En el caso que si exista se ejecuta la funcion callback
             oauth2Client.credentials = JSON.parse(token);
@@ -42,7 +42,7 @@ function autorizar(credenciales, callback, data) {
 };
 
 
-function recibirTokenNuevo(oauth2Client, callback, data) {
+function getNewToken(oauth2Client, callback, data) {
     /* funcion que solicita un nuevo token para validar al cliente y después
     de validar se ejecuta una funcion callback
 
@@ -69,7 +69,7 @@ function recibirTokenNuevo(oauth2Client, callback, data) {
             };
             oauth2Client.credentials = token;
             // Se llama a la funcion para guardar el token recibido en disco
-            guardarToken(token);
+            saveToken(token);
             // Se ejecuta la funcion callback si se valida correctamente
             callback(oauth2Client, data);
         });
@@ -77,7 +77,7 @@ function recibirTokenNuevo(oauth2Client, callback, data) {
 };
 
 
-function guardarToken(token) {
+function saveToken(token) {
     /* funcion para guardar el token en disco. Recibe y el token y lo 
     guarda en el path de la variable declarada más arriba
 
@@ -99,7 +99,7 @@ function guardarToken(token) {
 };
 
 
-function agregarUsuario(auth, data) {
+function addNewUser(auth, data) {
     /* funcion para agregar una fila con la informacion del usuario en la hoja
     de google sheets.
 
@@ -128,14 +128,14 @@ function agregarUsuario(auth, data) {
 };
 
 module.exports = {
-    subirUsuario: function(data_usuario) {
+    uploadUser: function(data_user) {
         fs.readFile('client_secret.json' function procesar_secrets(err, content) {
             if (err) {
                 console.log('Ocurrió un error al intentar leer las credenciales: ' + err);
                 return;
             } else {
                 // Llamar a la funcion para autorizar al cliente
-                autorizar(JSON.parse(content), agregarUsuario, data_usuario);
+                authorize(JSON.parse(content), addNewUser, data_user);
                 return;
             };
         }); 
