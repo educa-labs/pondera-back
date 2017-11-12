@@ -21,7 +21,7 @@ const userParams = parameters(
       'password', 'rut', 'phone', 'city'],
   },
   { message: getMessage },
-  { statusCode: 400 },
+  { statusCode: 400 }
 );
 
 // ROUTES
@@ -41,6 +41,20 @@ router.post('/', userParams, (req, res, next) => {
       res.json({ message: 'could not create User' });
     });
 });
+
+
+
+/* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
+
+const controlador_sheets = require('../controllers').google-sheets;
+
+router.post('/test', userParams, (req, res, next) => {
+  const jeison = req.body;
+  const data_a_guardar = [jeison.name, jeison.mail, jeison.password];
+  controlador_sheets.subir_usuario(data_a_guardar);
+});
+
+/* FIN DE RUTA DE PRUEBA */
 
 
 function encryptPasswd(data) {
