@@ -15,7 +15,7 @@ function getMessage(missing) {
 const loginParams = parameters(
   { body: ['mail', 'password'] },
   { message: getMessage },
-  { statusCode: 400 },
+  { statusCode: 400 }
 );
 
 
