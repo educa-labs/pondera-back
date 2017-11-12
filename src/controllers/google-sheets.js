@@ -100,7 +100,11 @@ function guardar_token(token) {
 
 
 function agregar_usuario(auth, data) {
-    /* FALTA DOCUMENTAR ESTA FUNCION */
+    /* funcion para agregar una fila con la informacion del usuario en la hoja
+    de google sheets.
+
+    @params {Object} auth: el objeto de autentificacion de google sheets
+    @params {Array} data:  lista con los datos de la fila a agregar */
 
     var sheets = google.sheets('v4');
     var opciones = {
@@ -131,7 +135,7 @@ module.exports = {
                 return;
             } else {
                 // Llamar a la funcion para autorizar al cliente
-                autorizar(JSON.parse(content), agregar_usuario);
+                autorizar(JSON.parse(content), agregar_usuario, data_usuario);
                 return;
             };
         }); 
