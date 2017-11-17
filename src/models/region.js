@@ -1,11 +1,12 @@
 
 module.exports = (sequelize, DataTypes) => {
-  var Region = sequelize.define('Region', {
-    name: DataTypes.STRING,
+  const Region = sequelize.define('Region', {
+    name: { type: DataTypes.STRING, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
         Region.hasMany(models.City);
+        Region.hasMany(models.User);
       },
     },
   });

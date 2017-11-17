@@ -11,6 +11,8 @@ module.exports = {
       type: Sequelize.STRING,
     },
     mail: {
+      unique: true,
+      allowNull: false,
       type: Sequelize.STRING,
     },
     password_digest: {
@@ -20,6 +22,8 @@ module.exports = {
       type: Sequelize.STRING,
     },
     rut: {
+      unique: true,
+      allowNull: false,
       type: Sequelize.STRING,
     },
     phone: {
