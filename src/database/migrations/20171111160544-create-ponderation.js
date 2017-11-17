@@ -17,9 +17,11 @@ module.exports = {
       type: Sequelize.TEXT,
     },
     university_id: {
+      allowNull: false,
       type: Sequelize.INTEGER,
     },
     career_id: {
+      allowNull: false,
       type: Sequelize.INTEGER,
     },
     createdAt: {
