@@ -15,6 +15,9 @@ module.exports = (sequelize, DataTypes) => {
         User.hasMany(models.Score);
       },
     },
+    indexes: [
+      { fields: ['token'], name: 'token_index' },
+    ],
   });
   return User;
 };

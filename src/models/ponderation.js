@@ -12,6 +12,10 @@ module.exports = (sequelize, DataTypes) => {
         // associations can be defined here
       },
     },
+    indexes: [
+      { fields: ['university_id'], name: 'university_index' },
+      { fields: ['career_id'], name: 'career_index' },
+    ],
   });
   return Ponderation;
 };
