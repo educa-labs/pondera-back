@@ -1,29 +1,13 @@
 const express = require('express');
 
 const router = express.Router();
-const parameters = require('parameters-middleware');
+const parameters = require('../helpers/parameters');
 const { encryptPasswd } = require('../helpers/session');
 const models = require('../models');
 
-// In case of losing password
-// randomstring.generate();
-
-// Parameters
-function getMessage(missing) {
-  return `Missing params: ${missing.join(', ')}`;
-}
-
-const userParams = parameters(
-  {
-    body: ['name', 'mail',
-      'password', 'rut', 'phone', 'city'],
-  },
-  { message: getMessage },
-  { statusCode: 400 }
-);
-
 // ROUTES
 /* CREATE new user */
+const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'city']);
 router.post('/', userParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
@@ -47,7 +31,7 @@ router.post('/', userParams, (req, res) => {
 
 /* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
 
-const controladorSheets = require('../controllers').google-sheets;
+const controladorSheets = require('../controllers/google-sheets');
 
 router.post('/test', userParams, (req, res, next) => {
   const jeison = req.body;
@@ -55,12 +39,4 @@ router.post('/test', userParams, (req, res, next) => {
   controladorSheets.uploadUser(data);
 });
 
-/* FIN DE RUTA DE PRUEBA */
-
-
-function encryptPasswd(data) {
-  return crypt.createHash('md5').update(data).digest('hex');
-}
-
 module.exports = router;
-
