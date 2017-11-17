@@ -1,11 +1,12 @@
 
 module.exports = (sequelize, DataTypes) => {
   const City = sequelize.define('City', {
-    name: DataTypes.STRING,
+    name: { type: DataTypes.STRING, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
         City.belongsTo(models.region);
+        City.hasMany(models.User);
       },
     },
     // indexes: [
