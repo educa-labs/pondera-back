@@ -1,7 +1,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const City = sequelize.define('City', {
-    name: { type: DataTypes.STRING, allowNull: false },
+    title: { type: DataTypes.STRING, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
