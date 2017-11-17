@@ -2,9 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 const parameters = require('parameters-middleware');
-const db = require('../database/db');
-const crypt = require('crypto');
-const randomstring = require('randomstring');
+const { encryptPasswd } = require('../helpers/session');
 const models = require('../models');
 
 // In case of losing password
@@ -26,10 +24,14 @@ const userParams = parameters(
 
 // ROUTES
 /* CREATE new user */
-router.post('/', userParams, (req, res, next) => {
-  const j = req.body;
-  const pswd = encryptPasswd(j.password);
-  models.User.create({ name: j.name, mail: j.mail, password_digest: pswd }).then((data) => {
+router.post('/', userParams, (req, res) => {
+  const { body } = req;
+  const pswd = encryptPasswd(body.password);
+  models.User.create({
+    name: body.name,
+    mail: body.mail,
+    password_digest: pswd,
+  }).then((data) => {
     res.status(200)
       .json({
         message: 'Usuario creado correctamente',
@@ -41,7 +43,6 @@ router.post('/', userParams, (req, res, next) => {
       res.json({ message: 'could not create User' });
     });
 });
-
 
 
 /* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
@@ -60,7 +61,6 @@ router.post('/test', userParams, (req, res, next) => {
 function encryptPasswd(data) {
   return crypt.createHash('md5').update(data).digest('hex');
 }
-
 
 module.exports = router;
 
