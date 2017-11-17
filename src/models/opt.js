@@ -1,7 +1,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Opt = sequelize.define('Opt', {
-    name: DataTypes.STRING,
+    title: DataTypes.STRING,
   }, {
     classMethods: {
       associate(models) {

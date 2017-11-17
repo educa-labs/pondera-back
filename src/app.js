@@ -17,6 +17,7 @@ const users = require('./routes/users');
 const ponderar = require('./routes/ponderar');
 const tuni = require('./routes/tuni');
 const session = require('./routes/session');
+const regions = require('./routes/regions');
 
 // Iniciar Aplicacion
 const app = express();
@@ -30,5 +31,6 @@ app.use('/api/v1/users', users);
 app.use('/api/v1/ponderar', ponderar);
 app.use('/api/v1/tuni', tuni);
 app.use('/api/v1/session', session);
+app.use('/api/v1/regions', regions);
 
 module.exports = app;

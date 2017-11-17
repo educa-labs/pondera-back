@@ -45,4 +45,5 @@ router.post('/', loginParams, (req, res) => {
 router.get('/', (req, res, next) => {
   res.status(400).json({ Message: 'Not implemented' });
 });
+
 module.exports = router;
