@@ -1,27 +1,17 @@
 const express = require('express');
-
+const models = require('../models');
 const router = express.Router();
 const db = require('../database/db');
 const randomstring = require('randomstring');
-const parameters = require('parameters-middleware');
-const encrypt = require('../helpers/encrypt');
-
-// randomstring.generate();
-// Parameters requirements
-function getMessage(missing) {
-  return `Missing params: ${missing.join(', ')}`;
-}
-const loginParams = parameters(
-  { body: ['mail', 'password'] },
-  { message: getMessage },
-  { statusCode: 400 },
-);
+const parameters = require('../helpers/parameters');
+const session = require('../helpers/session');
 
 
 /* Login. */
+loginParams = parameters.permitParams(['mail', 'password'])
 router.post('/', loginParams, (req, res, next) => {
   const j = req.body;
-  const paswd = encrypt.encryptPasswd(j.password);
+  const paswd = session.encryptPasswd(j.password);
   models.User.findOne({ where: { mail: j.mail } }).then((data) => {
     // Comprobar password
     if (data.password_digest === paswd) {
