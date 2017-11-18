@@ -8,20 +8,6 @@ const models = require('../models');
 // In case of losing password
 // randomstring.generate();
 
-// Parameters
-function getMessage(missing) {
-  return `Missing params: ${missing.join(', ')}`;
-}
-
-const userParams = parameters(
-  {
-    body: ['name', 'mail',
-      'password', 'rut', 'phone', 'city'],
-  },
-  { message: getMessage },
-  { statusCode: 400 },
-);
-
 // ROUTES
 /* CREATE new user */
 const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'city']);
