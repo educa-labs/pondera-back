@@ -8,13 +8,23 @@ function getMessage(missing) {
 function permitParams(params) {
   const p = parameters(
     {
-      body: ['name', 'mail',
-        'password', 'rut', 'phone', 'city'],
+      body: params,
     },
     { message: getMessage },
-    { statusCode: 400 }
+    { statusCode: 400 },
   );
   return p;
 }
 
-module.exports = { permitParams };
+function permitHeaders(params) {
+  const p = parameters(
+    {
+      header: params,
+    },
+    { message: getMessage },
+    { statusCode: 400 },
+  );
+  return p;
+}
+
+module.exports = { permitParams, permitHeaders };
