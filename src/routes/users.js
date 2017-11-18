@@ -19,7 +19,7 @@ const userParams = parameters(
       'password', 'rut', 'phone', 'city'],
   },
   { message: getMessage },
-  { statusCode: 400 }
+  { statusCode: 400 },
 );
 
 // ROUTES
@@ -47,20 +47,16 @@ router.post('/', userParams, (req, res) => {
 
 /* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
 
-const controladorSheets = require('../controllers').google-sheets;
+// const controladorSheets = require('../controllers').google-sheets;
 
-router.post('/test', userParams, (req, res, next) => {
-  const jeison = req.body;
-  const data = [jeison.name, jeison.mail, jeison.password];
-  controladorSheets.uploadUser(data);
-});
+// router.post('/test', userParams, (req, res, next) => {
+//   const jeison = req.body;
+//   const data = [jeison.name, jeison.mail, jeison.password];
+//   controladorSheets.uploadUser(data);
+// });
 
 /* FIN DE RUTA DE PRUEBA */
 
-
-function encryptPasswd(data) {
-  return crypt.createHash('md5').update(data).digest('hex');
-}
 
 module.exports = router;
 

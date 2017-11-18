@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
   models.Region.findAll({})
     .then((data) => {
-      res.status(200).json({ regions: data });
+      res.status(200).json({ data });
     });
 });
 
