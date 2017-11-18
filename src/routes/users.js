@@ -1,7 +1,7 @@
 const express = require('express');
 
 const router = express.Router();
-const parameters = require('parameters-middleware');
+const parameters = require('../helpers/parameters');
 const { encryptPasswd } = require('../helpers/session');
 const models = require('../models');
 
@@ -24,6 +24,7 @@ const userParams = parameters(
 
 // ROUTES
 /* CREATE new user */
+const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'city']);
 router.post('/', userParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
@@ -47,7 +48,9 @@ router.post('/', userParams, (req, res) => {
 
 /* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
 
+
 // const controladorSheets = require('../controllers').google-sheets;
+
 
 // router.post('/test', userParams, (req, res, next) => {
 //   const jeison = req.body;
@@ -56,7 +59,4 @@ router.post('/', userParams, (req, res) => {
 // });
 
 /* FIN DE RUTA DE PRUEBA */
-
-
 module.exports = router;
-
