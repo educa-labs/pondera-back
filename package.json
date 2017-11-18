@@ -25,6 +25,7 @@
     "express": "~4.13.1",
     "google-auth-library": "^0.11.0",
     "googleapis": "^22.2.0",
+    "jsonapi-serializer": "^3.5.5",
     "nodemon": "^1.12.1",
     "parameters-middleware": "",
     "pg": "^7.4.0",
