@@ -2,15 +2,16 @@ const express = require('express');
 
 const router = express.Router();
 const db = require('../database/db');
-const parameters = require('parameters-middleware');
+const parameters = require('../helpers/parameters');
 const session = require('../helpers/session');
 
-/* GET users listing. */
-router.get('/', session.checkSession, (req, res, next) => {
+/* Ponderaciones. */
+const authHeader = parameters.permitHeaders(['authorization'])
+router.get('/', authHeader, session.checkSession, (req, res, next) => {
   res.json({ message: 'Nice try motherfucker' });
 });
 
-router.post('/', session.checkSession, (req, res, next) => {
+router.post('/', authHeader, session.checkSession, (req, res, next) => {
   res.json({ message: req.body });
 });
 

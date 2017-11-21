@@ -2,7 +2,7 @@ const parameters = require('parameters-middleware');
 
 // Parameters
 function getMessage(missing) {
-  return `Missing params: ${missing.join(', ')}`;
+  return `Missing : ${missing.join(', ')}`;
 }
 
 function permitParams(params) {
@@ -19,7 +19,7 @@ function permitParams(params) {
 function permitHeaders(params) {
   const p = parameters(
     {
-      header: params,
+      headers: params,
     },
     { message: getMessage },
     { statusCode: 400 },

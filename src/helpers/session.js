@@ -7,13 +7,13 @@ const encryptPasswd = data => (
 );
 
 function checkSession(req, res, next) {
-  const token = req.headers.token;
+  const token = req.get('Authorization');
   models.User.findOne({ where: { token } })
     .then((data) => {
       if (data) {
         next();
       } else {
-        res.status(401).json({message: 'Token invalido'})
+        res.status(401).json({ message: 'Token invalido' });
       }
     });
 }

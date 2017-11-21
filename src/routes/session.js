@@ -8,7 +8,7 @@ const session = require('../helpers/session');
 
 
 /* Login. */
-loginParams = parameters.permitParams(['mail', 'password'])
+const loginParams = parameters.permitParams(['mail', 'password'])
 router.post('/', loginParams, (req, res, next) => {
   const j = req.body;
   const paswd = session.encryptPasswd(j.password);
