@@ -7,6 +7,7 @@ const parameters = require('../helpers/parameters');
 const session = require('../helpers/session');
 
 
+
 /* Login. */
 const loginParams = parameters.permitParams(['mail', 'password'])
 router.post('/', loginParams, (req, res, next) => {
