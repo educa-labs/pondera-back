@@ -13,7 +13,7 @@ function checkSession(req, res, next) {
       if (data) {
         next();
       } else {
-        res.status(401).json({ message: 'Token invalido' });
+        res.status(401).json({ status: 'Unauthorized', message: 'Token invalido' });
       }
     });
 }
