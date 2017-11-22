@@ -14,7 +14,7 @@ router.get('/universidades', (req, res, next) => {
 });
 
 router.get('/universidades/:id/carreras', (req, res, next) => {
-  const id = req.params.id;
+  const { id } = req.params;
   db.db_tuni.any('SELECT carreers.id, carreers.title FROM carreers,universities WHERE universities.id=${id} AND carreers.university_id = universities.id;', { id })
     .then((data) => {
       res.status(200)

@@ -18,6 +18,9 @@ router.post('/', userParams, (req, res) => {
     name: body.name,
     mail: body.mail,
     password_digest: pswd,
+    rut: body.rut,
+    phone: body.phone,
+    city: body.city,
   }).then((data) => {
     res.status(200)
       .json({
