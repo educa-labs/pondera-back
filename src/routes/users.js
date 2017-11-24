@@ -4,13 +4,14 @@ const router = express.Router();
 const parameters = require('../helpers/parameters');
 const { encryptPasswd } = require('../helpers/session');
 const models = require('../models');
+const randomstring = require('randomstring');
 
 // In case of losing password
 // randomstring.generate();
 
 // ROUTES
 /* CREATE new user */
-const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'city']);
+const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'region']);
 router.post('/', userParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
@@ -20,12 +21,13 @@ router.post('/', userParams, (req, res) => {
     password_digest: pswd,
     rut: body.rut,
     phone: body.phone,
-    city: body.city,
+    region: body.region,
+    token: randomstring.generate(),
   }).then((data) => {
     res.status(200)
       .json({
         message: 'Usuario creado correctamente',
-        data,
+        token: data.token,
       });
   })
     .catch((obj) => {
