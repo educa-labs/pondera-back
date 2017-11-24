@@ -49,7 +49,6 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       };
       // Carreras similares by Newton
       const similar = similarCareers(cId);
-      console.log("Termine");
       res.status(200).json({ ponderation, weights, similar });
     })
     .catch((error) => {

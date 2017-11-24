@@ -11,7 +11,7 @@ const randomstring = require('randomstring');
 
 // ROUTES
 /* CREATE new user */
-const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'region']);
+const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'regionId']);
 router.post('/', userParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
@@ -21,7 +21,7 @@ router.post('/', userParams, (req, res) => {
     password_digest: pswd,
     rut: body.rut,
     phone: body.phone,
-    region: body.region,
+    region: body.regionId,
     token: randomstring.generate(),
   }).then((data) => {
     res.status(200)

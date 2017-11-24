@@ -12,14 +12,13 @@ function similarCareers(cId) {
     json: true, // Automatically stringifies the body to JSON
   };
   let ids;
-  rp(options)
+  const a = rp(options)
     .then((parsedBody) => {
       ids = parsedBody.result['0'];
       const [id1, id2, id3] = ids;
       db.db_tuni.any('SELECT carreers.id, carreers.title FROM carreers WHERE id = ${id1} OR id = ${id2} OR id = ${id3}', { id1, id2, id3 })
         .then((data) => {
           return data;
-          console.log("Sigo aqui");
         })
         .catch((err) => {
           return 'Error';
