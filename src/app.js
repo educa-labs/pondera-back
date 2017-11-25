@@ -3,6 +3,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 const ENV = process.env.ENV || 'development';
 
@@ -21,6 +22,9 @@ const regions = require('./routes/regions');
 
 // Iniciar Aplicacion
 const app = express();
+
+// Use CORS
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
