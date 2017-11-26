@@ -34,7 +34,12 @@ const corsOptions = {
     }
   },
 };
-app.use(cors(corsOptions));
+if (process.env.NODE_ENV === 'production') {
+  app.use(cors(corsOptions));
+}
+else {
+  app.use(cors());
+}
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
