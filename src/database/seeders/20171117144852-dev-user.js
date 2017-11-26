@@ -6,7 +6,7 @@ module.exports = {
     mail: 'a@a.cl',
     rut: '19291235-0',
     phone: '+569569569',
-    city: 'wuat wea',
+    regionId: 14,
     password_digest: encrypt.encryptPasswd('123123'),
     createdAt: new Date(),
     updatedAt: new Date(),
