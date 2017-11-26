@@ -8,7 +8,7 @@ const session = require('../helpers/session');
 const authHeader = parameters.permitHeaders(['authorization']);
 
 router.get('/universities', authHeader, session.checkSession, (req, res, next) => {
-  db.db_tuni.any('SELECT universities.id, institutions.title FROM universities,institutions WHERE institutions.id = universities.institution_id LIMIT 5')
+  db.db_tuni.any('SELECT universities.id, institutions.title FROM universities,institutions WHERE institutions.id = universities.institution_id')
     .then((data) => {
       if (!data) {
         res.status(404).json({ message: 'Universidad no encontrada' });
