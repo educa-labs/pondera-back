@@ -24,7 +24,7 @@ const regions = require('./routes/regions');
 const app = express();
 
 // Use CORS
-const whitelist = ['localhost', 'https://beta.pondera.cl', 'https://www.pondera.cl'];
+const whitelist = ['http://localhost', 'https://beta.pondera.cl', 'https://www.pondera.cl'];
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== -1) {
