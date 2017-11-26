@@ -29,7 +29,7 @@ module.exports = {
     phone: {
       type: Sequelize.STRING,
     },
-    city: {
+    regionId: {
       type: Sequelize.STRING,
     },
     token: {

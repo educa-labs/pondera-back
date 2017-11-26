@@ -21,7 +21,7 @@ router.post('/', userParams, (req, res) => {
     password_digest: pswd,
     rut: body.rut,
     phone: body.phone,
-    region: body.regionId,
+    regionId: body.regionId,
     token: randomstring.generate(),
   }).then((data) => {
     res.status(200)
