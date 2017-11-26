@@ -26,7 +26,7 @@ async function similarCareers(cId) {
     });
   let carreras = {};
   await db.db_tuni.any(`SELECT carreers.id as "cId", universities.id as "uId", 
-  carreers.title as "careerTitle", universities.initials as "universityInitials" 
+  carreers.title as "cTitle", universities.initials as "uInitials" 
   FROM carreers,universities
   WHERE universities.id = carreers.university_id
   AND (carreers.id = ${id1} OR carreers.id = ${id2} OR carreers.id = ${id3})`, { id1, id2, id3 })

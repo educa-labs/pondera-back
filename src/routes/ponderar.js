@@ -34,11 +34,11 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         }
       };
       // Calcular ponderacion
-      let ponderation = 0;
-      ponderation += (NEM * data.NEM) + (math * data.math)
+      let pond = 0;
+      pond += (NEM * data.NEM) + (math * data.math)
       + (language * data.language) + (science * data.science)
       + (history * data.history) + (ranking * data.ranking);
-      ponderation /= 100;
+      pond /= 100;
       // Ordenar datos de ponderacion
       const weights = {
         NEM: data.NEM,
@@ -51,11 +51,11 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Carreras similares by Newton
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
-      const difference = ponderation - data.lastCut;
+      const diff = pond - data.lastCut;
       similarCareers(cId)
-        .then((similar) => {
+        .then((sim) => {
           res.status(200).json({
-            ponderation, weights, similar, lastCut: data.lastCut, difference,
+            pond, weights, sim, cut: data.lastCut, diff,
           });
         });
     })
