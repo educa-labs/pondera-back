@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 const db = require('../database/db');
 const parameters = require('../helpers/parameters');
@@ -21,17 +22,17 @@ router.get('/', authHeader, session.checkSession, (req, res, next) => {
 });
 
 router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) => {
-  const { 
+  const {
     NEM, math, language, ranking, history, science, cId,
   } = req.body;
 
   db.db_tuni.one(`SELECT "NEM", ranking, language, math, science, history FROM weighings WHERE carreer_id = ${cId}`, { cId })
     .then((data) => {
-      for (var key in data){
-        if(data[key] == null){
-          data[key] = 0
+      for (const key in data) {
+        if (data[key] == null) {
+          data[key] = 0;
         }
-      };
+      }
       // Calcular ponderacion
       let ponderation = 0;
       ponderation += (NEM * data.NEM) + (math * data.math)

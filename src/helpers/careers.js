@@ -17,12 +17,8 @@ function similarCareers(cId) {
       ids = parsedBody.result['0'];
       const [id1, id2, id3] = ids;
       db.db_tuni.any('SELECT carreers.id, carreers.title FROM carreers WHERE id = ${id1} OR id = ${id2} OR id = ${id3}', { id1, id2, id3 })
-        .then((data) => {
-          return data;
-        })
-        .catch((err) => {
-          return 'Error';
-        });
+        .then(data => data)
+        .catch(err => 'Error');
     })
     .catch((err) => {
       ids = ['error'];

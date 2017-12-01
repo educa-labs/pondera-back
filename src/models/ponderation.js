@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     indexes: [
-      { fields: ['university_id'], name: 'university_index' },
-      { fields: ['career_id'], name: 'career_index' },
+      { fields: ['universityId'], name: 'university_index' },
+      { fields: ['careerId'], name: 'career_index' },
     ],
   });
   return Ponderation;

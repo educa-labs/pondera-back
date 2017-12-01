@@ -2,7 +2,7 @@ const parameters = require('parameters-middleware');
 
 // Parameters
 function getMessage(missing) {
-  return {status: 'error', message: `Missing : ${missing.join(', ')}` }
+  return { status: 'error', message: `Missing : ${missing.join(', ')}` };
   // return `Missing : ${missing.join(', ')}`;
 }
 
@@ -28,4 +28,29 @@ function permitHeaders(params) {
   return p;
 }
 
-module.exports = { permitParams, permitHeaders };
+function validateName(name) {
+  const regex = /^([a-zA-Zá-úÁ-Ú-_']+\s?\b){2,}\Z/;
+  console.log(regex.test(name));
+  return regex.test(name);
+}
+
+function validateEmail(email) {
+  return true;
+}
+
+function validateRut(rut) {
+  return true;
+}
+
+function validatePhone(phone) {
+  return true;
+}
+
+module.exports = {
+  permitParams,
+  permitHeaders,
+  validateName,
+  validateEmail,
+  validateRut,
+  validatePhone,
+};
