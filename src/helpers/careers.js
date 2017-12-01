@@ -21,7 +21,7 @@ async function similarCareers(cId) {
       [id1, id2, id3] = ids;
     })
     .catch((err) => {
-      
+
     });
   let carreras = [];
   await db.db_tuni.any(`SELECT carreers.id as "cId", universities.id as "uId", 
