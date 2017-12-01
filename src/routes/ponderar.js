@@ -22,22 +22,23 @@ router.get('/', authHeader, session.checkSession, (req, res, next) => {
 
 router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) => {
   const { 
-    NEM, math, language, ranking, history, science, cId,
+    NEM, math, language, ranking, history, science, cId, uId,
   } = req.body;
 
-  db.db_tuni.one(`SELECT "NEM", ranking, language, math, science, history FROM weighings WHERE carreer_id = ${cId}`, { cId })
+  db.db_tuni.one(`SELECT "NEM", ranking, language, math, science, history, last_cut as "lastCut" 
+  FROM weighings,carreers WHERE carreer_id = ${cId} AND carreers.id = weighings.carreer_id`, { cId })
     .then((data) => {
-      for (var key in data){
+      for (let key in data){
         if(data[key] == null){
           data[key] = 0
         }
       };
       // Calcular ponderacion
-      let ponderation = 0;
-      ponderation += (NEM * data.NEM) + (math * data.math)
+      let pond = 0;
+      pond += (NEM * data.NEM) + (math * data.math)
       + (language * data.language) + (science * data.science)
       + (history * data.history) + (ranking * data.ranking);
-      ponderation /= 100;
+      pond /= 100;
       // Ordenar datos de ponderacion
       const weights = {
         NEM: data.NEM,
@@ -48,8 +49,15 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         ranking: data.ranking,
       };
       // Carreras similares by Newton
-      const similar = similarCareers(cId);
-      res.status(200).json({ ponderation, weights, similar });
+      // const similar = similarCareers(cId);
+      // Titles de carrera y universidad
+      const diff = pond - data.lastCut;
+      similarCareers(cId)
+        .then((sim) => {
+          res.status(200).json({
+            pond, weights, sim, cut: data.lastCut, diff,
+          });
+        });
     })
     .catch((error) => {
       res.status(500).json({ error: error.message });

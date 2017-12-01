@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "production": "export NODE_ENV=production && node ./bin/www",
     "dev": "nodemon ./bin/www",
     "lint": "eslint . index.js",
     "lint:fix": "eslint --fix . index.js",
@@ -34,7 +35,8 @@
     "sequelize": "^4.22.6",
     "sequelize-cli": "^3.0.0",
     "request": "",
-    "request-promise": "4.2.2"
+    "request-promise": "4.2.2",
+    "cors": "2.8.4"
   },
   "devDependencies": {
     "eslint": "^4.10.0",

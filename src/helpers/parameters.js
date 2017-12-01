@@ -2,7 +2,7 @@ const parameters = require('parameters-middleware');
 
 // Parameters
 function getMessage(missing) {
-  return {status: 'error', message: `Missing : ${missing.join(', ')}` }
+  return { status: 'error', message: `Missing : ${missing.join(', ')}` };
   // return `Missing : ${missing.join(', ')}`;
 }
 
