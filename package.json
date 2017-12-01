@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "production": "export NODE_ENV=production && node ./bin/www",
     "dev": "nodemon ./bin/www",
     "lint": "eslint . index.js",
     "lint:fix": "eslint --fix . index.js",
@@ -11,11 +12,12 @@
     "model:generate": "node_modules/.bin/sequelize model:generate",
     "db:create": "node_modules/.bin/sequelize db:create",
     "db:drop": "node_modules/.bin/sequelize db:drop",
-    "db:seed:create": "node_modules/.bin/sequelize seed:create --name",
+    "db:seed:create": "node_modules/.bin/sequelize seed:create",
     "db:seed": "node_modules/.bin/sequelize db:seed",
     "db:seed:all": "node_modules/.bin/sequelize db:seed:all",
     "db:seed:undo:all": "node_modules/.bin/sequelize db:seed:undo:all",
-    "db:seed:undo": "node_modules/.bin/sequelize db:seed:undo"
+    "db:seed:undo": "node_modules/.bin/sequelize db:seed:undo",
+    "db:migration:create": "node_modules/.bin/sequelize migration:create"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -34,7 +36,8 @@
     "sequelize": "^4.22.6",
     "sequelize-cli": "^3.0.0",
     "request": "",
-    "request-promise": "4.2.2"
+    "request-promise": "4.2.2",
+    "cors": "2.8.4"
   },
   "devDependencies": {
     "eslint": "^4.10.0",

@@ -9,6 +9,7 @@ module.exports = {
     },
     name: {
       type: Sequelize.STRING,
+      allowNull: false,
     },
     mail: {
       unique: true,
@@ -17,9 +18,7 @@ module.exports = {
     },
     password_digest: {
       type: Sequelize.STRING,
-    },
-    hash: {
-      type: Sequelize.STRING,
+      allowNull: false,
     },
     rut: {
       unique: true,
@@ -29,7 +28,7 @@ module.exports = {
     phone: {
       type: Sequelize.STRING,
     },
-    city: {
+    regionId: {
       type: Sequelize.STRING,
     },
     token: {

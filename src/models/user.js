@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         User.hasMany(models.Score);
         User.belongsTo(models.City);
         User.belongsTo(models.Region);
+        User.hasMany(models.Ponderation);
       },
     },
     indexes: [
