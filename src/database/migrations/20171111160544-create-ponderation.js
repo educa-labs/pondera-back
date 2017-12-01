@@ -8,19 +8,21 @@ module.exports = {
       type: Sequelize.INTEGER,
     },
     value: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.FLOAT,
     },
     university: {
       type: Sequelize.TEXT,
+      allowNull: true,
     },
     career: {
       type: Sequelize.TEXT,
+      allowNull: true,
     },
-    university_id: {
+    universityId: {
       allowNull: false,
       type: Sequelize.INTEGER,
     },
-    career_id: {
+    careerId: {
       allowNull: false,
       type: Sequelize.INTEGER,
     },

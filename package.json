@@ -11,11 +11,12 @@
     "model:generate": "node_modules/.bin/sequelize model:generate",
     "db:create": "node_modules/.bin/sequelize db:create",
     "db:drop": "node_modules/.bin/sequelize db:drop",
-    "db:seed:create": "node_modules/.bin/sequelize seed:create --name",
+    "db:seed:create": "node_modules/.bin/sequelize seed:create",
     "db:seed": "node_modules/.bin/sequelize db:seed",
     "db:seed:all": "node_modules/.bin/sequelize db:seed:all",
     "db:seed:undo:all": "node_modules/.bin/sequelize db:seed:undo:all",
-    "db:seed:undo": "node_modules/.bin/sequelize db:seed:undo"
+    "db:seed:undo": "node_modules/.bin/sequelize db:seed:undo",
+    "db:migration:create": "node_modules/.bin/sequelize migration:create"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
