@@ -44,11 +44,4 @@ async function similarCareers(cId) {
 }
 
 module.exports = { similarCareers };
-function newFunction(cId, simIds) {
-  return id => {
-    if (id !== cId) {
-      simIds.push(id);
-    }
-  };
-}
 
