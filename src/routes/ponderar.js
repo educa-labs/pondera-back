@@ -28,7 +28,7 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
   db.db_tuni.one(`SELECT "NEM", ranking, language, math, science, history, last_cut as "lastCut" 
   FROM weighings,carreers WHERE carreer_id = ${cId} AND carreers.id = weighings.carreer_id`, { cId })
     .then((data) => {
-      for (var key in data){
+      for (let key in data){
         if(data[key] == null){
           data[key] = 0
         }

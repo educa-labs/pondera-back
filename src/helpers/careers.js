@@ -15,7 +15,6 @@ async function similarCareers(cId) {
   let id1;
   let id2;
   let id3;
-  console.log('HOLA');
   await rp(options)
     .then((parsedBody) => {
       ids = parsedBody.result['0'];
