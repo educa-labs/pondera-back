@@ -59,7 +59,7 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Titles de carrera y universidad
       const diff = pond - data.lastCut;
       res.status(200).json({
-        pond, weights, sim, cut: data.lastCut, diff,
+        pond, weights, cut: data.lastCut, diff,
       });
     })
     .catch((error) => {
