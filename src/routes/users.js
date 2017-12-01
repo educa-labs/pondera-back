@@ -15,7 +15,7 @@ const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', '
 router.post('/', userParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
-  if (parameters.validateName(body.name)) {
+  if (parameters.validateName(body.name) && parameters.validateEmail(body.mail)) {
     models.User.create({
       name: body.name,
       mail: body.mail,
