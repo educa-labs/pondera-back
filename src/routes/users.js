@@ -15,26 +15,29 @@ const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', '
 router.post('/', userParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
-  parameters.validateName(body.name);
-  models.User.create({
-    name: body.name,
-    mail: body.mail,
-    password_digest: pswd,
-    rut: body.rut,
-    phone: body.phone,
-    regionId: body.regionId,
-    token: randomstring.generate(),
-  }).then((data) => {
-    res.status(200)
-      .json({
-        message: 'Usuario creado correctamente',
-        token: data.token,
+  if (parameters.validateName(body.name)) {
+    models.User.create({
+      name: body.name,
+      mail: body.mail,
+      password_digest: pswd,
+      rut: body.rut,
+      phone: body.phone,
+      regionId: body.regionId,
+      token: randomstring.generate(),
+    }).then((data) => {
+      res.status(200)
+        .json({
+          message: 'Usuario creado correctamente',
+          token: data.token,
+        });
+    })
+      .catch((obj) => {
+        console.log(obj);
+        res.status(422).json({ message: 'no se pudo crear el usuario' });
       });
-  })
-    .catch((obj) => {
-      console.log(obj);
-      res.json({ message: 'could not create User' });
-    });
+  } else {
+    res.status(422).json({ message: 'no se pudo crear el usuario' });
+  }
 });
 
 
