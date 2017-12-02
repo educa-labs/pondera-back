@@ -59,7 +59,6 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
       const diff = pond - data.lastCut;
-      console.log(req.user)
       models.Ponderation.create({
         value: pond,
         careerId: cId,
