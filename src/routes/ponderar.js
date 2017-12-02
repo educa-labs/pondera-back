@@ -17,8 +17,14 @@ const pondParams = parameters.permitParams(['NEM',
   'history',
   'science',
   'cId']);
-router.get('/', authHeader, session.checkSession, (req, res, next) => {
-  res.json({ message: 'Buen intento amigo' });
+router.get('/similar/:cId', (req, res, next) => {
+  const { cId } = req.params;
+  similarCareers(cId)
+    .then((sim) => {
+      res.status(200).json({
+        sim,
+      });
+    });
 });
 
 router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) => {
@@ -26,8 +32,8 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
     NEM, math, language, ranking, history, science, cId, uId,
   } = req.body;
 
-  db.db_tuni.one(`SELECT "NEM", ranking, language, math, science, history, last_cut as "lastCut" 
-  FROM weighings,carreers WHERE carreer_id = ${cId} AND carreers.id = weighings.carreer_id`, { cId })
+  db.db_tuni.one('SELECT "NEM", ranking, language, math, science, history, last_cut as "lastCut" \
+  FROM weighings,carreers WHERE carreer_id = ${cId} AND carreers.id = weighings.carreer_id', { cId })
     .then((data) => {
       for (const key in data) {
         if (data[key] == null) {
@@ -53,12 +59,9 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
       const diff = pond - data.lastCut;
-      similarCareers(cId)
-        .then((sim) => {
-          res.status(200).json({
-            pond, weights, sim, cut: data.lastCut, diff,
-          });
-        });
+      res.status(200).json({
+        pond, weights, cut: data.lastCut, diff,
+      });
     })
     .catch((error) => {
       res.status(500).json({ error: error.message });
