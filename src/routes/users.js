@@ -12,35 +12,28 @@ const randomstring = require('randomstring');
 // ROUTES
 /* CREATE new user */
 const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'regionId']);
-router.post('/', userParams, (req, res) => {
+router.post('/', userParams, parameters.validateName, parameters.validateEmail, parameters.validateRut, parameters.validatePhone, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
-  if (parameters.validateName(body.name) &&
-  parameters.validateEmail(body.mail) &&
-  parameters.validateRut(body.rut) &&
-  parameters.validatePhone(body.phone)) {
-    models.User.create({
-      name: body.name,
-      mail: body.mail,
-      password_digest: pswd,
-      rut: body.rut,
-      phone: body.phone,
-      regionId: body.regionId,
-      token: randomstring.generate(),
-    }).then((data) => {
-      res.status(200)
-        .json({
-          message: 'Usuario creado correctamente',
-          token: data.token,
-        });
-    })
-      .catch((obj) => {
-        console.log(obj);
-        res.status(422).json({ message: 'no se pudo crear el usuario' });
+  models.User.create({
+    name: body.name,
+    mail: body.mail,
+    password_digest: pswd,
+    rut: body.rut,
+    phone: body.phone,
+    regionId: body.regionId,
+    token: randomstring.generate(),
+  }).then((data) => {
+    res.status(200)
+      .json({
+        message: 'Usuario creado correctamente',
+        token: data.token,
       });
-  } else {
-    res.status(422).json({ message: 'no se pudo crear el usuario' });
-  }
+  })
+    .catch((obj) => {
+      console.log(obj);
+      res.status(422).json({ message: 'no se pudo crear el usuario' });
+    });
 });
 
 

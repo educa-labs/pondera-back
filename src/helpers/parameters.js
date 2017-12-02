@@ -28,17 +28,25 @@ function permitHeaders(params) {
   return p;
 }
 
-function validateName(name) {
+function validateName(req, res, next) {
   const regex = /^([a-zA-Zá-úÁ-Ú-_']+\s?\b){2,}$/;
-  return regex.test(name);
+  if (regex.test(req.body.name)) {
+    next();
+  } else {
+    res.status(422).json({ message: 'Nombre inválido (requiere nombre y apellido)' })
+  }
 }
 
-function validateEmail(email) {
+function validateEmail(req, res, next) {
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return regex.test(email);
+  if (regex.test(req.body.mail)) {
+    next();
+  } else {
+    res.status(422).json({ message: 'Correo inválido' })
+  }
 }
 
-function validateRut(rut) {
+function validateRut(req, res, next) {
   const f = (T) => {
     let M = 0;
     let S = 1;
@@ -47,19 +55,28 @@ function validateRut(rut) {
     }
     return S ? S - 1 : 'k';
   };
-  if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rut)) {
-    return false;
+  if (/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(req.body.rut)) {
+    const tmp = req.body.rut.split('-');
+    let digv = tmp[1];
+    const num = tmp[0];
+    if (digv === 'K') digv = 'k';
+    if (f(num) == digv) {
+      next();
+    } else {
+      res.status(422).json({ message: 'RUT inválido' });
+    }
+  } else {
+    res.status(422).json({ message: 'RUT inválido' });
   }
-  const tmp = rut.split('-');
-  let digv = tmp[1];
-  const num = tmp[0];
-  if (digv === 'K') digv = 'k';
-  return (f(num) == digv);
 }
 
-function validatePhone(phone) {
+function validatePhone(req, res, next) {
   const regex = /^\+569\d{8}$/;
-  return regex.test(phone);
+  if (regex.test(req.body.phone)) {
+    next();
+  } else {
+    res.status(422).json({ message: 'Teléfono inválido. (Incluir +569 y 8 dígitos)' });
+  }
 }
 
 module.exports = {
