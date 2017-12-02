@@ -36,8 +36,7 @@ const corsOptions = {
 };
 if (false && process.env.NODE_ENV === 'production') {
   app.use(cors(corsOptions));
-}
-else {
+} else {
   app.use(cors());
 }
 
