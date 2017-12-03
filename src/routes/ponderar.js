@@ -4,7 +4,7 @@ const router = express.Router();
 const db = require('../database/db');
 const parameters = require('../helpers/parameters');
 const session = require('../helpers/session');
-const model = require('../models');
+const models = require('../models');
 const rp = require('request-promise');
 const { similarCareers } = require('../helpers/careers');
 
@@ -59,6 +59,16 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
       const diff = pond - data.lastCut;
+      models.Ponderation.create({
+        value: pond,
+        careerId: cId,
+        universityId: uId,
+        userId: req.user.id,
+      }).then(() => {})
+        .catch((obj) => {
+          console.log(obj);
+          // res.status(422).json({ message: 'no se pudo crear la ponderacion' });
+        });
       res.status(200).json({
         pond, weights, cut: data.lastCut, diff,
       });
@@ -67,5 +77,4 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       res.status(500).json({ error: error.message });
     });
 });
-
 module.exports = router;

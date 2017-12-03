@@ -4,8 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     value: DataTypes.INTEGER,
     university: DataTypes.TEXT,
     career: DataTypes.TEXT,
-    university_id: { type: DataTypes.INTEGER, allowNull: false },
-    career_id: { type: DataTypes.INTEGER, allowNull: false },
+    universityId: { type: DataTypes.INTEGER, allowNull: false },
+    careerId: { type: DataTypes.INTEGER, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
