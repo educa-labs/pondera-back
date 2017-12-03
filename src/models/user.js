@@ -5,7 +5,6 @@ module.exports = (sequelize, DataTypes) => {
     mail: { type: DataTypes.STRING, unique: true, allowNull: false },
     password_digest: DataTypes.STRING,
     rut: { type: DataTypes.STRING, unique: true, allowNull: false },
-    hash: DataTypes.STRING,
     phone: DataTypes.STRING,
     token: DataTypes.STRING,
   }, {
