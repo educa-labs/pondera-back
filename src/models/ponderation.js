@@ -4,17 +4,17 @@ module.exports = (sequelize, DataTypes) => {
     value: DataTypes.INTEGER,
     university: DataTypes.TEXT,
     career: DataTypes.TEXT,
-    university_id: { type: DataTypes.INTEGER, allowNull: false },
-    career_id: { type: DataTypes.INTEGER, allowNull: false },
+    universityId: { type: DataTypes.INTEGER, allowNull: false },
+    careerId: { type: DataTypes.INTEGER, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
-        // associations can be defined here
+        Ponderation.belongsTo(models.User);
       },
     },
     indexes: [
-      { fields: ['university_id'], name: 'university_index' },
-      { fields: ['career_id'], name: 'career_index' },
+      { fields: ['universityId'], name: 'university_index' },
+      { fields: ['careerId'], name: 'career_index' },
     ],
   });
   return Ponderation;

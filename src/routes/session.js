@@ -1,5 +1,6 @@
 const express = require('express');
 const models = require('../models');
+
 const router = express.Router();
 const db = require('../database/db');
 const randomstring = require('randomstring');
@@ -7,9 +8,8 @@ const parameters = require('../helpers/parameters');
 const session = require('../helpers/session');
 
 
-
 /* Login. */
-const loginParams = parameters.permitParams(['mail', 'password'])
+const loginParams = parameters.permitParams(['mail', 'password']);
 router.post('/', loginParams, (req, res, next) => {
   const j = req.body;
   const paswd = session.encryptPasswd(j.password);
