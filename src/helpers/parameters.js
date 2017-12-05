@@ -29,7 +29,7 @@ function permitHeaders(params) {
 }
 
 function validateName(req, res, next) {
-  const regex = /^([a-zA-Zá-úÁ-Ú-_']+\s?\b){2,}$/;
+  const regex = /^([a-zA-Zá-úÁ-Ú-']+\s?\b){2,}$/;
   if (regex.test(req.body.name)) {
     next();
   } else {

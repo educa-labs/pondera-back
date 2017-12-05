@@ -11,6 +11,7 @@ function checkSession(req, res, next) {
   models.User.findOne({ where: { token } })
     .then((data) => {
       if (data) {
+        req.user = data;
         next();
       } else {
         res.status(401).json({ status: 'Unauthorized', message: 'Token invalido' });
