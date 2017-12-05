@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     career: DataTypes.TEXT,
     universityId: { type: DataTypes.INTEGER, allowNull: false },
     careerId: { type: DataTypes.INTEGER, allowNull: false },
+    userId: { type: DataTypes.INTEGER, allowNull: false },
   }, {
     classMethods: {
       associate(models) {

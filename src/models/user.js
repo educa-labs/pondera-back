@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     rut: { type: DataTypes.STRING, unique: true, allowNull: false },
     phone: DataTypes.STRING,
     token: DataTypes.STRING,
+    regionId: { type: DataTypes.INTEGER, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
