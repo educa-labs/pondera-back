@@ -17,7 +17,8 @@
     "db:seed:all": "node_modules/.bin/sequelize db:seed:all",
     "db:seed:undo:all": "node_modules/.bin/sequelize db:seed:undo:all",
     "db:seed:undo": "node_modules/.bin/sequelize db:seed:undo",
-    "db:migration:create": "node_modules/.bin/sequelize migration:create"
+    "db:migration:create": "node_modules/.bin/sequelize migration:create",
+    "db:reset": "node_modules/.bin/sequelize db:drop && node_modules/.bin/sequelize db:create && node_modules/.bin/sequelize db:migrate && node_modules/.bin/sequelize db:seed:all"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
