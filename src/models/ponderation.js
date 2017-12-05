@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     career: DataTypes.TEXT,
     universityId: { type: DataTypes.INTEGER, allowNull: false },
     careerId: { type: DataTypes.INTEGER, allowNull: false },
+    userId: { type: DataTypes.INTEGER, allowNull: false },
   }, {
     classMethods: {
       associate(models) {
@@ -15,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     indexes: [
       { fields: ['universityId'], name: 'university_index' },
       { fields: ['careerId'], name: 'career_index' },
+      { fields: ['userId'], name: 'user_index' },
     ],
   });
   return Ponderation;

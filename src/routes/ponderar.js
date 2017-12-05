@@ -58,6 +58,7 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Carreras similares by Newton
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
+      console.log(req.user.id)
       const diff = pond - data.lastCut;
       models.Ponderation.create({
         value: pond,
