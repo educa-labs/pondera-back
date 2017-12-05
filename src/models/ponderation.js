@@ -16,7 +16,6 @@ module.exports = (sequelize, DataTypes) => {
     indexes: [
       { fields: ['universityId'], name: 'university_index' },
       { fields: ['careerId'], name: 'career_index' },
-      { fields: ['userId'], name: 'user_index' },
     ],
   });
   return Ponderation;
