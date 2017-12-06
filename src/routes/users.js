@@ -31,8 +31,12 @@ router.post('/', userParams, parameters.validateUserParams, (req, res) => {
       });
   })
     .catch((obj) => {
-      console.log(obj);
-      res.status(422).json({ message: 'no se pudo crear el usuario' });
+      console.log(obj.errors);
+      const field = obj.errors[0].path;
+      console.log(field);
+      const errors = {};
+      errors[field] = 102;
+      res.status(422).json({ errors });
     });
 });
 
