@@ -12,7 +12,7 @@ const randomstring = require('randomstring');
 // ROUTES
 /* CREATE new user */
 const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'regionId']);
-router.post('/', userParams, parameters.validateName, parameters.validateEmail, parameters.validateRut, parameters.validatePhone, (req, res) => {
+router.post('/', userParams, parameters.validateUserParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
   models.User.create({
@@ -31,8 +31,12 @@ router.post('/', userParams, parameters.validateName, parameters.validateEmail, 
       });
   })
     .catch((obj) => {
-      console.log(obj);
-      res.status(422).json({ message: 'no se pudo crear el usuario' });
+      console.log(obj.errors);
+      const field = obj.errors[0].path;
+      console.log(field);
+      const errors = {};
+      errors[field] = 102;
+      res.status(422).json({ errors });
     });
 });
 
