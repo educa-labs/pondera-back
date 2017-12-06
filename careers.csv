@@ -1,0 +1,2592 @@
+id,title
+1,Actuación Teatral
+2,Artes Plásticas
+3,Diseño Teatral
+4,Ingeniería en Sonido
+5,Teoría de la Música
+6,Teoría e Historia del Arte
+7,Programa Académico Bachillerato
+8,Arquitectura
+9,Diseño
+10,Geografía
+11,Biología
+12,Física
+13,Matemáticas
+14,Química
+15,Biología mención en Medio Ambiente
+16,Ingeniería en Biotecnología Molecular
+17,Pedadogía en Ed. Media en Biología y Química
+18,Pedadogía en Ed. Media en Matemática y Física
+19,Química Ambiental
+20,Ingeniería Agronóma
+21,Ingeniería en Recursos Naturales Renovables
+22,Ingeniería y Ciencias - Plan Común
+23,Ingeniería Civil con Mención
+24,Ingeniería Civil Mecánica
+25,Ingeniería Civil Matemática
+26,Ingeniería Civil Biotecnología
+27,Ingeniería Civil Eléctrica
+28,Ingeniería Civil Química
+29,Ingeniería Civil de Minas
+30,Ingeniería Civil en Computación
+31,Geología
+32,Licenciatura en Ciencias Mención Física
+33,Licenciatura en Ciencias Mención Geofísica
+34,Licenciatura en Ciencias Mención Astronomía
+35,Ingeniería Forestal, Lic. en Ciecias Forestakes
+36,Bioquímica
+37,Ingeniería en Alimentos
+38,Quimica, Lic en Química
+39,Química y Farmacia
+40,Antropología -  Arquelogía, Lic. en Antropología con mención en Antropología
+41,Pedagogía en Educación Parvaluria, Lic. en Educación.
+42,Psicología, Lic. en Psicología.
+43,Sociología, Lic. en Sociología.
+44,Trabajo Social, Lic. en Trabajo Social
+45,Medicina Veterinaria, Lic. en Ciencias Veterinarias y Pecuarias
+46,Derecho, Lic. en Ciencias Jurídicas y Sociales
+47,Contador Auditor, Lic. en Contabilidad y Auditoría.
+48,Ingenieria Comercial
+49,Ingenieria en Información y Control de Gestión
+50,Lic. en Filosofía
+51,Lic. en Historia
+52,Lengua y Literatura Inglesas
+53,Lengua y Literatura Hispánicas
+54,Pedagogía en Eduacación Básica
+55,Enfermería
+56,Fonoaudiología
+57,Kinesiología
+58,Medicina
+59,Nutriciíon y Dietética
+60,Obstetricia y Puericultura
+61,Tecnología Médica
+62,Terapia Ocupacional
+63,Odontología
+64,Administración Pública
+65,Cine y Televisión
+66,Periodismo
+67,Actuación 
+68,Agronomía
+69,Antropología
+70,Arquitectura
+71,Arte
+72,Astronomía
+73,Biología
+74,Biología Marina
+75,Bioquímica
+76,Ciencia Política
+77,College Artes y Humanidades
+78,College Ciencias Naturales y Matemáticas
+79,College Ciencias Sociales
+80,Construcción Civil
+81,Derecho
+82,Dirección Audiovisual
+83,Diseño
+84,Enfermería
+85,Estadística
+86,Filosofía
+87,Física
+88,Fonoaudiología
+89,Geografía
+90,Historia
+91,Ingeniería
+92,Ingeniería Comercial
+93,Ingeniería Forestal
+94,Kinesiología
+95,Letras Hispánicas
+96,Letras Inglesas
+97,Matemáticas
+98,Medicina
+99,Música
+100,Nutrición y Dietética
+101,Odontología
+102,Pedagogía de Educación Media en Física
+103,Pedagogía Educación General Básica - Villarrica
+104,Pedagogía Educación Media en Ciencias Naturales y Biología
+105,Pedagogía Educación Media en Matemática
+106,Pedagogía Educación Media en Química
+107,Pedagogía en Educación Parvularia.
+108,Pedagogía en Educación Parvularia.
+109,Pedagogía General Básica
+110,Periodismo
+111,Psicología
+112,Publicidad
+113,Química
+114,Química y Farmacia
+115,Sociología
+116,Teología
+117,Trabajo Social
+118,Enfermería
+119,Agronomía
+120,Agronomía
+121,Antropología
+122,Arquitectura
+123,Artes Visuales
+124,Astronomia
+125,Auditoría
+126,Auditoría
+127,Bachillerato en Humanidades
+128,Bioingenieria
+129,Biología
+130,Biología Marina
+131,Bioquímica
+132,Ciencias Físicas
+133,Ciencias Políticas y Administrativas
+134,Derecho
+135,Derecho
+136,Educación Básica
+137,Educación Básica
+138,Educación Diferencial
+139,Educación Diferencial
+140,Educación Parvularia
+141,Erfermería
+142,Enfermería
+143,Enfermería
+144,Fonoaudiología
+145,Geofísica
+146,Geografía
+147,Geología
+148,Ingeniería Agroindustrial
+149,Ingeniería Ambiental
+150,Ingeniería Ambiental - Chillán
+151,Ingeniería Civil
+152,Ingeniería Civil - Primer Año Común
+153,Ingeniería Civil Aeroespacial
+154,Ingeniería Civil Agrícola - Chillán
+155,Ingeniería Civil Biomédica
+156,Ingenierá Civil Materiales
+157,Ingeniería Civil de Minas
+158,Ingeniería Civil Eléctrica
+159,Ingeniería Civil Electrónica
+160,Ingeniería Civil en Telecomunicaciones
+161,Ingeniería Civil Industrial
+162,Ingeniería Civil Informática
+163,Ingeniería Civil Matemática
+164,Ingeniería Civil Mecánica
+165,Ingeniería Civil Metalúrgica
+166,Ingeniería Civil Química
+167,Ingeniería Comercial
+168,Ingeniería Comercial - Chillán
+169,Ingeniería Comercial -  Los Ángeles
+170,Ingeniería en Biotecnología Marina y Acuicultura
+171,Ingeniería en Biotecnología Vegetal
+172,Ingeniería en Biotecnología Vegetal - Los Ángeles
+173,Ingeniería en Conservación de Recursos Naturales 
+174,Ingeniería en Prevención de Riesgos  - Los Ángeles
+175,Ingeniería Estadística
+176,Ingeniería Forestal
+177,Ingeniería Geomática - Los Ángeles
+178,Kinesiología
+179,Licenciatura en Historia
+180,Licenciatura en Matemáticas
+181,Licenciatura en Química
+182,Medicina
+183,Medicina Veterinaria.
+184,Medicina Veterinaria - Chillán
+185,Nutrición y Dietética
+186,Obstetricia y Puericultura
+187,Odontología
+188,Pedagogía en Artes Plásticas
+189,Pedagogía en Ciencias Naturales y Biología 
+190,Pedagogía en Ciencias Naturales y Biología - Los Ángeles
+191,Pedagogía en Ciencias Naturales y Física
+192,Pedagogía en Ciencias Naturales y Química
+193,Pedagogía en Educación Física 
+194,Pedagogía en Educación Musical 
+195,Pedagogía en Español
+196,Pedagogía en Filosofía
+197,Pedagogía en Historia y Geografía 
+198,Pedagogía en Inglés
+199,Pedagogía en Matemática y Computación
+200,Pedagogía en Matemática y Educación Tecnológica - Los Ángeles
+201,Periodismo
+202,Psicología
+203,Química y Farmacia 
+204,Químico Analista
+205,Sociología
+206,Tecnología Médica
+207,Trabajo Social
+208,Traducción - Interpretación en Idiomas Extrajeros
+209,Administración Pública
+210,Arquitectura
+211,Bachillerato en Ciencias y Humanidades 
+212,Bioquímica y Licenciatura en Bioquímica 
+213,Contador Público y Auditor
+214,Contador Público y Auditor - Vespertino
+215,Derecho
+216,Enfermería
+217,Ingeniería Ambiental
+218,Ingeniería Civil en Electricidad
+219,Ingeniería Civil en Geografía
+220,Ingeniería Civil en Industrias
+221, Ingeniería Civil en Informática 
+222,Ingeniería Civil en Mecánica
+223,Ingeniería Civil en Metalurgia
+224,Ingeniería Civil en Minas
+225,Ingeniería Civil en Obras Civiles 
+226,Ingeniería Civil en Química
+227,Ingeniería Comercial
+228,Ingeniería de Alimentos
+229,Ingeniería de Ejecución en Climatización
+230,Ingeniería de Ejecución en Computación e Informática
+231,Ingeniería de Ejecución en Electricidad
+232,Ingeniería de Ejecución en Geomensura
+233,Ingeniería de Ejecución en Industria
+234,Ingeniería de Ejecución en Mecánica
+235,Ingeniería de Ejecución en Metalurgia
+236,Ingeniería de Ejecución en Minas
+237,Ingeniería de Ejecución en Química 
+238,Ingeniería en Agronegocios
+239,Ingeniería en Biotecnología 
+240,Ingeniería Estadística
+241,Ingeniería Física 
+242,Ingeniería Matemática
+243,Kinesiología
+244,Licenciatura en Ciencias de la Actividad Física / Terapeuta en Actividad Física
+245,Licenciatura en Ciencias de la Actividad Física /Entrenador Deportivo
+246,Licenciatura en Ciencias de la Computación
+247,Licenciatura en Estudios Internacionales
+248,Licenciatura en Historia 
+249,Licenciatura en Lingüística Aplicada a la Traducción en Inglés - Japonés e Inglés - Portugués
+250,Medicina
+251,Obstetricia y Puericultura
+252,Pedagogía en Castellano / Licenciatura en Educación en Castellano
+253,Pedagogía en Educación Física / Licenciatura en Ciencias de la Actividad Física
+254,Pedagogía en Educación General Básica / Licenciatura en Educación General Básica 
+255,Pedagogía en Filosofía / Licenciatura en Educación en Filosofía
+256,Pedagogía en Física y Matemática / Licenciatura en Educación en Física y Matemática 
+257,Pedagogía en Historia y Ciencias Sociales / Licenciatura en Educación en Historia y Ciencias Sociales
+258,Pedagogía en Inglés / Licenciatura en Educación en Inglés
+259,Pedagogía en Matemática y Computación / Licenciatura en Educación en Matemática y Computación 
+260,Pedagogía en Química y Biología 
+261,Periodismo
+262,Psicología
+263,Publicidad
+264,Química y Farmacia
+265,Química y Licenciatura en Química
+266,Técnico Universitario en Análisis Químico y Físico
+267,Técnico Universitario en Análisis Químico y Físico - Vespertino
+268,Tecnólogo en Administración de Personal
+269,Tecnólogo en Alimentos 
+270,Tecnólogo en Automatización Industrial 
+271,Tecnólogo en Construcciones 
+272,Tecnólogo en Control Industrial 
+273,Tecnólogo en Diseño Industrial
+274,Tecnólogo en Mantenimiento Industrial
+275,Tecnólogo en Telecomunicaciones
+276,Terapia Ocupacional
+277,Construcción Civil
+278,Ingeniería Civil
+279,Ingeniería Civil Ambiental
+280,Ingeniería Civil de Minas
+281,Ingeniería Civil de Minas
+282,Ingeniería Civil Eléctrica
+283,Ingeniería Civil Eléctrica
+284,Ingeniería Civil Electrónica 
+285,Ingeniería Civil Industrial 
+286,Ingeniería Civil Industrial 
+287,Ingeniería Civil Informática 
+288,Ingeniería Civil Informática 
+289,Ingeniería Civil Matemática
+290,Ingeniería Civil Matemática
+291,Ingeniería Civil Mecánica
+292,Ingeniería Civil Mecánica
+293,Ingeniería Civil Metalúrgica
+294,Ingeniería Civil Plan Común 
+295,Ingeniería Civil Plan Común 
+296,Ingeniería Civil Química
+297,Ingeniería Civil Química
+298,Ingeniería Civil Telemática
+299,Ingeniería Comercial 
+300,Ingeniería Comercial 
+301,Ingeniería de Ejecución en Mecánica de Procesos y Mantenimiento Industrial 
+302,Ingeniería de Ejecución en Mecánica de Procesos y Mantenimiento Industrial 
+303,Ingeniería en Aviación Comercial
+304,Ingeniería en Diseño de Productos
+305,Arquitectura
+306,Ingeniería en Fabricación y Diseño Industrial
+307,Ingeniería en Prevención de Riesgos Laborales y Ambientales 
+308,Ingeniería en Prevención de Riesgos Laborales y Ambientales 
+309,Licenciatura en Ciencias mención Física
+310,Técnico Universitario en Electricidad 
+311,Técnico Universitario en Electricidad 
+312,Agronomía
+313,Arquitectura
+314,Bachillerato en Ciencias
+315,Bioquímica
+316,Contador Auditor
+317,Derecho
+318,Diseño Gráfico
+319,Diseño Industrial
+320,Educación Básica
+321,Educación Especial - Diferencial
+322,Educación Física
+323,Educación Parvularia
+324,Estadística
+325,Geografía
+326,Ingeniería Civil
+327,Ingeniería Civil Bioquímica
+328,Ingeniería Civil Eleéctrica
+329,Ingeniería Civil Electrónica
+330,Ingeniería civila Metalúrgica Extractiva
+331,Ingeniería Civil Industrial
+332,Ingeniería Civil Informática
+333,Ingeniería Civil Mecánica
+334,Ingeniería Civil Química
+335,Ingerniería Comercial
+336,Ingeniería de Alimentos
+337,Ingeniería de Ejecución en Bioprocesos 
+338,Ingeniería de Ejecución en Informática
+339,Ingeniería Eléctrica
+340,Ingeniería Electrónica
+341,Ingeniería en Construcción 
+342,Ingeniería Mecánica
+343,Interpretación Inglés Español
+344,Interpretación Musical con mención en Instrumento Principal 
+345,Kinesiología 
+346,Licenciatura en Arte
+347,Licenciatura en Biología
+348,Licenciatura en Ciencias y Artes Musicales
+349,Licenciatura en Filosofía
+350,Licenciatura en Física
+351,Licentura en Historía con mención en Ciencia Política
+352,Licenciatura en Matemáticas
+353,Oceanografía
+354,Pedagogía de Biologíoa y Ciencias Naturales
+355,Pedagogía en Castellano y Comunicación
+356,Pedagogía en Filosofía
+357,Pedagogía en Física
+358,Pedagogía en Historia, Geografía y Ciencias Sociales
+359,Pedagogía en Inglés
+360,Pedagogía en Matemáticas
+361,Pedagogía en Música
+362,Pedagogía en Química y Ciencias Naturales
+363,Periodismo
+364,Psicología
+365,Química Industrial
+366,Tecnología Médica con Mención en Oftalmología y Contactología
+367,Trabajo Social
+368,Traducción Inglés Español
+369,Administración Empresas de Turismo
+370,Agronomía 
+371,Antropología
+372,Arquitectura
+373,Auditoría
+374,Bachillerato en Ciencias de la Ingeniería 
+375,Bachillerato en Ciencias de la Ingeniería 
+376,Bachillerato en Ciencias y Recursos Naturales
+377,Biología Marina
+378,Bioquímica 
+379,Derecho
+380,Enfermería 
+381,Enfermería 
+382,Fonoaudiología
+383,Geografía
+384,Geología 
+385,Ingeniería Civil Acústica 
+386,Ingeniería Civil Electrónica
+387,Ingeniería Civil en Informática 
+388,Ingeniería Civil en Obras Civiles 
+389,Ingeniería Civil Industrial 
+390,Ingeniería Civil Industrial 
+391,Ingeniería Civil Mecánica
+392,Ingeniería Comercial
+393,Ingeniería Comercial
+394,Ingeniería en Alimentos 
+395,Ingeniería en Conservación de Recursos Naturales - Ingeniería Forestal 
+396,Ingeniería en Construcción 
+397,Ingeniería en Información y Control de Gestión
+398,Ingeniería Naval 
+399,Kinesiología
+400,Licenciatura en Artes Visuales
+401,Licenciatura en Ciencias 
+402,Medicina 
+403,Medicina Veterinaria
+404,Obstetricia y Puericultura 
+405,Odontología
+406,Pedagogía en Comunicación en Lengua Inglesa
+407,Pedagogía en Educación Básica 
+408,Pedagogía en Educación Básica 
+409,Pedagogía en Educación Diferencial
+410,Pedagogía en Educación Física, Deportes y Recreación
+411,Pedagogía en Historia y Ciencias Sociales
+412,Pedagogía en Lenguaje y Comunicación
+413,Pedagogía en Matemáticas 
+414,Periodismo 
+415,Psicología 
+416,Psicología Puerto Montt
+417,Química y Farmacia
+418,Tecnología Médica 
+419,Tecnología Médica Puerto Montt
+420,Terapia Ocupacional 
+421,Arquitectura
+422,Artes Visuales
+423,Bachillerato en Ciencias Sociales y Humanidades
+424,Ciencia Política
+425,Contador Auditor - Contador Público
+426,Contador Auditor - Contador Público
+427,Derecho
+428,Diseño
+429,Enfermería 
+430,Ingeniería Civil en Informática y Telecomunicaciones
+431,Ingeniería Civil en Obras Civiles 
+432,Ingeniería Civil Industrial
+433,Ingeniería Civil Plan Común 
+434,Ingeniería Comercial
+435,Ingeniería en Administración de Empresas (V)
+436,Ingeniería en Control de Gestión
+437,Ingeniería en Industria y Logística (V)
+438,Ingeniería en Informática y Gestión (v)
+439,Kinesiología
+440,Licenciatura en Historia 
+441,Literatura Creativa
+442,Medicina
+443,Obstetricia y Neonatología
+444,Odontología
+445,Pedagogía en Educación Diferencial con mención en Desarrollo Cognitivo
+446,Pedagogía en Educación General Básica
+447,Pedagogía en Educación Parvularia
+448,Pedagogía en Inglés
+449,Pedagogía Media en Historia y Ciencias Sociales
+450,Pedagogía Media en Lengua Castellana y Comunicación
+451,Periodismo
+452,Psicología
+453,Publicidad
+454,Sociología
+455,Tecnología Médica
+456,Administración Pública
+457,Agronomía
+458,Arquitectura
+459,Auditoría e Ingeniería en control de Gestión - Santiago
+460,Auditoría e Ingeniería en control de Gestión - Talca
+461,Contador Público y Auditor
+462,Derecho - Santiago
+463,Derecho - Talca
+464,Diseño
+465,Enfermería 
+466,Fonoaudiología
+467,Ingeniería Civil de Minas
+468,Ingeniería Civil Eléctrica
+469,Ingeniería Civil en Bioinformática
+470,Ingeniería Civil en Computación
+471,Ingeniería Civil en Mecatrónica
+472,Ingeniería Civil en Obras Civiles 
+473,Ingeniería Civil Industrial
+474,Ingeniería Civil Mecánica
+475,Ingeniería Comercial - Santiago
+476,Ingeniería Comercial - Talca
+477,Ingeniería en Desarrollo de Videojuegos y Realidad Virtual
+478,Ingeniería en Informática Empresarial
+479,Interpretación y Docencia Musical
+480,Kinesiología
+481,Medicina
+482,Nutrición y Dietética
+483,Odontología
+484,Pedagogía de Educación Media en Inglés
+485,Pedagogía en Educación General Básica con mención en Alemán
+486,Pedagogía en Educación Media en Alemán
+487,Pedagogía en Educación Media en Matemáticas
+488,Pedagogía en Educación Parvularia con mención en Alemán
+489,Pedagogía en Educación Parvularia con mención Inglés
+490,Psicología
+491,Tecnología Médica
+492,Derecho
+493,Derecho
+494,Diseño
+495,Ingeniería Civil
+503,Ingeniería Comercial
+504,Ingeniería Comercial
+507,Periodismo
+508,Periodismo
+509,Psicología
+510,Psicología
+511,Agronomía
+512,Bachillerato en Ciencias Sociales
+513,Bioquímica
+514,Biotecnología
+515,Contador Público y Auditor
+516,Derecho
+517,Enfermería 
+518,Fonoaudiología
+519,Ingeniería Civil
+520,Ingeniería Civil Ambiental
+521,Ingeniería Civil Eléctrica
+522,Ingeniería Civil Electrónica
+523,Ingeniería Biotecnología
+524,Ingeniería Civil Física
+525,Ingeniería Civil Industrial mención Bioprocesos
+526,Ingeniería Civil Industrial mención Informática
+527,Ingeniería Civil Industrial mención Mecánica
+528,Ingeniería Civil Informática
+529,Ingeniería Civil Matemática
+530,Ingeniería Civil Mecánica
+531,Ingeniería Civil Química
+532,Ingeniería Civil Telemático
+533,Ingeniería Comercial
+534,Ingeniería en Construcción 
+535,Ingeniería en Recursos Naturales
+536,Ingeniería Informática
+537,Kinesioloogía
+538,Medicina
+539,Nutrición y Dietética
+540,Obstetricia y Puericultura
+541,Odontología
+542,Pedagogía en Castellano y Comunicación
+543,Pedagogía en Ciencias mención Biología
+544,Pedagogía en Educación Física, Deporte y Recreación
+545,Pedagogía en Historia, Geografía y Educación Cívica
+546,Pedagogía en Inglés
+547,Pedagogía en Matemática
+548,Periodismo
+549,Plan Común Ingeniería Civil
+550,Psicología
+551,Química y Farmacia
+552,Sociología
+553,Tecnología Médica
+554,Terapia Ocupacional 
+555,Trabajo Social
+556,Administración Hotelera y Gastronómica
+557,Administración Pública
+558,Administración Pública - Santiago
+559,Arquitectura
+560,Auditoría
+561,Auditoría - Vespertino
+562,Auditoría - Santiago
+563,Biología Marina
+564,Cine
+565,Derecho
+566,Diseño
+567,Educación Parvularia
+568,Enfermería 
+569,Enfermería - San Felipe
+570,Fonoaudiología
+571,Fonoaudiología - San Felipe
+572,Gestión en Turismo y Cultura
+573,Ingeniería Ambiental
+574,Ingeniería Civil
+575,Ingeniería Civil Biomédica
+576,Ingeniería Civil Industrial
+577,Ingeniería Civil Industrial - Santiago
+578,Ingeniería Civil Informática
+579,Ingeniería Civil Oceánica
+580,Ingeniería Civil Oceánica
+581,Ingeniería Comercial
+582,Ingeniería Comercial - Santiago
+583,Ingeniería en Construcción 
+584,Ingeniería en Estadística
+585,Ingeniería en Información y Control de Gestión
+586,Ingeniería en Negocios Internacionales
+587,Ingeniería en Negocios Internacionales - Santiago
+588,Kinesiología
+589,Licenciatura en Ciencias 
+590,Licenciatura en Física (Menciones)
+591,Matemáticas
+592,Medicina
+593,Medicina - San Felipe
+594,Pedagogía en Música
+595,Nutrición y Dietética
+596,Obstetricia y Puericultura
+597,Obstetricia y Puericultura - San Felipe
+598,Odontología
+599,Pedagogía en Filosofía
+600,Pedagogía en Historia y Ciencias Sociales
+601,Psicología
+602,Química y Farmacia
+603,Sociología
+604,Teatro
+605,Tecnología Médica
+606,Tecnología Médica - San Felipe
+607,Trabajo Social
+608,Administración de Servicios
+609,Bachillerato de Obstetricia y Puericultura
+610,Bachillerato en Administración de Servicios
+611,Bachillerato en Derecho
+612,Bachillerato en Enfermería
+613,Bachillerato en Humanidades
+614,Bachillerato en Ingeniería Civíl
+615,Bachillerato en Ingeniería Comercial
+616,Bachillerato en Medicina
+617,Bachillerato en Odontología
+618,Bachillerato en Psicología  
+619,Bachillerato Salud
+620,Comunicación Audiovisual
+621,Derecho
+622,Educación de Párvulos
+623,Enfermería
+624,Filosofía
+625,Fonoaudiología
+626,Historia
+627,Ingeniería Civil
+628,Ingeniería Comercial
+629,Kinesiología
+630,Literatura
+631,Medicina
+632,Nutrición y Dietética
+633,Obstetricia y Puericultura
+634,Odontología
+635,Pedagogía Básica
+636,Pedagogía Media en Filosofía
+637,Pedagoía Media en Historia y Ciencias Sociales
+638,Pedagogía Media en Lengua y Literatura
+639,Periodismo
+640,Psicología
+641,Publicidad
+642,Terapia Ocupacional 
+643,Arquitectura
+644,Artes Visuales
+645,Bachillerato en Ciencias
+646,Bachillerato en Ciencias
+647,Bachillerato en Ciencias
+648,Bachillerato en Ciencias
+649,Bachillerato en Humanidades
+650,Biología Marina
+651,Bioquímica
+652,Contador Auditor
+653,Contador Auditor
+654,Contador Auditor
+655,Derecho
+656,Derecho
+657,Diseño de Juegos Digitales
+658,Diseño de Productos
+659,Diseño de Vestuario y Textil
+660,Diseño Gráfico
+661,Ecoturismo
+662,Ecoturismo
+663,Ecoturismo
+664,Educación Física
+665,Educación Física
+666,Educación Física
+667,Educación General Básica
+668,Educación Musical
+669,Educación Parvularia
+670,Enfermería
+671,Enfermería
+672,Enfermería
+673,Fonoaudiología
+674,Fonoaudiología
+675,Fonoaudiología
+676,Geología
+677,Geología
+678,Geología
+679,Ingeniería Ambiental
+680,Ingeniería Bioinformática
+681,Ingeniería Civil
+682,Ingeniería Civil
+683,Ingeniería Civil en Metalurgia
+684,Ingeniería Civil en Metalurgia
+685,Ingeniería Civil en Metalurgia
+686,Ingeniería Civil Industrial
+687,Ingeniería Civil Industrial
+688,Ingeniería Civil Industrial
+689,Ingeniería Civil Informática
+690,Ingeniería Civil Informática
+691,Ingeniería Comercial
+692,Ingeniería Comercial
+693,Ingeniería Comercial
+694,Ingeniería en Acuicultura
+695,Ingeniería en Administración de Empresas
+696,Ingeniería en Administración de Empresas
+697,Ingeniería en Administración de Empresas
+698,Ingeniería en Administración de Empresas
+699,Ingeniería en Administración Hotelera Internacional
+700,Ingeniería en Automatizaión y Robótica
+701,Ingeniería en Biotecnología
+702,Ingeniería en Biotecnología
+703,Ingeniería en Computación e Informática
+704,Ingeniería en Logística y Transporte
+705,Ingeniería en Marina Mercante
+706,Ingeniería en Marina Mercante
+707,Ingeniería en Seguridad y Prevención de Riesgos
+708,Ingeniería en Seguridad y Prevención de Riesgos
+709,Ingeniería en Telecomunicaciones
+710,Ingeniería Física
+711,Ingeniería Geológica
+712,Ingeniería Industrial
+713,Ingeniería Industrial
+714,Ingeniería Industrial
+715,Kinesiología
+716,Kinesiología
+717,Kinesiología
+718,Licenciatura en Astronomía
+719,Licenciatura en Biología
+720,Licenciatura en Filosofía
+721,Licenciatura en Física
+722,Licenciatura en Historia
+723,Licenciatura en Letras Mencíon Literatura
+724,Licenciatura en Química
+725,Medicina
+726,Medicina
+727,Medicina
+728,Medicina Veterinaria
+729,Nutrición y Dietética
+730,Nutrición y Dietética
+731,Nutrición y Dietética
+732,Obstetricia
+733,Odontología
+734,Odontología
+735,Odontología
+736,Pedagogía en Ingles
+737,Pedagogía en Ingles
+738,Pedagogía en Ingles
+739,Periodismo
+740,Programa de Pedagogía en Eduación Meda para Licenciados
+741,Programa de Pedagogía en Eduación Meda para Licenciados
+742,Programa de Pedagogía en Eduación Meda para Licenciados
+743,Psicología
+744,Psicología
+745,Psicología
+746,Psicopedagogía
+747,Psicopedagogía
+748,Psicopedagogía
+749,Publicidad
+750,Química y Farmacia
+751,Química y Farmacia
+752,Sociología
+753,Sociología
+754,Tecnología Médica
+755,Tecnología Médica
+756,Tecnología Médica
+757,Terapia Ocupacional 
+758,Terapia Ocupacional 
+759,Terapia Ocupacional 
+760,Trabajo Social
+761,Trabajo Social
+762,Trabajo Social
+763,Analista Químico
+764,Arquitectura
+765,Biología Marina
+766,Contador Auditor - Contador Público
+767,Contador Auditor - Contador Público Vespertino
+768,Derecho - Sede Antofagasta
+769,Derecho - Sede Coquimbo
+770,Enfermería
+771,Geología
+772,Ingeniería Civil
+773,Ingeniería Civil Ambiental
+774,Ingeniería Civil de Minas
+775,Ingeniería Civil en Computación e Informática - Antofagasta
+776,Ingeniería Civil en Computación e Informática - Coquimbo
+777,Ingeniería Civil Industrial - Sede Antofagasta
+778,Ingeniería Civil Industrial - Sede Coquimbo
+779,Ingeniería Civil Metalúgica
+780,Ingeniería Civil Plan Común
+781,Ingeniería Civil Química
+782,Ingeniería Comercial - Sede Antofagasta
+783,Ingeniería Comercial - Sede Coquimbo
+784,Ingeniería en Acuicultura
+785,Ingeniería en Computación e Informática
+786,Ingeniería en Construcción
+787,Ingeniería en Información y Control de Gestión - Coquimbo
+788,Ingeniería en Información y Control de Gestión - Antofagasta
+789,Ingeniería en Metalurgia
+790,Ingeniería en Prevención de Riesgos y Medio Ambiente - Antofagasta
+791,Ingeniería en Prevención de Riesgos y Medio Ambiente - Coquimbo
+792,Ingeniería en Procesos Químicos
+793,Kinesiología
+794,Licenciatura en Ciencias Religiosas
+795,Licenciatura en Física con Mención en Astronomía
+796,Licenciatura en Matemática
+797,Medicina
+798,Nutrición y Dietética
+799,Pedagogía en Educación Básica con Especialización
+800,Pedagogía en Filosofía y Religión
+801,Pedagogía en Ingles
+802,Pedagogía en Matemática en Educación Media 
+803,Periodismo
+804,Psicología
+805,Química Industrial
+806,Química y Farmacia
+807,Agronomía
+808,Antropología
+809,Contador Auditor - Contador Público
+810,Derecho
+811,Derecho- Inique
+812,Diseño Multimedia
+813,Educación Párvularia
+814,Educación Párvularia - Iquique
+815,Enfermería
+816,Enfermería - Iquique
+817,Historia y Geografía Ingreso Común
+818,Ingeniería Civil Eléctrica - Iquique
+819,Ingeniería Civil en Computación e Informática
+820,Ingeniería Civil en Informática - Iquique
+821,Ingeniería Civil Industrial
+822,Ingeniería Civil Industrial - Iquique
+823,Ingeniería Civil y Ejecución Eléctrica - Electrónica Ingreso Común
+824,Ingeniería Comercial
+825,Ingeniería Comercial con mención en Gestión y Comercio Exterior
+826,Ingeniería en Sistemas de Información y Control de Gestión
+827,Ingeniería Mecánica y Mecatrónica
+828,Ingeniería Química Ambiental
+829,Kinesiología y Rehabilitación
+830,Kinesiología y Rehabilitación - Iquique
+831,Licenciatura en Inglés
+832,Licenciatura en Lenguaje y Comunicación
+833,Medicina
+834,Nutrición y Dietética
+835,Nutrición y Dietética - Iquique
+836,Obstetricia y Puericultura
+837,Pedagogía en Biología y Ciencias Naturales
+838,Pedagogía en Castellano y Comunicación
+839,Pedagogía en Educación Básica
+840,Pedagogía en Educación Básica - Iquique
+841,Pedagogía en Física y Matemática
+842,Pedagogía en Historia y Geografía
+843,Pedagogía en Inglés
+844,Pedagogía en Matemáticas
+845,Pedagogía en Química y Ciencias Naturales
+846,Profesor de Educación Física
+847,Psicología
+848,Psicología - Iquique
+849,Químico Laboratista
+850,Tecnología Médica - Imagenología y Fisica Medica
+851,Tecnología Médica - Laboratorio Clínico, Hematología y Banco de Sangre
+852,Tecnología Médica - Oftalmología y Optometría
+853,Trabajo Social
+854,Trabajo Social - Iquique
+855,Arquitectura
+856,Bachillerato en Ciencias - Chillán
+857,Bachillerato en Ciencias - Concepción
+858,Contador Público y Auditor - Chillán
+859,Contador Publico y Auditor - Concepción
+860,Diseño Gráfico
+861,Diseño Industrial
+862,Enfermería
+863,Fonoaudiología
+864,Ingeniería Civil
+865,Ingeniería Civil Eléctrica
+866,Ingeniería Civil en Automatización
+867,Ingeniería Civil en Idustrias de La Madera
+868,Ingeniería Civil en Informática - Chillán
+869,Ingeniería Civil en Informática - Concepción
+870,Ingeniería Civil Industrial
+871,Ingeniería Civil Mecánica
+872,Ingeniería Civil Química
+873,Ingeniería Comercial - Chillán
+874,Ingeniería Comercial - Concepción
+875,Ingeniería de Ejecución en Computación e Informática
+876,Ingeniería de Ejecución en Electricidad
+877,Ingeniería de Ejecución en Electrónica
+878,Ingeniería de Ejecución en Mecánica
+879,Ingeniería en Alimentos
+880,Ingeniería en Construcción
+881,Ingeniería en Estadística
+882,Ingeniería en Recursos Naturales
+883,Nutrición y Dietética
+884,Pedagogía en Castellano y Comunicación
+885,Pedagogía en Ciencias Naturales
+886,Pedagogía en Educación Física
+887,Pedagogía en Educación General Básica
+888,Pedagogía en Educación Matemática
+889,Pedagogía en Educación Parvularia
+890,Pedagogía en Historia y Geografía
+891,Pedagogía en Ingles
+892,Psicología
+893,Trabajo Social - Chillán
+894,Trabajo Social - Concepción
+895,Arquitectura
+896,Arquitectura
+897,Bachillerato en Ciencias Jurídicas y Humanidades
+898,Bachillerato en Ingeniería Comercial
+899,Bachillerato en Psicología
+900,Ciencia Política y Políticas Públicas
+901,Ciencia Política y Políticas Públicas
+902,Cine
+903,Derecho - Concepción
+904,Derecho - Santiago
+905,Diseño de Ambientes y Objetos
+906,Diseño de Ambientes y Objetos
+907,Diseño Digital
+908,Diseño Gráfico
+909,Diseño Gráfico
+910,Enfermería
+911,Enfermería
+912,Fonoaudiología
+913,Fonoaudiología
+914,Geología
+915,Ingeniería Civil en Minería
+916,Ingeniería Civil en Minería
+917,Ingeniería Civil en Obras Civiles
+918,Ingeniería Civil Industrial
+919,Ingeniería Civil Industrial
+920,Ingeniería Comercial 
+921,Ingeniería Comercial 
+922,Kinesiología
+923,Kinesiología
+924,Medicina
+925,Nutrición y Dietética
+926,Nutrición y Dietética
+927,Odontología
+928,Odontología
+929,Pedagogía en Educación Básica
+930,Pedagogía en Educación de Párvulos
+931,Periodismo
+932,Periodismo
+933,Psicología
+934,Psicología
+935,Publicidad
+936,Tecnología Médica
+937,Administración Pública
+938,Antropología
+939,Arqueología
+940,Bachillerato en Filosofía
+941,Bachillerato en Filosofía y Humanidades
+942,Ciencia Política y Relaciones Internacionales
+943,Contador Público Auditor
+944,Contador Público Auditor (Vespertino)
+945,Derecho
+946,Educación Básica
+947,Eduación Parvularia
+948,Geografía
+949,Gestión de la Información, Bibliotecología y Archivística
+950,Ingeniería Comercial
+951,Interpretación Superior mención Canto
+952,Licenciatura en Filosofía
+953,Licenciatura en Historia
+954,Licenciatura en Lengua y Literatura
+955,Licenciatura en Teoría e Historia del Arte
+956,Pedagogía en Artes Visuales
+957,Pedagogía en Biología y Ciencias Naturales
+958,Pedagogía en Eduación Diferencial 
+959,Pedagogía en Filosofía
+960,Pedagogía en Historia y Ciencias Sociales
+961,Pedagogía en Ingles
+962,Pedagogía en Lengua Castellana y Comunicación
+963,Pedagogía en Matemática
+964,Pedagogía en Música
+965,Periodismo
+966,Psicología
+967,Sociología
+968,Trabajo Social
+969,Arquitectura
+970,Auditoría
+971,Derecho
+972,Diseño
+973,Enfermería
+974,Ingeniería Agronómica
+975,Ingeniería Civil
+976,Ingeniería Civil Ambiental
+977,Ingeniería Civil en Minas
+978,Ingeniería Civil Industrial
+979,Ingeniería Civil Mecánica
+980,Ingeniería Comercial
+981,Ingeniería de Ejecución en Mecánica
+982,Ingeniería de Ejecución en Minas
+983,Ingeniería en Administración de Empresas
+984,Ingeniería en Alimentos
+985,Ingeniería en Computación
+986,Ingeniería en Construcción
+987,Kinesiología
+988,Licenciatura en Astronomía
+989,Licenciatura en Física
+990,Licenciatura en Matemática
+991,Licenciatura en Música
+992,Odontología
+993,Pedagogía en Castellano y Filosofía
+994,Pedagogía en Educación diferencial
+995,Pedagogía en Educación General Básica
+996,Pedagogía en Educación Musical
+997,Pedagogía en Eduación Parvularia
+998,Pedagogía en Historia y Geografía
+999,Pedagogía en Ingles
+1000,Pedagogía Matemática y computación
+1001,Pedagogía en Matemática y Física
+1002,Periodismo
+1003,Psicología
+1004,Química
+1005,Traductor Inglés
+1006,Administración Pública
+1007,Artes Escenicas
+1008,Bachillerato en Ciencias
+1009,Bachillerato en  Ciencias de la Salud
+1010,Bachillerato en Ciencias Sociales y Artes
+1011,Biología Marina
+1012,Bioquímica
+1013,Biotecnología 
+1014,Derecho
+1015,Diseño Gráfico mención Diseño Estratégico
+1016,Enfermería
+1017,Fonoaudiología
+1018,Ingeniería Civil en Procesos de minerales
+1019,Ingeniería civil Geomática
+1020,Ingeniería Civil Industrial
+1021,Ingeniería Civil Industrial en Electrónica
+1022,Ingeniería Civil Industrial en Minas
+1023,Ingeniería Civil Industrial Mecánica
+1024,Ingeniería Comercial mención Negocios Mineros
+1025,Ingeniería de Ejecución en Electricidad
+1026,Ingeniería de ejecución en Mecánica
+1027,Ingeniería de Ejecución en Minas
+1028,Kinesiología
+1029,Medicina
+1030,Música
+1031,Nutrición y Dietética
+1032,Obstetricia y Puericultura
+1033,Odontología
+1034,Pedagogía en biología y Ciencias Naturales
+1035,Pedagogía en Educación Básica, menciones, lenguaje y comunicación matemática
+1036,Pedagogía en Educación Física Damas
+1037,Pedagogía en Educación Física Varones
+1038,Pedagogía en Lenguaje y Comunicación
+1039,Pedagogía en Matemáticas
+1040,Psicología 
+1041,Química Ambiental
+1042,Tecnología Médica
+1043,Terapia Ocupacional 
+1044,Trabajo Social
+1045,Administración Pública
+1046,Agronomía
+1047,Antropología
+1048,Arqueología
+1049,Arquitectura
+1050,Bachiller en Ciencias y Humanidades
+1051,Ciencia Política
+1052,Contador Auditor
+1053,Derecho
+1054,Diseño Gráfico
+1055,Diseño Industrial
+1056,Eduación de Párvulos
+1057,Fonoaudiología
+1058,Geografía
+1059,Geología
+1060,Ingeniería Civil Ambiental
+1061,Ingeniería Civil en Informática
+1062,Ingeniería Civil en Obras Civiles
+1063,Ingeniería Civil Industrial
+1064,Ingeniería Civil Plan Común
+1065,Ingeniería Civil Química
+1066,Ingeniería Comercial
+1067,Ingeniería en Acuicultura
+1068,Ingeniería en Prevención de Riesgo y Medio Ambiente
+1069,Ingeniería en Recursos Naturales y Renovables
+1070,Kinesiología
+1071,Licenciatura en Artes Visuales
+1072,Medicina Veterinaria
+1073,Nutrición y Dietética
+1074,Pedagogía Básica Intercultural en Contexto Mapuche
+1075,Pedagogía en Educación Básica con mención
+1076,Pedagogía en Educación Diferencial N.E.E.T y DEF
+1077,Pedagogía en Eduacación Física
+1078,Pedagogía en historia, Geografía y Ciencias Sociales
+1079,Pedagogía en Ingles
+1080,Pedagogía en Lengua Castellana y Comunicación
+1081,Pedagogía en Religión Modalidad
+1082,Pedagogía Media en Ciencias Naturales y Biología
+1083,Pedagogía Media en Matemática
+1084,Psicología
+1085,Sociología
+1086,Técnico Universitario en Acuicultura
+1087,Técnico Universitario en Administración de Empresas
+1088,Técnico Universitario en Construcción y Obras Civiles
+1089,Técnico Universitario en Educación de Párvulos
+1090,Técnico Universitario en Preparación Física
+1091,Técnico Universitario en Prevención de Riesgos y Medio Ambiente
+1092,Técnico Unuversitario en Producción Agropecuaria
+1093,Técnico Universitario en Redes y Telecomunicaciones
+1094,Técnico Universitario en Topografía y Geomensura
+1095,Técnico Universitario en Turismo
+1096,Tecnología Médica
+1097,Terapia Ocupacional 
+1098,Trabajo Social
+1099,Traducción Inglés Español
+1100,Agronomía
+1101,Auditoría - Curicó
+1102,Auditoría - Talca
+1103,Educación Parvularia
+1104,Enfermería - Curicó
+1105,Enfermería - Talca
+1106,Ingeniería Civil
+1107,Ingeniería Civil Industrial
+1108,Ingeniería Civil Informática
+1109,Ingeniería Comercial
+1110,Ingeniería Biotecnología
+1111,Ingeniería en Construcción
+1112,Kinesiología
+1113,Medicina
+1114,Nutrición y Dietética
+1115,Pedagogía en Ciencias
+1116,Pedagogía en Eduación Especial
+1117,Pedagogía en Educación Física
+1118,Pedagogía en Educación General Básica con Mención - Curicó
+1119,Pedagogía en Educación General Básica con Mención - Talca
+1120,Pedagogía en Ingles
+1121,Pedagogía en Lengua Castellana y Comunicación
+1122,Pedagogia en Matematica y Computación
+1123,Pedagogía en Religión y Filosofía
+1124,Psicología
+1125,Sociología
+1126,Trabajo Social
+1127,Biología Marina
+1128,Contador Auditor
+1129,Derecho
+1130,Dirección Audiovisual y Multimedia
+1131,Educación de Parvulos
+1132,Enfermería
+1133,Ingeniería Civil
+1134,Ingniería Civil Eléctrica
+1135,Ingenmiería Civil Geológica
+1136,Ingeniería Civil Industrial
+1137,Ingeniería Civil Informática
+1138,Ingeniería Comercial
+1139,Ingeniería de Ejecución Industrial, mención Mantenimiento y Logística
+1140,Kinesiología
+1141,Licenciatura en Ciencias Religiosas y Estudios Eclesiásticos
+1142,Licenciatura en Filosofía
+1143,Licenciatura en Historia
+1144,Medicina
+1145,Nutrición y Dietética
+1146,Pedagogía en Educación Básica con Menciones
+1147,Pedagogía en Educación Diferencial
+1148,Pedagogía en Educación Física
+1149,Pedagogía en Educación Media en Biología y Ciencias Naturales
+1150,Pedagogía en Educación Media en Ingles
+1151,Pedagogía en Educación Media en Lenguaje y Comunicación
+1152,Pedagogía en Educación Media en Matemática
+1153,Pedagogía Media en Religión y Educación Moral
+1154,Periodismo
+1155,Química Ambiental
+1156,Tecnología Médica
+1157,Trabajo Social
+1158,Arquitectura
+1159,Arquitectura
+1160,Bachillerato en Ciencias de la Salud
+1161,Bachillerato en Ciencias de la Salud
+1162,Bachillerato en Ciencias de la Salud
+1163,Bioquímica
+1164,Derecho
+1165,Derecho
+1166,Derecho
+1167,Educación Diferencial
+1168,Educación Diferencial
+1169,Educación Diferencial
+1170,Educación Parvularia
+1171,Educación Parvularia
+1172,Enfermería
+1173,Enfermería
+1174,Enfermería
+1175,Fonoaudiología
+1176,Fonoaudiología
+1177,Fonoaudiología
+1178,Ingeniería Civil
+1179,Ingeniería Civil
+1180,Ingeniería Civil en Minas
+1181,Ingeniería Civil en Minas
+1182,Ingeniería Civil Industrial
+1183,Ingeniería Civil Industrial
+1184,Ingeniería Civil Industrial
+1185,Ingeniería Civil Informática
+1186,Ingeniería Comercial
+1187,Ingeniería Comercial
+1188,Ingeniería Comercial
+1189,Ingeniería en Energía y Sustentabilidad Ambiental
+1190,Ingeniería en Energía y Sustentabilidad Ambiental
+1191,Ingeniería en Expediciones y Ecoturismo
+1192,Ingeniería Civil Industrial
+1193,Ingeniería Civil Industrial
+1194,Ingeniería Civil Industrial
+1195,Ingeniería Civil Informática
+1196,Ingeniería Comercial
+1197,Ingeniería Comercial
+1198,Ingeniería Comercial
+1199,Ingeniería en Energía y Sustentabilidad Ambiental
+1200,Ingeniería en Energía y Sustentabilidad Ambiental
+1201,Ingeniería en Expediciones y Ecoturismo
+1202,Ingeniería en Prevención de Riesgos y Medioambiente
+1203,Ingeniería en Prevención de Riesgos y Medioambiente
+1204,Kinesiología
+1205,Kinesiología
+1206,Kinesiología
+1207,Medicina
+1208,Medicina
+1209,Nutrición y Dietética
+1210,Nutrición y Dietética
+1211,Nutrición y Dietética
+1212,Obstetricia
+1213,Obstetricia
+1214,Odontología
+1215,Pedagogía en Educación Básica
+1216,Pedagogía en Educación Básica
+1217,Pedagogía en Educación Básica
+1218,Pedagogía Media en Historia y Geografía
+1219,Pedagogía Media en Historia y Geografía
+1220,Pedagogía Media en Inglés
+1221,Pedagogía Media en Inglés
+1222,Pedagogía Media en Inglés
+1223,Pedagogía Media en Lenguaje y Comunicación
+1224,Psicología
+1225,Psicología
+1226,Psicología
+1227,Química y Farmacia
+1228,Química y Farmacia
+1229,Tecnología Médica
+1230,Tecnología Médica
+1231,Terapia Ocupacional
+1232,Terapia Ocupacional
+1233,Trabajo Social
+1234,Trabajo Social
+1235,Administración Turística Multilingüe
+1236,Bibliotecología
+1237,Dibujante Proyectista
+1238,Diseño Gráfico
+1239,Educación Parvularia - San Felipe
+1240,Educación Parvularia - Valparaíso
+1241,Enfermería
+1242,Fonoaudiología
+1243,Geografía
+1244,Ingeniería Ambiental
+1245,Ingeniería Civil Ambiental
+1246,Ingeniería Civil Industrial
+1247,Ingeniería Estadística
+1248,Ingeniería Informática - San Felipe
+1249,Ingeniería Informática - Valparaíso
+1250,Kinesiología
+1251,Licenciatura en Arte
+1252,Nutrición y Dietética
+1253,Pedagogía en Artes Plásticas
+1254,Pedagogía en Biología y Ciencias
+1255,Pedagogía en Castellano - San Felipe
+1256,Pedagogía en Castellano - Valparaíso
+1257,Pedagogía en Educación Básica - Diurno
+1258,Pedagogía en Educación Básica - Vespertino
+1259,Pedagogía en Educación Diferencial - San Felipe
+1260,Pedagogía en Educación Diferencial - Valparaíso
+1261,Pedagogía en Educación Física (Damas)
+1262,Pedagogía en Educación Física (Varones)
+1263,Pedagogía en Educación Musical
+1264,Pedagogía en Filosofía
+1265,Pedagogía en Física
+1266,Pedagogía en Historia y Geografía - Diurno
+1267,Pedagogía en Historia y Geografía - San Felipe
+1268,Pedagogía en Historia y Geografía - Vespertino
+1269,Pedagogía en Inglés - Diurno
+1270,Pedagogía en Inglés - San Felipe
+1271,Pedagogía en Inglés - Vespertino
+1272,Pedagogía en Matemática
+1273,Pedagogía en Química y Ciencia
+1274,Periodismo
+1275,Psicología
+1276,Sociología
+1277,Teatro
+1278,Tecnología en Deportes y Recreación
+1279,Terapia Ocupacional
+1280,Traducción e Interpretación Inglés - Español
+1281,Agronomía
+1282,Animación Digital
+1283,Arquitectura
+1284,Arquitectura - Temuco
+1285,Biotecnología
+1286,Cine
+1287,Construcción Civil
+1288,Derecho (Campus Oriente)
+1289,Derecho (Manuel Montt)
+1290,Derecho - Temuco
+1291,Diseño
+1292,Enfermería
+1293,Enfermería - Temuco
+1294,Fonoaudiología
+1295,Geología
+1296,Ingeniería Civil Electrónica
+1297,Ingeniería Civil en Computación e Informática
+1298,Ingeniería Civil Industrial
+1299,Ingeniería Civil Industrial - Temuco
+1300,Ingeniería Comercial (Manuel Montt)
+1301,Ingeniería Comercial (Oriente)
+1302,Ingeniería en Administración
+1303,Ingeniería en Construcción - Temuco
+1304,Ingeniería Forestal
+1305,Kinesiología
+1306,Kinesiología - Temuco
+1307,Medicina
+1308,Medicina - Temuco
+1309,Medicina Veterinaria
+1310,Medicina Veterinaria - Temuco
+1311,Nutrición y Dietética
+1312,Nutrición y Dietética - Temuco
+1313,Obstetricia y Puericultura
+1314,Obstetricia y Puericultura - Temuco
+1315,Odontología
+1316,Odontología - Temuco
+1317,Pedagogía en Artes Musicales para Educación Básica y Media
+1318,Pedagogía en Educación Diferencial con mención en Discapacidades Intelectual y Múltiples
+1319,Pedagogía en Educación Física, Deporte y Recreación
+1320,Pedagogía en Educación Parvularia y Básica para Primer Ciclo
+1321,Pedagogía en Inglés para Educación Básica y Media
+1322,Periodismo
+1323,Psicología
+1324,Psicología - Temuco
+1325,Psicopedagogía
+1326,Teatro
+1327,Tecnología Médica
+1328,Tecnología Médica - Temuco
+1329,Terapia Ocupacional
+1330,Terapia Ocupacional - Temuco
+1331,Kinesiología
+1332,Kinesiología
+1333,Lic. en Educ. con mención en Alemán y Pedagogía en Alemán
+1334,Lic. en Educ. con mención en Castellano y Pedagogía en Castellano
+1335,Lic. en Educ. con mención en Francés y Pedagogía en Francés
+1336,Lic. en Educ. con mención en Hist. o Geo. y Ped. en Hist., Geo. y Educ. Cívica
+1337,Lic. en Educ. con mención en Inglés y Pedagogía en Inglés
+1338,Lic. en Educ. en Biología y Pedagogía en Biología (con menciones)
+1339,Lic. en Educ. en Física y Pedagogía en Física (con menciones)
+1340,Lic. en Educ. Física y Ped. en Educ. Física Deportes y Recreación (damas)
+1341,Lic. en Educ. Física y Ped. en Educ. Física Deportes y Recreación (varones)
+1342,Lic. en Educ. Matemática y Pedagogía en Matemática (con menciones)
+1343,Lic. en Educ. Química y Pedagogía en Química (con menciones)
+1344,Lic. en Educ. y Ped. en Educ. Diferencial en Problemas de Aprendizaje
+1345,Lic. en Educ. y Ped. en Educ. Diferencial en Trastornos de Audición y Lenguaje
+1346,Lic. en Educ. y Ped. en Educ. Diferencial Especialidad en Problemas de la Visión
+1347,Lic. en Educ. y Ped. en Educ. Diferencial Especialidad Retardo Mental
+1348,Lic. en Educ. y Ped. en Educación Básica (con menciones)
+1349,Lic. en Educ. y Ped. en Educación Parvularia (con menciones)
+1350,Lic. en Educ. y Ped. en Filosofía
+1351,Lic. en Educ. y Pedagogía en Artes Visuales
+1352,Lic. en Educación y Pedagogía en Música
+1353,Lic. en Música y Dirección de Agrupaciones Musicales Instrumentales
+1354,Arquitectura
+1355,Artes Visuales
+1356,Auditoría
+1357,Ciencias de la Familia
+1358,Derecho
+1359,Dirección y Gestión de Artes Culinarias
+1360,Diseño
+1361,Educación Básica
+1362,Educación Parvularia
+1363,Enfermería
+1364,Historia
+1365,Ingeniería Civil en Informática y Telecomunicaciones
+1366,Ingeniería Civil Industrial
+1367,Ingeniería Civil Plan Común
+1368,Ingeniería Comercial
+1369,Ingeniería en Información y Control de Gestión
+1370,Kinesiología
+1371,Literatura
+1372,Medicina
+1373,Nutrición y Dietética
+1374,Odontología
+1375,Pedagogía en Religión y Moral Católica
+1376,Periodismo
+1377,Psicología
+1378,Publicidad
+1379,Teatro
+1380,Administración Pública
+1381,Administración Pública
+1382,Arquitectura
+1383,Auditoría e Ingeniería en Control de Gestión
+1384,Auditoría e Ingeniería en Control de Gestión
+1385,Derecho
+1386,Derecho
+1387,Enfermería
+1388,Enfermería
+1389,Enfermería
+1390,Fonoaudiología
+1391,Fonoaudiología
+1392,Fonoaudiología
+1393,Fonoaudiología
+1394,Ingeniería Civil en Informática 
+1395,Ingeniería Civil Industrial
+1396,Ingeniería Civil Industrial
+1397,Ingeniería Civil Industrial
+1398,Ingeniería Comercial
+1399,Ingeniería Comercial
+1400,Ingeniería Comercial
+1401,Ingeniería Comercial
+1402,Ingeniería en Construcción
+1403,Ingeniería en Construcción
+1404,Ingeniería en Construcción
+1405,Ingeniería en Informática
+1406,Kinesiología
+1407,Kinesiología
+1408,Kinesiología
+1409,Kinesiología
+1410,Medicina
+1411,Medicina
+1412,Nutrición y Dietética
+1413,Nutrición y Dietética
+1414,Nutrición y Dietética
+1415,Obstetricia y Puericultura
+1416,Obstetricia y Puericultura
+1417,Odontología
+1418,Odontología
+1419,Pedagogía en Educación Básica
+1420,Pedagogía en Educación Básica
+1421,Pedagogía en Educación Básica
+1422,Pedagogía en Educación Física
+1423,Pedagogía en Educación Física
+1424,Pedagogía en Educación Física
+1425,Pedagogía en Educación Parvularia
+1426,Pedagogía en Educación Parvularia
+1427,Pedagogía en Educación Parvularia
+1428,Pedagogía en Historia, Geografía y Ciencias Sociales
+1429,Pedagogía en Inglés
+1430,Pedagogía en Inglés
+1431,Pedagogía en Inglés
+1432,Pedagogía en Inglés
+1433,Psicología
+1434,Psicología
+1435,Psicología
+1436,Psicología
+1437,Publicidad y Comunicación Integral
+1438,Relaciones Públicas y Comunicación Estartégica
+1439,Técnico Universitario en Administración
+1440,Terapia Ocupacional
+1441,Terapia Ocupacional
+1442,Terapia Ocupacional
+1443,Terapia Ocupacional
+1444,Trabajo Social
+1445,Trabajo Social
+1446,Trabajo Social
+1447,Agronomía
+1448,Arquitectura
+1449,Biología Marina
+1450,Contador Público y Auditor
+1451,Derecho - Casa Central Iquique
+1452,Derecho - Sede Victoria
+1453,Educación Parvularia
+1454,Enfermería - Casa Central Iquique
+1455,Enfermería - Sede Victoria
+1456,Fonoaudiología
+1457,Ingeniería Civil Ambiental
+1458,Ingeniería Civil de Minas
+1459,Ingeniería Civil Electrónica
+1460,Ingeniería Civil en Computación e Informática
+1461,Ingeniería Civil Industrial
+1462,Ingeniería Civil Metalúrgica
+1463,Ingeniería Comercial
+1464,Ingeniería en Biotecnología
+1465,Ingeniería en Información y Control de Gestión
+1466,Kinesiología - Casa Central Iquique
+1467,Kinesiología - Sede Victoria
+1468,Odontología
+1469,Pedagogía en Educación Básica
+1470,Pedagogía en Educación Física
+1471,Pedagogía en Inglés
+1472,Pedagogía en Lengua Castellana y Comunicación
+1473,Pedagogía en Matemática y Física
+1474,Psicología - Casa Central Iquique
+1475,Psicología - Sede Victoria
+1476,Química y Farmacia
+1477,Sociología
+1478,Trabajo Social
+1479,Traducción Inglés - Español
+1480,Administración Pública
+1481,Arquitectura
+1482,Bachillerato en Ciencias de la Ingeniería
+1483,Bibliotecología y Documentación
+1484,Cartografía y geomática
+1485,Construcción CIvil
+1486,Contador Público y Auditor
+1487,Dibujante Proyectista
+1488,Diseño en Comunicación visual
+1489,Diseño Industrial
+1490,Ingeniería Civil Electrónica
+1491,Ingeniería Civil en Computación mención Informática
+1492,Ingeniería Civil en Mecánica
+1493,Ingeniería Civil en Obras Civiles
+1494,Ingeniería Civil en Prevención de Riesgos y Medio Ambiente
+1495,Ingeniería Civil Industrial
+1496,Ingeniería Comercial
+1497,Ingeniería de Ejecución en Biotecnología
+1498,Ingeniería en Administración Agroindustrial
+1499,Ingeniería en Biotecnología
+1500,Ingeniería en Comercio Internacional
+1501,Ingeniería en Construcción
+1502,Ingeniería en Geomensura
+1503,Ingeniería en Gestión Turística
+1504,Ingeniería en Industria Alimentaria
+1505,Ingeniería en Informática
+1506,Ingeniería en Transporte y Tránsito
+1507,Ingeniería Industrial
+1508,Ingeniería Química
+1509,Química Industrial
+1510,Técnico de Nivel Superior en Gestiónn Pública
+1511,Trabajo Social
+1512,Administración Pública
+1513,Arquitectura
+1514,Arquitectura del Paisaje
+1515,Ciencias Políticas
+1516,Contador Auditor
+1517,Derecho - Sede La Serena
+1518,Derecho - Sede Santiago
+1519,Educación Parvularia
+1520,Enfermería
+1521,Geología
+1522,Ingeniería Civil en Computación e Informática
+1523,Ingeniería Civil en Minas
+1524,Ingeniería Civil en Obras Civiles
+1525,Ingeniería Civil Industrial
+1526,Ingeniería Comercial - Sede La Serena
+1527,Ingeniería Comercial - Sede Stgo.
+1528,Ingeniería de Ejecución en Administración de Negocios
+1529,Ingeniería en Agronegocios
+1530,Ingeniería en Construcción
+1531,Ingeniería en Control de Gestión
+1532,Nutrición y Dietética
+1533,Pedagogía en Educación Diferencial
+1534,Pedagogía en Educación Diferencial - Sede La Serena
+1535,Pedagogía en Educación Física
+1536,Pedagogía en educación Física - Sede La Serena
+1537,Pedagogía en Educación General Básica
+1538,Pedagogía en Lengua y Cultura Inglesas
+1539,Pedagogía en Matemática y Estadística
+1540,Periodismo
+1541,Psicología
+1542,Psicología - Sede La Serena
+1543,Publicidad
+1544,Sociología - Sede La Serena
+1545,Sociología - Sede Santiago
+1546,Tecnología Médica
+1547,Terapia Ocupacional
+1548,Trabajo Social
+1549,Bachillerato en Ciencias y Humanidades
+1550,Contador Público y Auditor
+1551,Derecho
+1552,Educación Parvularia
+1553,Enfermería
+1554,Fonoaudiología
+1555,Ingeniería Comercial
+1556,Ingeniería en Administración
+1557,Ingeniería en Prevención de Riesgos y Medio Ambiente
+1558,Kinesiología
+1559,Licenciatura en Educación
+1560,Pedagogía en Castellano
+1561,Pedagogía en Educación Artística
+1562,Pedagogía en Educación Básica
+1563,Pedagogía en Educación Diferencial
+1564,Pedagogía en Educación Física
+1565,Pedagogía en Educación Técnica y Formación Profesional
+1566,Pedagogía en Filosofía
+1567,Pedagogía en Historia y Geografía
+1568,Pedagogía en Inglés
+1569,Pedagogía en Matemáticas e Informática Educativa
+1570,Pedagogía en Religión Educación Básica y Media
+1571,Psicología
+1572,Sociología
+1573,Trabajo Social
+1574,Derecho
+1575,Derecho
+1576,Enfermería
+1577,Enfermería
+1578,Fonoaudiología
+1579,Ingeniería Civil Industrial
+1580,Ingeniería Comercial
+1581,Ingeniería de Ejecución en Prevención de Riesgos y Medio Ambiente
+1582,Ingeniería de Ejecución en Prevención de Riesgos y Medio Ambiente
+1583,Ingeniería en Control de Gestión
+1584,Ingeniería en Geomensura y Cartografía
+1585,Ingeniería en Geomensura y Cartografía
+1586,Ingeniería en Informática
+1587,Ingeniería en Informática
+1588,Kinesiología
+1589,Kinesiología
+1590,Nutrición y Dietética
+1591,Nutrición y Dietética
+1592,Obstetricia y Puericultura
+1593,Pedagogía en Educación Diferencial
+1594,Pedagogía en Educación Diferencial
+1595,Pedagogía en Educación Física, Deporte y Recreación
+1596,Pedagogía en Educación Física, Deporte y Recreación
+1597,Pedagogía en Educación General Básica
+1598,Pedagogía en Educación General Básica
+1599,Pedagogía en Educación Parvularia
+1600,Pedagogía en Historia y Geografía en Enseñanza Media
+1601,Pedagogía en Historia y Geografía en Enseñanza Media
+1602,Pedagogía en Inglés en Enseñanza Básica y Media
+1603,Pedagogía en Inglés en Enseñanza Básica y Media
+1604,Periodismo
+1605,Psicología
+1606,Psicología
+1607,Relaciones Públicas y Comunicación Estartégica
+1608,Tecnología Médica
+1609,Terapia Ocupacional
+1610,Animación Digital 3D
+1612,Derecho
+1615,Ingeniería Civil Industrial (Plan Especial Ejecutivo)
+1616,Ingeniería Comercial
+1620,Psicología
+1621,Arquitectura
+1622,Biología Marina
+1623,Ciencias Políticas y Administrativas
+1624,Contador Público y Auditor
+1625,Educación Diferencial
+1626,Educación Parvularia - Campus Osorno
+1627,Educación Parvularia - Sede Chiloé
+1628,Enfermería - Osorno
+1629,Enfermería - Puerto Montt
+1630,Fonoaudiología
+1631,Ingeniería Ambiental
+1632,Ingeniería Civil en Informática - Osorno
+1633,Ingeniería Civil en Informática - Puerto Montt
+1634,Ingeniería Civil Industrial
+1635,Ingeniería Comercial
+1636,Ingeniería en Alimentos
+1637,Kinesiología - Osorno
+1638,Kinesiología - Puerto Montt
+1639,Nutrición y Alimentación
+1640,Pedagogía Educación Media mención Educación Física - Osorno
+1641,Pedagogía Educación Media mención Educación Física - Puerto Montt
+1642,Pedagogía Educación Media mención Historia y Geografía
+1643,Pedagogía Educación Media mención Inglés y Traducción
+1644,Pedagogía Educación Media mención Lengua Castellana y Comunicaciones
+1645,Pedagogía Educación Media mención Matemática y Computación
+1646,Pedagogía en Educación Media en Artes
+1647,Psicología - Osorno
+1648,Psicología - Puerto Montt
+1649,Trabajo Social
+1650,Agronomía
+1651,Arquitectura
+1652,Auditoría
+1653,Biología Marina
+1654,Derecho
+1655,Enfermería
+1656,Fonoaudiología
+1657,Ingeniería Civil en Computación e Informática
+1658,Ingeniería Civil en Electricidad mención Electrónica Industrial
+1659,Ingeniería Civil en Mecánica
+1660,Ingeniería Civil en Química
+1661,Ingeniería Comercial
+1662,Ingeniería en Computación e Informática
+1663,Ingeniería en Construcción
+1664,Ingeniería Idustrial
+1665,Ingeniería en Mecánica
+1666,Ingeniería en Química y Medio Ambiente
+1667,Kinesiología
+1668,Medicina
+1669,Nutrición y Dietética
+1670,Pedagogía en Artes Musicales, para Enseñanza Básica y Media
+1671,Pedagogía en Castellano y Comunicación para Enseñanza Media
+1672,Pedagogía en Educación Básica
+1673,Pedagogía en Educación Física para Enseñanaza Básica y Media
+1674,Pedagogía en Educación Parvularia
+1675,Pedagogía en Historia y Ciencias Sociales para Enseñanza Media
+1676,Pedagogía en Inglés para Enseñanza Básica y Media
+1677,Pedagogía en Matemáticas para Enseñanza Media
+1678,Psicología
+1679,Terapia Ocupacional
+1680,Trabajo Social
+1681,Agronomía
+1682,Biotecnología
+1683,Ciencias del Deporte y Actividad Física
+1684,Contador Público y Auditor
+1685,Contador Público y Auditor
+1686,Derecho
+1687,Derecho
+1688,Derecho
+1689,Derecho
+1690,Derecho
+1691,Derecho
+1692,Derecho
+1693,Derecho
+1694,Derecho
+1695,Derecho
+1696,Derecho
+1697,Educación Diferencial
+1698,Educación Diferencial
+1699,Educación Diferencial
+1700,Educación Diferencial
+1701,Educación Diferencial
+1702,Educación Diferencial
+1703,Educación Parvularia
+1704,Enfermería
+1705,Enfermería
+1706,Enfermería
+1707,Enfermería
+1708,Enfermería
+1709,Enfermería
+1710,Enfermería
+1711,Enfermería
+1712,Enfermería
+1713,Enfermería
+1714,Enfermería
+1715,Enfermería
+1716,Enfermería
+1717,Enfermería
+1718,Fonoaudiología
+1719,Fonoaudiología
+1720,Fonoaudiología
+1721,Fonoaudiología
+1722,Fonoaudiología
+1723,Fonoaudiología
+1724,Fonoaudiología
+1725,Geología
+1726,Ingeniería Civil en Minas
+1727,Ingeniería Civil en Minas
+1728,Ingeniería Civil Industrial
+1729,Ingeniería Civil Industrial
+1730,Ingeniería Comercial
+1731,Ingeniería Comercial
+1732,Ingeniería Comercial
+1733,Ingeniería Comercial
+1734,Ingeniería Comercial
+1735,Ingeniería Comercial
+1736,Ingeniería Comercial
+1737,Ingeniería Comercial
+1738,Ingeniería Comercial
+1739,Ingeniería en Control de Gestión
+1740,Ingeniería en Control de Gestión
+1741,Kinesiología
+1742,Kinesiología
+1743,Kinesiología
+1744,Kinesiología
+1745,Kinesiología
+1746,Kinesiología
+1747,Kinesiología
+1748,Kinesiología
+1749,Kinesiología
+1750,Kinesiología
+1751,Kinesiología
+1752,Kinesiología
+1753,Kinesiología
+1754,Kinesiología
+1755,Medicina Veterinaria
+1756,Medicina Veterinaria
+1757,Medicina Veterinaria
+1758,Medicina Veterinaria
+1759,Medicina Veterinaria
+1760,Medicina Veterinaria
+1761,Nutrición y Dietética
+1762,Nutrición y Dietética
+1763,Nutrición y Dietética
+1764,Nutrición y Dietética
+1765,Nutrición y Dietética
+1766,Nutrición y Dietética
+1767,Nutrición y Dietética
+1768,Nutrición y Dietética
+1769,Pedagogía en Educación Física
+1770,Pedagogía en Educación Física
+1771,Periodismo
+1772,Periodismo
+1773,Psicología
+1774,Psicología
+1775,Psicología
+1776,Psicología
+1777,Psicología
+1778,Psicología
+1779,Psicología
+1780,Psicología
+1781,Psicología
+1782,Psicología
+1783,Psicología
+1784,Psicología
+1785,Psicología
+1786,Terapia Ocupacional
+1787,Terapia Ocupacional
+1788,Terapia Ocupacional
+1789,Terapia Ocupacional
+1790,Terapia Ocupacional
+1791,Terapia Ocupacional
+1792,Terapia Ocupacional
+1793,Terapia Ocupacional
+1794,Relaciones Públicas
+1795,Relaciones Públicas
+1796,Trabajo Social
+1797,Trabajo Social
+1798,Trabajo Social
+1799,Trabajo Social
+1800,Trabajo Social
+1801,Trabajo Social
+1802,Trabajo Social
+1803,Trabajo Social
+1804,Trabajo Social
+1805,Trabajo Social
+1806,Trabajo Social
+1807,Trabajo Social
+1808,Trabajo Social
+1809,Trabajo Social
+1810,Construcción Civil
+1811,Derecho
+1812,Enfermería
+1813,Geología
+1814,Ingeniería Civil en Computación e Informática
+1815,Ingeniería Civil en Materiales
+1816,Ingeniería Civil en Minas
+1817,Ingeniería Civil Industrial
+1818,Ingeniería Comercial
+1819,Kinesiología
+1820,Licenciatura en Educación y Pedagogía en Educación Física
+1821,Licenciatura en Educación y Pedagogía en Educación General Básica
+1822,Licenciatura en Educación y Pedagogía en Educación Parvularia
+1823,Licenciatura en Educación y Pedagogía en Inglés
+1824,Licenciatura en Idioma Inglés y Traducción Inglés Español
+1825,Nutrición y Dietética
+1826,Obstetricia y Puericultura
+1827,Psicología
+1828,Técnico Universitario en Energías Renovables y Eficiencia Energética
+1829,Técnico Universitario en Minas
+1830,Tecnólogo en Administración de Empresas
+1831,Técnologo en Electricidad
+1832,Técnologo en  Instrumentación y Automatización Industrial
+1833,Ténologo en Metalurgia
+1834,Trabajo Social
+1835,Agronomía
+1836,Animación Digital
+1837,Arquitectura
+1838,Arquitectura
+1839,Comunicación Audiovisual y Multimedia
+1840,Construcción Civil
+1841,Construcción Civil
+1842,Derecho
+1843,Derecho
+1844,Derecho
+1845,Derecho
+1846,Derecho
+1847,Derecho
+1848,Diseño de Vestuario
+1849,Diseño Gráfico
+1850,Educación Diferencial
+1851,Educación Diferencial
+1852,Educación Diferencial
+1853,Educación Diferencial
+1854,Educación Diferencial
+1855,Educación Parvularia
+1856,Educación Parvularia
+1857,Educación Parvularia
+1858,Enfermería
+1859,Fonoaudiología
+1860,Fonoaudiología
+1861,Fonoaudiología
+1862,Fonoaudiología
+1863,Fonoaudiología
+1864,Fonoaudiología
+1865,Hotelería y Turismo
+1866,Ingeniería Civil Industrial
+1867,Ingeniería Civil Industrial
+1868,Ingeniería Civil Industrial
+1869,Ingeniería Civil Industrial
+1870,Ingeniería Comercial
+1871,Ingeniería Comercial
+1872,Ingeniería Comercial
+1873,Ingeniería Comercial
+1874,Ingeniería Comercial
+1875,Ingeniería Comercial
+1876,Ingeniería de Ejecución en Administración de Empresas
+1877,Ingeniería de Ejecución en Administración de Empresas
+1878,Ingeniería de Ejecución en Administración de Empresas
+1879,Ingeniería de Ejecución en Administración de Empresas
+1880,Ingeniería de Ejecución en Administración de Empresas
+1881,Ingeniería de Ejecución en Informática
+1882,Ingeniería de Ejecución en Informática
+1883,Ingeniería de Ejecución en Informática
+1884,Ingeniería de Ejecución Industrial
+1885,Ingeniería de Ejecución Industrial
+1886,Ingeniería de Ejecución Industrial
+1887,Ingeniería en Bíoprocesos
+1888,Ingeniería en Minas
+1889,Ingeniería en Minas
+1890,Ingeniería en Minas
+1891,Ingeniería en Prevención de Riesgos y Medio Ambiente
+1892,Ingeniería en Prevención de Riesgos y Medio Ambiente
+1893,Ingeniería en Prevención de Riesgos y Medio Ambiente
+1894,Ingeniería en Prevención de Riesgos y Medio Ambiente
+1895,Ingeniería en Sonido y Acústica
+1896,Intérprete en Danza
+1897,Kinesiología
+1898,Kinesiología
+1899,Kinesiología
+1900,Kinesiología
+1901,Kinesiología
+1902,Kinesiología
+1903,Licenciatura en Artes Culinarias y Negocios Gastronómicos
+1904,Licenciatura en Ciencias de la Actividad Física
+1905,Licenciatura en Ciencias de la Actividad Física
+1906,Licenciatura en Ciencias de la Actividad Física
+1907,Licenciatura en Ciencias de la Actividad Física
+1908,Licenciatura en Ciencias de la Actividad Física
+1909,Medicina Veterinaria
+1910,Medicina Veterinaria
+1911,Medicina Veterinaria
+1912,Medicina Veterinaria
+1913,Medicina Veterinaria
+1914,Medicina Veterinaria
+1915,Nutrición y Dietética
+1916,Nutrición y Dietética
+1917,Nutrición y Dietética
+1918,Nutrición y Dietética
+1919,Nutrición y Dietética
+1920,Nutrición y Dietética
+1921,Pedagogía en Biología y Ciencias Naturales
+1922,Pedagogía en Educación Básica
+1923,Pedagogía en Educación Física
+1924,Pedagogía en Educación Física
+1925,Pedagogía en Educación Física
+1926,Pedagogía en Historia, Geografía y Educación Cívica
+1927,Pedagogía en Inglés
+1928,Pedagogía en Lengua Castellana y Literatura
+1929,Pedagogía en Matemática y Estadística
+1930,Periodismo
+1931,Psicología
+1932,Psicología
+1933,Psicología
+1934,Psicología
+1935,Psicología
+1936,Psicología
+1937,Publicidad
+1938,Relaciones Públicas
+1939,Relaciones Públicas
+1940,Teatro y Comunicación Escénica
+1941,Terapia Ocupacional
+1942,Terapia Ocupacional
+1943,Terapia Ocupacional
+1944,Terapia Ocupacional
+1945,Trabajo Social
+1946,Trabajo Social
+1947,Trabajo Social
+1948,Trabajo Social
+1949,Traducción e Intérprete en Inglés
+1950,Traducción e Intérprete en Inglés
+1951,Agronomía
+1952,Contador Auditor
+1953,Educación Parvularia
+1954,Enfermería
+1955,Ingeniería Civil en Agroindustrias
+1956,Ingeniería Civil en Industrial
+1957,Ingeniería Civil en Informática
+1958,Ingeniería Comercial
+1959,Ingeniería en Agroindustrias
+1960,Ingeniería en Electrónica y Telecomunicaciones
+1961,Ingeniería en Informática
+1962,Pedagogía en Biología y Ciencias Naturales
+1963,Pedagogía en Educación Diferencial mención Dificultades Específicas del Aprendizaje
+1964,Pedagogía en Educación Física
+1965,Pedagogía en Educación General Básica
+1966,Pedagogía en Historia y Geografía
+1967,Pedagogía en Inglés
+1968,Pedagogía en Lengua Castellana y Comunicación
+1969,Pedagogía en Matemática y Computación
+1970,Pedagogía en Música mención Eduación Extraescolar
+1971,Psicología
+1972,Teología
+1973,Trabajo Social
+1974,Agronomía
+1975,Comunicación Digital y Multimedia
+1976,Contador Público y Auditor
+1977,Diseño de Interiores
+1978,Diseño de Vestuario y Textiles
+1979,Diseño Gráfico
+1980,Enfermería
+1981,Ingeniería Comercial
+1982,Ingeniería Comercial
+1983,Licenciatura en Comunicación
+1984,Medicina Veterinaria
+1985,Música y Tecnología
+1986,Nutrición y Dietética
+1987,Periodismo
+1988,Psicología
+1989,Publicidad
+1990,Relaciones Públicas
+1991,Trabajo Social
+1992,Administración de Negocios Turísticos y Hoteleros
+1993,Agronomía
+1994,Arquitectura
+1995,Cine y Comunicación Audiovisual
+1996,Contador Auditor
+1997,Contador Auditor
+1998,Derecho
+1999,Derecho
+2000,Diseño
+2001,Educación Básica
+2002,Educación Básica
+2003,Educación Parvularia
+2004,Enfermería
+2005,Fonoaudiología
+2006,Ingeniería Civil en Minas
+2007,Ingeniería Civil en Industrial
+2008,Ingeniería Civil en Industrial
+2009,Ingeniería Civil Informática
+2010,Ingeniería Comercial
+2011,Ingeniería Comercial
+2012,Ingeniería en Construcción
+2013,Ingeniería en Construcción
+2014,Ingeniería en Gestión de Negocios Internacioles
+2015,Ingeniería en Medio Ambiente y Recursos Naturales
+2016,Ingeniería en Prevención de Riesgos
+2017,Ingeniería en Prevención de Riesgos
+2018,Kinesiología
+2019,Medicina Veterinaria
+2020,Nutrición y Dietética
+2021,Odontología
+2022,Pedagogía en Artes Visuales
+2023,Pedagogía en Educación Física
+2024,Pedagogía en Educación Física
+2025,Pedagogía en Historia y Ciencias Sociales
+2026,Pedagogía en Inglés
+2027,Pedagogía en Lenguaje y Literatura
+2028,Periodismo
+2029,Psicología
+2030,Psicología
+2031,Psicopedagogía
+2032,Psicopedagogía
+2033,Relaciones Públicas
+2034,Sociología
+2035,Tecnología Médica
+2036,Terapia Ocupacional
+2037,Trabajo Social
+2038,Administración de Empresas con mención en Gestión de Personas
+2039,Administración de Empresas con mención en Gestión de Personas
+2040,Administración de Empresas con mención en Gestión de Personas
+2041,Administración de Empresas con mención en Gestión de Personas
+2042,Administración de Empresas con mención en Gestión de Personas
+2043,Administración de Empresas con mención en Gestión de Personas
+2044,Administración de Empresas con mención en Gestión de Personas
+2045,Administración de Empresas con mención en Gestión de Personas
+2046,Administración de Empresas con mención en Gestión de Personas
+2047,Administración de Empresas con mención en Gestión de Personas
+2048,Administración de Empresas con mención en Gestión de Personas
+2049,Administración de Empresas con mención en Gestión de Personas
+2050,Contador Auditor
+2051,Contador Auditor
+2052,Contador Auditor
+2053,Contador Auditor
+2054,Contador Auditor
+2055,Contador Auditor
+2056,Contador Auditor
+2057,Contador Auditor
+2058,Contador Auditor
+2059,Contador Auditor
+2060,Contador Auditor
+2061,Contador Auditor
+2062,Contador Auditor
+2063,Contador Auditor
+2064,Contador Auditor
+2065,Contador Auditor
+2066,Contador Auditor
+2067,Contador Auditor
+2068,Contador Auditor
+2069,Contador Auditor
+2070,Contador Auditor
+2071,Contador Auditor
+2072,Enfermería
+2073,Enfermería
+2074,Ingeniería Comercial
+2075,Ingeniería Comercial
+2076,Ingeniería Comercial
+2077,Ingeniería Comercial
+2078,Ingeniería Comercial
+2079,Ingeniería Comercial
+2080,Ingeniería Comercial
+2081,Ingeniería Comercial
+2082,Ingeniería Comercial
+2083,Ingeniería Comercial
+2084,Ingeniería Comercial
+2085,Ingeniería Comercial
+2086,Ingeniería Comercial
+2087,Ingeniería Comercial
+2088,Ingeniería Comercial
+2089,Ingeniería Comercial
+2090,Ingeniería Comercial
+2091,Ingeniería Comercial
+2092,Ingeniería Comercial
+2093,Ingeniería Comercial
+2094,Ingeniería Comercial
+2095,Ingeniería Comercial
+2096,Ingeniería Comercial
+2097,Ingeniería Comercial
+2098,Ingeniería Comercial
+2099,Ingeniería Comercial
+2100,Ingeniería Comercial
+2101,Ingeniería Comercial
+2102,Ingeniería Comercial
+2103,Ingeniería Comercial
+2104,Ingeniería Comercial
+2105,Ingeniería Comercial
+2106,Ingeniería Comercial
+2107,Ingeniería Comercial
+2108,Ingeniería Comercial
+2109,Ingeniería Comercial
+2110,Ingeniería Electrónica
+2111,Ingeniería Electrónica
+2112,Ingeniería Electrónica
+2113,Ingeniería Electrónica
+2114,Ingeniería Electrónica
+2115,Ingeniería Electrónica
+2116,Ingeniería Electrónica
+2117,Ingeniería Electrónica
+2118,Ingeniería Electrónica
+2119,Ingeniería Electrónica
+2120,Ingeniería Electrónica
+2121,Ingeniería Electrónica
+2122,Ingeniería en Administración de Empresas mención Finanzas
+2123,Ingeniería en Administración de Empresas mención Finanzas
+2124,Ingeniería en Administración de Empresas mención Finanzas
+2125,Ingeniería en Administración de Empresas mención Finanzas
+2126,Ingeniería en Administración de Empresas mención Finanzas
+2127,Ingeniería en Administración de Empresas mención Finanzas
+2128,Ingeniería en Administración de Empresas mención Finanzas
+2129,Ingeniería en Administración de Empresas mención Finanzas
+2130,Ingeniería en Administración de Empresas mención Finanzas
+2131,Ingeniería en Administración de Empresas mención Finanzas
+2132,Ingeniería en Administración de Empresas mención Finanzas
+2133,Ingeniería en Administración de Empresas mención Finanzas
+2134,Ingeniería en Administración de Empresas mención Finanzas
+2135,Ingeniería en Administración de Empresas mención Finanzas
+2136,Ingeniería en Administración de Empresas mención Finanzas
+2137,Ingeniería en Administración de Empresas mención Finanzas
+2138,Ingeniería en Administración de Empresas mención Finanzas
+2139,Ingeniería en Administración de Empresas mención Finanzas
+2140,Ingeniería en Administración de Empresas mención Finanzas
+2141,Ingeniería en Administración de Empresas mención Finanzas
+2142,Ingeniería en Administración de Empresas mención Finanzas
+2143,Ingeniería en Administración de Empresas mención Finanzas
+2144,Ingeniería en Administración de Empresas mención Finanzas
+2145,Ingeniería en Administración de Empresas mención Finanzas
+2146,Ingeniería en Administración de Empresas mención Finanzas
+2147,Ingeniería en Administración de Empresas mención Finanzas
+2148,Ingeniería en Administración de Empresas mención Finanzas
+2149,Ingeniería en Administración de Empresas mención Finanzas
+2150,Ingeniería en Administración de Empresas mención Finanzas
+2151,Ingeniería en Administración de Empresas mención Finanzas
+2152,Ingeniería en Administración de Empresas mención Finanzas
+2153,Ingeniería en Administración de Empresas mención Finanzas
+2154,Ingeniería en Administración de Empresas mención Finanzas
+2155,Ingeniería en Administración de Empresas mención Finanzas
+2156,Ingeniería en Administración de Empresas mención Finanzas
+2157,Ingeniería en Administración de Empresas mención Finanzas
+2158,Ingeniería en Administración de Empresas mención Finanzas
+2159,Ingeniería en Administración de Empresas mención Finanzas
+2160,Ingeniería en Administración de Empresas mención Finanzas
+2161,Ingeniería en Administración de Empresas mención Finanzas
+2162,Ingeniería en Administración de Empresas mención Finanzas
+2163,Ingeniería en Administración de Empresas mención Finanzas
+2164,Ingeniería en Administración de Empresas mención Gestión de Personas
+2165,Ingeniería en Administración de Empresas mención Gestión de Personas
+2166,Ingeniería en Administración de Empresas mención Gestión de Personas
+2167,Ingeniería en Administración de Empresas mención Gestión de Personas
+2168,Ingeniería en Administración de Empresas mención Gestión de Personas
+2169,Ingeniería en Administración de Empresas mención Gestión de Personas
+2170,Ingeniería en Administración de Empresas mención Gestión de Personas
+2171,Ingeniería en Administración de Empresas mención Gestión de Personas
+2172,Ingeniería en Administración de Empresas mención Gestión de Personas
+2173,Ingeniería en Administración de Empresas mención Gestión de Personas
+2174,Ingeniería en Administración de Empresas mención Gestión de Personas
+2175,Ingeniería en Administración de Empresas mención Gestión de Personas
+2176,Ingeniería en Administración de Empresas mención Gestión de Personas
+2177,Ingeniería en Administración de Empresas mención Gestión de Personas
+2178,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2179,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2180,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2181,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2182,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2183,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2184,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2185,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2186,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2187,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2188,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2189,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2190,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2191,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2192,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2193,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2194,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2195,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2196,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2197,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2198,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2199,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2200,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2201,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2202,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2203,Ingeniería en Administración de Empresas mención Marketing y Ventas
+2204,Administración en Hotelería y Servicios
+2205,Administración en Hotelería y Servicios
+2206,Administración en Hotelería y Servicios
+2207,Administración en Hotelería y Servicios
+2208,Administración en Hotelería y Servicios
+2209,Administración Gastronómica Internacional
+2210,Administración Gastronómica Internacional
+2211,Administración Gastronómica Internacional
+2212,Administración Gastronómica Internacional
+2213,Administración Gastronómica Internacional
+2214,Administración Gastronómica Internacional
+2215,Administración Gastronómica Internacional
+2216,Administración Gastronómica Internacional
+2217,Administración Gastronómica Internacional
+2218,Administración Turística Internacional
+2219,Administración Turística Internacional
+2220,Administración Turística Internacional
+2221,Construcción Civil
+2222,Construcción Civil
+2223,Construcción Civil
+2224,Construcción Civil
+2225,Construcción Civil
+2226,Construcción Civil
+2227,Construcción Civil
+2228,Construcción Civil
+2229,Construcción Civil
+2230,Construcción Civil
+2231,Construcción Civil
+2232,Construcción Civil
+2233,Construcción Civil
+2234,Construcción Civil
+2235,Construcción Civil
+2236,Construcción Civil
+2237,Construcción Civil
+2238,Construcción Civil
+2239,Construcción Civil
+2240,Construcción Civil
+2241,Construcción Civil
+2242,Construcción Civil
+2243,Construcción Civil
+2244,Construcción Civil
+2245,Diseño de Moda
+2246,Diseño de Moda
+2247,Diseño Gráfico Profesional
+2248,Diseño Gráfico Profesional
+2249,Diseño Gráfico Profesional
+2250,Diseño Gráfico Profesional
+2251,Diseño Gráfico Profesional
+2252,Diseño Gráfico Profesional
+2253,Diseño Gráfico Profesional
+2254,Diseño Gráfico Profesional
+2255,Diseño Gráfico Profesional
+2256,Diseño Gráfico Profesional
+2257,Diseño Gráfico Profesional
+2258,Diseño Gráfico Profesional
+2259,Diseño Gráfico Profesional
+2260,Diseño Gráfico Profesional
+2261,Diseño Gráfico Profesional
+2262,Diseño Gráfico Profesional
+2263,Diseño Gráfico Profesional
+2264,Diseño Gráfico Profesional
+2265,Diseño Gráfico Profesional
+2266,Diseño Gráfico Profesional
+2267,Ingeniería Agrícola
+2268,Ingeniería Agrícola
+2269,Ingeniería Agrícola
+2270,Ingeniería Agrícola
+2271,Ingeniería Agrícola
+2272,Ingeniería Agrícola
+2273,Ingeniería Agrícola
+2274,Ingeniería Agrícola
+2275,Ingeniería Agrícola
+2276,Ingeniería Agrícola
+2277,Ingeniería Agrícola
+2278,Ingeniería Agrícola
+2279,Ingeniería en Climatización
+2280,Ingeniería en Climatización
+2281,Ingeniería en Climatización
+2282,Ingeniería en Climatización
+2283,Ingeniería en Comercio Exterior
+2284,Ingeniería en Comercio Exterior
+2285,Ingeniería en Geomensura
+2286,Ingeniería en Geomensura
+2287,Ingeniería en Geomensura
+2288,Ingeniería en Geomensura
+2289,Ingeniería en Geomensura
+2290,Ingeniería en Geomensura
+2291,Ingeniería en Maquinaria Pesada y Vehículos Automotrices
+2292,Ingeniería en Maquinaria Pesada y Vehículos Automotrices
+2293,Ingeniería en Maquinaria Pesada y Vehículos Automotrices
+2294,Ingeniería en Maquinaria Pesada y Vehículos Automotrices
+2295,Ingeniería en Maquinaria Pesada y Vehículos Automotrices
+2296,Ingeniería en Maquinaria Pesada y Vehículos Automotrices
+2297,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2298,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2299,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2300,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2301,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2302,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2303,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2304,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2305,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2306,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2307,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2308,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2309,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2310,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2311,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2312,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2313,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2314,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2315,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2316,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2317,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2318,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2319,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2320,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2321,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2322,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2323,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2324,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2325,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2326,Ingeniería en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos
+2327,Ingeniería en Metalurgia
+2328,Ingeniería en Metalurgia
+2329,Ingeniería en Metalurgia
+2330,Ingeniería en Metalurgia
+2331,Ingeniería en Minas
+2332,Ingeniería en Minas
+2333,Ingeniería en Minas
+2334,Ingeniería en Minas
+2335,Ingeniería en Minas
+2336,Ingeniería en Minas
+2337,Ingeniería en Minas
+2338,Ingeniería en Minas
+2339,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2340,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2341,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2342,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2343,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2344,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2345,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2346,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2347,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2348,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2349,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2350,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2351,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2352,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2353,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2354,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2355,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2356,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2357,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2358,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2359,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2360,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2361,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2362,Ingeniería en Prevención de Riesgos, Calidad y Ambiente
+2363,Ingeniería en Producción Ganadera
+2364,Ingeniería en Producción Ganadera
+2365,Ingeniería en Producción Ganadera
+2366,Ingeniería en Química Industrial
+2367,Ingeniería en Química Industrial
+2368,Ingeniería en Refrigeración
+2369,Ingeniería en Refrigeración
+2370,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2371,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2372,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2373,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2374,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2375,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2376,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2377,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2378,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2379,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2380,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2381,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2382,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2383,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2384,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2385,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2386,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2387,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2388,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2389,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2390,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2391,Ingeniería en Telecomunicaciones, Conectividad y Redes
+2392,Ingeniería Mecánica en Mantenimiento Industrial
+2393,Ingeniería Mecánica en Mantenimiento Industrial
+2394,Ingeniería Mecánica en Mantenimiento Industrial
+2395,Ingeniería Mecánica en Mantenimiento Industrial
+2396,Ingeniería Mecánica en Mantenimiento Industrial
+2397,Ingeniería Mecánica en Mantenimiento Industrial
+2398,Ingeniería Mecánica en Mantenimiento Industrial
+2399,Ingeniería Mecánica en Mantenimiento Industrial
+2400,Ingeniería Mecánica en Mantenimiento Industrial
+2401,Ingeniería Mecánica en Mantenimiento Industrial
+2402,Ingeniería Mecánica en Mantenimiento Industrial
+2403,Ingeniería Mecánica en Mantenimiento Industrial
+2404,Ingeniería Mecánica en Producción Industrial
+2405,Ingeniería Mecánica en Producción Industrial
+2406,Ingeniería Mecánica en Producción Industrial
+2407,Ingeniería Mecánica en Producción Industrial
+2408,Kinesiología
+2409,Nutrición y Dietética
+2410,Nutrición y Dietética
+2411,Nutrición y Dietética
+2412,Pedagogía en Educación Media mención Artes Musicales
+2413,Psicopedagogía
+2414,Psicopedagogía
+2415,Psicopedagogía
+2416,Psicopedagogía
+2417,Psicopedagogía
+2418,Psicopedagogía
+2419,Psicopedagogía
+2420,Psicopedagogía
+2421,Psicopedagogía
+2422,Psicopedagogía
+2423,Psicopedagogía
+2424,Psicopedagogía
+2425,Tecnología en Sonido
+2426,Trabajo Social
+2427,Trabajo Social
+2428,Trabajo Social
+2429,Trabajo Social
+2430,Trabajo Social
+2431,Trabajo Social
+2432,Trabajo Social
+2433,Trabajo Social
+2434,Traductocción Inglés- Español, Mención Negocios Internacionales
+2435,Traductocción Inglés- Español, Mención Negocios Internacionales
+2436,Traductocción Inglés- Español, Mención Negocios Internacionales
+2437,Traductocción Inglés- Español, Mención Negocios Internacionales
+2438,Traductocción Inglés- Español, Mención Negocios Internacionales
+2439,Traductocción Inglés- Español, Mención Negocios Internacionales
+2440,Traductocción Inglés- Español, Mención Negocios Internacionales
+2441,Traductocción Inglés- Español, Mención Negocios Internacionales
+2442,Traductocción Inglés- Español, Mención Negocios Internacionales
+2443,Traductocción Inglés- Español, Mención Negocios Internacionales
+2444,Traductocción Inglés- Español, Mención Negocios Internacionales
+2445,Traductocción Inglés- Español, Mención Negocios Internacionales
+2446,Traductocción Inglés- Español, Mención Negocios Internacionales
+2447,Traductocción Inglés- Español, Mención Negocios Internacionales
+2448,Traductocción Inglés- Español, Mención Negocios Internacionales
+2449,Traductocción Inglés- Español, Mención Negocios Internacionales
+2450,Traductocción Inglés- Español, Mención Negocios Internacionales
+2451,Traductocción Inglés- Español, Mención Negocios Internacionales
+2452,Traductocción Inglés- Español, Mención Negocios Internacionales
+2453,Traductocción Inglés- Español, Mención Negocios Internacionales
+2454,Administración Pública
+2455,Arquitectura
+2456,Artes Visuales
+2457,Comunicación Audiovisual - Cine
+2458,Comunicación Audiovisual - Guiones
+2459,Comunicación Audiovisual - Televisión
+2460,Comunicación Audiovisual - Animación Digital
+2461,Comunicación Digital - Diseño y Desarrollo de videojuegos
+2462,Comunicación Digital - Interacción en Medios Digitales
+2463,Contador Auditor
+2464,Danza y Coreografía
+2465,Derecho
+2466,Diseño de Imagen
+2467,Diseño Gráfico
+2468,Diseño Gráfico
+2469,Ingeniería Comercial
+2470,Ingeniería Comercial
+2471,Ingeniería Comercial en Programa de Titulación y Licenciatura Universitaria
+2472,Ingeniería en Control de Gestión
+2473,Ingeniería Informática Multimedia
+2474,Música e Interpretación
+2475,Música y Composición
+2476,Periodismo
+2477,Psicología
+2478,Publicidad
+2479,Relaciones Públicas
+2480,Teatro y Comunicación Escénica
+2481,Trabajo Social
+2482,Traducción e Interpretariado Bilingue (Inglés - Español)
+2483,Derecho
+2484,Derecho
+2485,Derecho
+2486,Derecho
+2487,Derecho
+2488,Derecho
+2489,Derecho
+2490,Derecho
+2491,Derecho
+2492,Derecho
+2493,Derecho
+2494,Derecho
+2495,Educación Parvularia
+2496,Educación Parvularia
+2497,Educación Parvularia
+2498,Educación Parvularia
+2499,Educación Parvularia
+2500,Educación Parvularia
+2501,Educación Parvularia
+2502,Educación Parvularia
+2503,Educación Parvularia
+2504,Educación Parvularia
+2505,Enfermería
+2506,Enfermería
+2507,Enfermería
+2508,Enfermería
+2509,Enfermería
+2510,Enfermería
+2511,Fonoaudiología
+2512,Fonoaudiología
+2513,Fonoaudiología
+2514,Fonoaudiología
+2515,Fonoaudiología
+2516,Fonoaudiología
+2517,Fonoaudiología
+2518,Fonoaudiología
+2519,Fonoaudiología
+2520,Fonoaudiología
+2521,Fonoaudiología
+2522,Fonoaudiología
+2523,Geología
+2524,Geología
+2525,Geología
+2526,Geología
+2527,Ingeniería Civil en Minas
+2528,Ingeniería Civil en Minas
+2529,Ingeniería Civil en Minas
+2530,Ingeniería Civil en Minas
+2531,Ingeniería Civil en Minas
+2532,Ingeniería Civil en Minas
+2533,Ingeniería Civil en Minas
+2534,Ingeniería Civil en Minas
+2535,Ingeniería Civil en Minas
+2536,Ingeniería Civil en Minas
+2537,Ingeniería Industrial
+2538,Ingeniería Industrial
+2539,Ingeniería Industrial
+2540,Ingeniería Industrial
+2541,Kinesiología
+2542,Kinesiología
+2543,Kinesiología
+2544,Kinesiología
+2545,Kinesiología
+2546,Kinesiología
+2547,Medicina
+2548,Medicina
+2549,Medicina Veterinaria
+2550,Medicina Veterinaria
+2551,Medicina Veterinaria
+2552,Medicina Veterinaria
+2553,Nutrición y Dietética
+2554,Nutrición y Dietética
+2555,Nutrición y Dietética
+2556,Nutrición y Dietética
+2557,Nutrición y Dietética
+2558,Odontología
+2559,Odontología
+2560,Odontología
+2561,Odontología
+2562,Odontología
+2563,Odontología
+2564,Odontología
+2565,Pedagogía en Educación Diferencial
+2566,Pedagogía en Educación Física
+2567,Pedagogía en Educación Física
+2568,Pedagogía en Educación Física
+2569,Pedagogía en Educación Física
+2570,Pedagogía en Educación Física
+2571,Pedagogía en Educación General Básica
+2572,Psicología
+2573,Psicología
+2574,Psicología
+2575,Psicología
+2576,Psicología
+2577,Psicología
+2578,Psicología
+2579,Psicología
+2580,Psicología
+2581,Psicología
+2582,Psicología
+2583,Psicología
+2584,Psicología
+2585,Psicología
+2586,Tecnología Médica
+2587,Tecnología Médica
+2588,Tecnología Médica
+2589,Administración Pública
+2590,Arqueología
+2591,Contador Público y Auditor
+2592,Derecho
+2593,Pedagogía en Educación Parvularia
+2594,Enfermería
+2595,Kinesiología
+2596,Nutrición y dietética
+2597,Terapia Ocupacional
+2598,Fonoaudiología
+2599,Ingeniería en Control de Gestión
+2600,Artes Musicales y Sonoras (nueva)
+2601,Diseño (nuevo)
+2602,Creación Audiovisual
+2603,Administración pública
+2604,Ingeniería en informática
+2605,Pedagogía en Educación Física
+2606,Ingeniería Civil

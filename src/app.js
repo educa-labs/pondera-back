@@ -19,6 +19,7 @@ const ponderar = require('./routes/ponderar');
 const tuni = require('./routes/tuni');
 const session = require('./routes/session');
 const regions = require('./routes/regions');
+const admin = require('./routes/admin');
 
 // Iniciar Aplicacion
 const app = express();
@@ -50,5 +51,6 @@ app.use('/api/v1/ponderar', ponderar);
 app.use('/api/v1/tuni', tuni);
 app.use('/api/v1/session', session);
 app.use('/api/v1/regions', regions);
+app.use('/api/v1/admin', admin);
 
 module.exports = app;
