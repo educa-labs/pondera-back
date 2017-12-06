@@ -30,6 +30,30 @@ module.exports = {
       allowNull: false,
       type: Sequelize.INTEGER,
     },
+    NEM: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    },
+    ranking: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    },
+    math: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    },
+    language: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    },
+    science: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    },
+    history: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    },
     createdAt: {
       allowNull: false,
       type: Sequelize.DATE,
