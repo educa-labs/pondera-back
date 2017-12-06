@@ -7,6 +7,12 @@ module.exports = (sequelize, DataTypes) => {
     universityId: { type: DataTypes.INTEGER, allowNull: false },
     careerId: { type: DataTypes.INTEGER, allowNull: false },
     userId: { type: DataTypes.INTEGER, allowNull: false },
+    NEM: { allowNull: false, type: DataTypes.INTEGER },
+    ranking: { allowNull: false, type: DataTypes.INTEGER },
+    math: { allowNull: false, type: DataTypes.INTEGER },
+    language: { allowNull: false, type: DataTypes.INTEGER },
+    science: { allowNull: false, type: DataTypes.INTEGER },
+    history: { allowNull: false, type: DataTypes.INTEGER },
   }, {
     classMethods: {
       associate(models) {

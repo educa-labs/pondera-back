@@ -43,8 +43,8 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Calcular ponderacion
       let pond = 0;
       pond += (NEM * data.NEM) + (math * data.math)
-      + (language * data.language) + (science * data.science)
-      + (history * data.history) + (ranking * data.ranking);
+        + (language * data.language) + (science * data.science)
+        + (history * data.history) + (ranking * data.ranking);
       pond /= 100;
       // Ordenar datos de ponderacion
       const weights = {
@@ -58,14 +58,19 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Carreras similares by Newton
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
-      console.log(req.user.id)
       const diff = pond - data.lastCut;
       models.Ponderation.create({
         value: pond,
         careerId: cId,
         universityId: uId,
         userId: req.user.id,
-      }).then(() => {})
+        NEM,
+        math,
+        language,
+        science,
+        history,
+        ranking,
+      }).then(() => { })
         .catch((obj) => {
           console.log(obj);
           // res.status(422).json({ message: 'no se pudo crear la ponderacion' });
