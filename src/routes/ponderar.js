@@ -55,8 +55,8 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Calcular ponderacion
       let pond = 0;
       pond += (NEM * data.NEM) + (math * data.math)
-      + (language * data.language) + (science * data.science)
-      + (history * data.history) + (ranking * data.ranking);
+        + (language * data.language) + (science * data.science)
+        + (history * data.history) + (ranking * data.ranking);
       pond /= 100;
       // Ordenar datos de ponderacion
       const weights = {
@@ -76,6 +76,12 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         careerId: cId,
         universityId: uId,
         userId: req.user.id,
+        NEM,
+        math,
+        language,
+        science,
+        history,
+        ranking,
       }).then(() => {
         res.status(200).json({
           pond, weights, cut: data.lastCut, diff,
