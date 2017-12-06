@@ -12,7 +12,7 @@ const randomstring = require('randomstring');
 // ROUTES
 /* CREATE new user */
 const userParams = parameters.permitParams(['name', 'mail', 'password', 'rut', 'phone', 'regionId']);
-router.post('/', userParams, parameters.validateName, parameters.validateEmail, parameters.validateRut, parameters.validatePhone, (req, res) => {
+router.post('/', userParams, parameters.validateUserParams, (req, res) => {
   const { body } = req;
   const pswd = encryptPasswd(body.password);
   models.User.create({

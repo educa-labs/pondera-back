@@ -58,21 +58,21 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Carreras similares by Newton
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
-      console.log(req.user.id)
       const diff = pond - data.lastCut;
       models.Ponderation.create({
         value: pond,
         careerId: cId,
         universityId: uId,
         userId: req.user.id,
-      }).then(() => {})
+      }).then(() => {
+        res.status(200).json({
+          pond, weights, cut: data.lastCut, diff,
+        });
+      })
         .catch((obj) => {
           console.log(obj);
-          // res.status(422).json({ message: 'no se pudo crear la ponderacion' });
+          res.status(422).json({ message: 'no se pudo crear la ponderacion' });
         });
-      res.status(200).json({
-        pond, weights, cut: data.lastCut, diff,
-      });
     })
     .catch((error) => {
       res.status(500).json({ error: error.message });
