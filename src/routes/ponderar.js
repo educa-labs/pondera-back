@@ -28,7 +28,7 @@ router.get('/similar/:cId', (req, res, next) => {
 });
 
 router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) => {
-  const {
+  let {
     NEM, math, language, ranking, history, science, cId, uId,
   } = req.body;
 
