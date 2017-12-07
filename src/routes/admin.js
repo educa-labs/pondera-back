@@ -19,7 +19,7 @@ router.get('/users', (req, res, next) => {
 
 router.get('/stats', (req, res, next) => {
   const data = db.db_pond.any(`SELECT "Careers".id as cId, "Universities".title as uTitle, 
-  "Careers".title as cTitle, count(*) as count
+  "Careers".title as cTitle, count(DISTINCT "Ponderations"."userId") as count
   FROM "Universities", "Careers", "Ponderations"
   WHERE "Universities".id = "Ponderations"."universityId" 
   AND "Careers".id = "Ponderations"."careerId" 
