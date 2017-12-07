@@ -82,7 +82,8 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         science,
         history,
         ranking,
-      }).then(() => {
+      }).then((ponderation) => {
+        ponderation.setUser(req.user);
         res.status(200).json({
           pond, weights, cut: data.lastCut, diff,
         });

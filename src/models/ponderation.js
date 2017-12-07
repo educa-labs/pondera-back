@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate(models) {
-        Ponderation.belongsTo(models.User);
+        Ponderation.belongsTo(models.User, { as: 'User' });
       },
     },
     indexes: [
