@@ -8,6 +8,8 @@ module.exports = {
     phone: '+569569569',
     regionId: 14,
     password_digest: encrypt.encryptPasswd('123123'),
+    admin: true,
+    superadmin: true,
     createdAt: new Date(),
     updatedAt: new Date(),
   }], {}),

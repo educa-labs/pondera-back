@@ -8,7 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     phone: DataTypes.STRING,
     token: DataTypes.STRING,
     regionId: { type: DataTypes.INTEGER, allowNull: false },
-    admin: { type: DataTypes.BOOLEAN, allowNull: false },
+    admin: { type: DataTypes.BOOLEAN, default: false },
+    superadmin: { type: DataTypes.BOOLEAN, default: false },
   }, {
     classMethods: {
       associate(models) {
