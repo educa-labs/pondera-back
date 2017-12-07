@@ -47,11 +47,9 @@ module.exports = {
       type: Sequelize.INTEGER,
     },
     science: {
-      allowNull: false,
       type: Sequelize.INTEGER,
     },
     history: {
-      allowNull: false,
       type: Sequelize.INTEGER,
     },
     createdAt: {

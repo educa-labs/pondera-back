@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
     ranking: { allowNull: false, type: DataTypes.INTEGER },
     math: { allowNull: false, type: DataTypes.INTEGER },
     language: { allowNull: false, type: DataTypes.INTEGER },
-    science: { allowNull: false, type: DataTypes.INTEGER },
-    history: { allowNull: false, type: DataTypes.INTEGER },
+    science: { allowNull: true, type: DataTypes.INTEGER },
+    history: { allowNull: true, type: DataTypes.INTEGER },
   }, {
     classMethods: {
       associate(models) {
