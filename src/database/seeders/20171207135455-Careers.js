@@ -11,7 +11,7 @@ for (let a in file) {
 }
 
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.bulkInsert('Universities', seeder, {}),
+  up: (queryInterface, Sequelize) => queryInterface.bulkInsert('Careers', seeder, {}),
 
   down: (queryInterface, Sequelize) => {
     /*
@@ -23,3 +23,4 @@ module.exports = {
     */
   },
 };
+
