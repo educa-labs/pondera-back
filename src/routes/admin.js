@@ -49,17 +49,18 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 router.get('/excel', session.checkAdmin, (req, res, next) => {
   const wb = XLSX.readFile('src/public/template.xlsx');
   const worksheet = wb.Sheets[wb.SheetNames[0]];
-  models.Ponderation.findAll({ includes: [{ model: models.User, attributes: ["name", "email"] }] }).then((data) => {
+  models.Ponderation.findAll({ includes: [models.User] }).then((data) => {
     console.log(JSON.stringify(data));
     let i = 2;
     data.forEach((ponderation) => {
-      worksheet[`A${i}`].v = ponderation.getUser.name;
+      console.log(ponderation);
+      worksheet[`A${i}`].v = ponderation.User.name;
       i += 1;
-      console.log(worksheet[`A${i}`])
+      console.log(worksheet[`A${i}`]);
     });
   });
   XLSX.writeFile(wb, 'test.xlsx');
-
+  res.status(200);
   //res.status(200).sendFile("put some file here");
 });
 

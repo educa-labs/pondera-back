@@ -36,9 +36,18 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
   FROM weighings,carreers WHERE carreer_id = ${cId} AND carreers.id = weighings.carreer_id', { cId })
     .then((data) => {
       // Verificar prueba correcta
+      let opt = null;
+
+      if (science !== null) {
+        opt = 2;
+      } else if (history !== null) {
+        opt = 1;
+      }
+
       if (data.science !== null || data.history !== null) {
         if (data.science === null && science !== null) {
           res.status(422).json({ message: 'Esta carrera pondera con historia' });
+          opt = 1
           return;
         }
         else if (data.history === null && history !== null) {
@@ -66,16 +75,19 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         science: data.science,
         history: data.history,
         ranking: data.ranking,
+ 
       };
       // Carreras similares by Newton
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
       const diff = pond - data.lastCut;
+      
       models.Ponderation.create({
         value: pond,
         careerId: cId,
         universityId: uId,
         userId: req.user.id,
+        optId: opt,
         NEM,
         math,
         language,
@@ -83,7 +95,7 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         history,
         ranking,
       }).then((ponderation) => {
-        ponderation.setUser(req.user);
+
         res.status(200).json({
           pond, weights, cut: data.lastCut, diff,
         });

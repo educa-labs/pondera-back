@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     universityId: { type: DataTypes.INTEGER, allowNull: false },
     careerId: { type: DataTypes.INTEGER, allowNull: false },
     userId: { type: DataTypes.INTEGER, allowNull: false },
+    optId: { type: DataTypes.INTEGER, allowNull: true },
     NEM: { allowNull: false, type: DataTypes.INTEGER },
     ranking: { allowNull: false, type: DataTypes.INTEGER },
     math: { allowNull: false, type: DataTypes.INTEGER },
@@ -16,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate(models) {
-        Ponderation.belongsTo(models.User, { as: 'User' });
+        Ponderation.belongsTo(models.User, { foreignKey: 'userId' });
+        Ponderation.belongsTo(models.Opt);
       },
     },
     indexes: [

@@ -6,7 +6,6 @@ module.exports = {
     mail: 'admin@educalabs.cl',
     rut: '19291235-0',
     phone: '+569569569',
-    regionId: 14,
     password_digest: encrypt.encryptPasswd('123123'),
     admin: true,
     superadmin: true,
