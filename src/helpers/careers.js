@@ -18,7 +18,7 @@ async function similarCareers(cId) {
   let id3;
   await rp(options)
     .then((parsedBody) => {
-      let simIds = [];
+      const simIds = [];
       ids = parsedBody.result['0'];
       ids.forEach((id) => {
         if (id !== cId) {
@@ -43,5 +43,47 @@ async function similarCareers(cId) {
   return carreras;
 }
 
-module.exports = { similarCareers };
+async function sendMbo(user, body, idOptativa, ponderation) {
+  let optativa;
+  switch (idOptativa) {
+    case 1:
+      optativa = body.science;
+      break;
+    case 2:
+      optativa = body.history;
+      break;
+  }
+
+  const options = {
+    method: 'POST',
+    uri: 'http://190.96.47.75:80/api/Psu/Insert',
+    body: {
+      nombre: user.name,
+      mail: user.mail,
+      rut: user.rut,
+      region: user.regionId,
+      telefono: user.phone,
+      nem: body.NEM,
+      ranking: body.ranking,
+      matematicas: body.math,
+      lenguaje: body.language,
+      optativa,
+      idOptativa,
+      ponderacion: ponderation,
+      carrera: body.cId,
+      hora: '2017-10-31T17:55:15+00:00',
+    },
+    json: true, // Automatically stringifies the body to JSON
+  };
+  console.log(options.body);
+  rp(options)
+    .then((parsedBody) => {
+      console.log(parsedBody);
+    })
+    .catch((error)=>{
+      console.log(error);
+    });
+}
+
+module.exports = { similarCareers, sendMbo };
 
