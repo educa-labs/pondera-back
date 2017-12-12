@@ -71,7 +71,7 @@ async function sendMbo(user, body, idOptativa, ponderation) {
       idOptativa,
       ponderacion: ponderation,
       carrera: body.cId,
-      hora: '2017-10-31T17:55:15+00:00',
+      hora: new Date(),
     },
     json: true, // Automatically stringifies the body to JSON
   };
