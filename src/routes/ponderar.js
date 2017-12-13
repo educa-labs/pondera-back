@@ -6,7 +6,7 @@ const parameters = require('../helpers/parameters');
 const session = require('../helpers/session');
 const models = require('../models');
 const rp = require('request-promise');
-const { similarCareers } = require('../helpers/careers');
+const { similarCareers, sendMbo } = require('../helpers/careers');
 
 /* Ponderaciones. */
 const authHeader = parameters.permitHeaders(['authorization']);
@@ -37,14 +37,22 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
     .then((data) => {
       // Verificar prueba correcta
       if (data.science !== null || data.history !== null) {
-        if (data.science === null && science !== null) {
+        if (data.science === null && science !== '') {
           res.status(422).json({ message: 'Esta carrera pondera con historia' });
           return;
         }
-        else if (data.history === null && history !== null) {
+        else if (data.history === null && history !== '') {
           res.status(422).json({ message: 'Esta carrera pondera con ciencias' });
           return;
         }
+      }
+      // Get idOptativa
+      let idOptativa;
+      if (science == '') {
+        idOptativa = 2;
+      }
+      else {
+        idOptativa = 1;
       }
 
       for (let key in data){
@@ -89,12 +97,12 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         history,
         ranking,
       }).then(() => {
+        sendMbo(req.user, req.body, idOptativa, pond);
         res.status(200).json({
           pond, weights, cut: data.lastCut, diff,
         });
       })
         .catch((obj) => {
-          console.log(obj);
           res.status(422).json({ message: 'no se pudo crear la ponderacion' });
         });
     })
