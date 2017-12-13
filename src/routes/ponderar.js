@@ -6,7 +6,7 @@ const parameters = require('../helpers/parameters');
 const session = require('../helpers/session');
 const models = require('../models');
 const rp = require('request-promise');
-const { similarCareers } = require('../helpers/careers');
+const { similarCareers, sendMbo } = require('../helpers/careers');
 
 /* Ponderaciones. */
 const authHeader = parameters.permitHeaders(['authorization']);
@@ -28,7 +28,7 @@ router.get('/similar/:cId', (req, res, next) => {
 });
 
 router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) => {
-  const {
+  let {
     NEM, math, language, ranking, history, science, cId, uId,
   } = req.body;
 
@@ -45,15 +45,23 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       }
 
       if (data.science !== null || data.history !== null) {
-        if (data.science === null && science !== null) {
+        if (data.science === null && science !== '') {
           res.status(422).json({ message: 'Esta carrera pondera con historia' });
           opt = 1;
           return;
         }
-        else if (data.history === null && history !== null) {
+        else if (data.history === null && history !== '') {
           res.status(422).json({ message: 'Esta carrera pondera con ciencias' });
           return;
         }
+      }
+      // Get idOptativa
+      let idOptativa;
+      if (science == '') {
+        idOptativa = 2;
+      }
+      else {
+        idOptativa = 1;
       }
 
       for (let key in data){
@@ -81,7 +89,14 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // const similar = similarCareers(cId);
       // Titles de carrera y universidad
       const diff = pond - data.lastCut;
-      
+
+      if (science === '') {
+        science = '0';
+      }
+      if (history === '') {
+        history = '0';
+      }
+    
       models.Ponderation.create({
         value: pond,
         careerId: cId,
@@ -94,14 +109,13 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         science,
         history,
         ranking,
-      }).then((ponderation) => {
-
+      }).then(() => {
+        sendMbo(req.user, req.body, idOptativa, pond);
         res.status(200).json({
           pond, weights, cut: data.lastCut, diff,
         });
       })
         .catch((obj) => {
-          console.log(obj);
           res.status(422).json({ message: 'no se pudo crear la ponderacion' });
         });
     })
