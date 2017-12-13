@@ -103,7 +103,6 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         });
       })
         .catch((obj) => {
-          console.log(obj);
           res.status(422).json({ message: 'no se pudo crear la ponderacion' });
         });
     })
