@@ -13,7 +13,6 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate(models) {
-        User.hasMany(models.Score);
         User.belongsTo(models.Region, { foreignKey: 'regionId' });
         User.hasMany(models.Ponderation, { foreignKey: 'userId' });
       },

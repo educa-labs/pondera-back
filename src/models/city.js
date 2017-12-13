@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate(models) {
-        City.belongsTo(models.Region);
+        // City.belongsTo(models.Region);
       },
     },
     // indexes: [

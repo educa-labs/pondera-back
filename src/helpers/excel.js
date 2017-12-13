@@ -11,22 +11,20 @@ const baseCell = () => {
   return cell;
 };
 
-function excelGen  (ponderations, sheet) {
+function excelGen(ponderations, sheet) {
   let i = 2;
   let user;
   let opt;
-  console.log("EMPEZANDO=======================================================================")
   ponderations.forEach(async (ponderation) => {
     user = await ponderation.getUser();
     opt = await ponderation.getOpt();
-    console.log("HICE UNA QUERY=======================================================================")
-    console.log(user);
     sheet[`A${i}`] = baseCell();
     console.log(sheet[`A${i}`]);
     sheet[`A${i}`].v = user.name;
     console.log(sheet[`A${i}`]);
     i += 1;
   });
+  return sheet;
 };
 
 module.exports = excelGen;

@@ -47,7 +47,7 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       if (data.science !== null || data.history !== null) {
         if (data.science === null && science !== null) {
           res.status(422).json({ message: 'Esta carrera pondera con historia' });
-          opt = 1
+          opt = 1;
           return;
         }
         else if (data.history === null && history !== null) {
