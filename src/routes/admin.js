@@ -4,6 +4,7 @@ const models = require('../models');
 const config = require('../../config/config.js');
 const params = require('../helpers/parameters');
 const session = require('../helpers/session');
+const excelGen = require('../helpers/excel');
 const XLSX = require('xlsx');
 
 const router = express.Router();
@@ -50,17 +51,10 @@ router.get('/excel', session.checkAdmin, (req, res, next) => {
   const wb = XLSX.readFile('src/public/template.xlsx');
   const worksheet = wb.Sheets[wb.SheetNames[0]];
   models.Ponderation.findAll({ includes: [models.User] }).then((data) => {
-    console.log(JSON.stringify(data));
-    let i = 2;
-    data.forEach((ponderation) => {
-      console.log(ponderation);
-      worksheet[`A${i}`].v = ponderation.User.name;
-      i += 1;
-      console.log(worksheet[`A${i}`]);
-    });
+    excelGen(data, worksheet);
   });
   XLSX.writeFile(wb, 'test.xlsx');
-  res.status(200);
+  res.status(200).json({ asd:"asd" });
   //res.status(200).sendFile("put some file here");
 });
 
