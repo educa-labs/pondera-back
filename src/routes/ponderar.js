@@ -109,7 +109,7 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
         history,
         ranking,
       }).then(() => {
-        sendMbo(req.user, req.body, idOptativa, pond);
+        sendMbo(req.user, req.body, opt, pond);
         res.status(200).json({
           pond, weights, cut: data.lastCut, diff,
         });
