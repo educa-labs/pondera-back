@@ -22,10 +22,14 @@ module.exports = {
       allowNull: false,
       type: Sequelize.INTEGER,
     },
-    userId: {
-      allowNull: false,
-      type: Sequelize.INTEGER,
-    },
+    // userId: {
+    //   type: Sequelize.INTEGER,
+    //   references: { model: 'Users', key: 'id' },
+    // },
+    // optId: {
+    //   type: Sequelize.INTEGER,
+    //   references: { model: 'Opts', key: 'id' }
+    // },
     careerId: {
       allowNull: false,
       type: Sequelize.INTEGER,
