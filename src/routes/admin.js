@@ -5,7 +5,7 @@ const config = require('../../config/config.js');
 const params = require('../helpers/parameters');
 const session = require('../helpers/session');
 const excelGen = require('../helpers/excel');
-
+const path = require('path');
 
 const router = express.Router();
 
@@ -49,8 +49,8 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 
 router.get('/excel', session.checkAdmin, async (req, res, next) => {
   await excelGen('src/public/template.xlsx');
-  res.status(200).json({ asd:"asd" });
-  //res.status(200).sendFile("put some file here");
+  // res.status(200).json({ asd:"asd" });
+  res.status(200).sendFile(path.resolve("src/public/ponderaciones.xlsx"));
 });
 
 module.exports = router;

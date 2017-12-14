@@ -35,7 +35,7 @@ async function excelGen(file) {
     await sheet.cell(`N${i}`).value(data[j].createdAt.toString());
     i += 1;
   }
-  return workbook.toFileAsync('./test.xlsx');
+  return workbook.toFileAsync('./src/public/ponderaciones.xlsx');
 }
 
 module.exports = excelGen;
