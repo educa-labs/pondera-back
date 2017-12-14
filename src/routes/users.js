@@ -31,6 +31,7 @@ router.post('/', userParams, parameters.validateUserParams, (req, res) => {
       });
   })
     .catch((obj) => {
+      console.log(obj);
       const field = obj.errors[0].path;
       const errors = {};
       errors[field] = 102;

@@ -38,18 +38,18 @@ router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) 
       // Verificar prueba correcta
       let opt = null;
 
-      if (science !== null) {
+      if (science !== '') {
         opt = 1;
-      } else if (history !== null) {
+      } else if (history !== '') {
         opt = 2;
       }
 
-      if (data.science !== null || data.history !== null) {
-        if (data.science === null && science !== '') {
+      if (data.science !== 0 || data.history !== 0) {
+        if (data.science === 0 && science !== '') {
           res.status(422).json({ message: 'Esta carrera pondera con historia' });
           return;
         }
-        else if (data.history === null && history !== '') {
+        else if (data.history === 0 && history !== '') {
           res.status(422).json({ message: 'Esta carrera pondera con ciencias' });
           return;
         }
