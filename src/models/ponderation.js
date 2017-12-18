@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
       associate(models) {
         Ponderation.belongsTo(models.User, { foreignKey: 'userId' });
         Ponderation.belongsTo(models.Opt, { foreignKey: 'optId' });
+        Ponderation.belongsTo(models.Career, { foreignKey: 'careerId' });
       },
     },
     indexes: [
