@@ -3,6 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   let Career = sequelize.define('Career', {
     title: DataTypes.STRING,
+    UgmId: DataTypes.STRING,
   }, {
     classMethods: {
       associate(models) {
