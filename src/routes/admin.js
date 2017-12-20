@@ -48,7 +48,11 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 });
 
 router.get('/excel', session.checkAdmin, async (req, res, next) => {
-  await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+  if (req.query.ugm) {
+    await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
+  } else {
+    await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+  }
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
 });
 

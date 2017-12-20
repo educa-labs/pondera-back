@@ -2,7 +2,7 @@ const models = require('../models');
 const XlsxPopulate = require('xlsx-populate');
 
 
-async function excelGen(file,outfile) {
+async function excelGen(file,outfile, ugm=false) {
   let i = 2;
   let user;
   let opt;
@@ -33,6 +33,9 @@ async function excelGen(file,outfile) {
     await sheet.cell(`L${i}`).value(data[j].value);
     await sheet.cell(`M${i}`).value(career.title);
     await sheet.cell(`N${i}`).value(data[j].createdAt.toString());
+    if (ugm){
+      await sheet.cell(`O${i}`).value(career.UgmId);
+    }
     i += 1;
   }
   return workbook.toFileAsync(outfile);
