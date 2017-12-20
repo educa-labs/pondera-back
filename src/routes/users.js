@@ -2,9 +2,10 @@ const express = require('express');
 
 const router = express.Router();
 const parameters = require('../helpers/parameters');
-const { encryptPasswd } = require('../helpers/session');
+const { encryptPasswd, checkAdmin } = require('../helpers/session');
 const models = require('../models');
 const randomstring = require('randomstring');
+const db = require('../database/db');
 
 // In case of losing password
 // randomstring.generate();
@@ -38,6 +39,18 @@ router.post('/', userParams, parameters.validateUserParams, (req, res) => {
       res.status(422).json({ errors });
     });
 });
+
+router.get('/count', checkAdmin, (req, res, next) => {
+  const data = db.db_pond.any('SELECT COUNT(DISTINCT rut) as count FROM "Users";')
+    .then((data) => {
+      res.status(200).json({ data });
+    })
+
+    .catch((error)=>{
+      res.status(500).json({ error });
+    });
+});
+
 
 
 /* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
