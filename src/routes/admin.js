@@ -31,7 +31,7 @@ router.post('/new', session.checkSuperadmin, (req, res, next) => {
     });
 });
 
-router.get('/stats', session.checkAdminQuery, (req, res, next) => {
+router.get('/stats', session.checkAdmin, (req, res, next) => {
   db.db_pond.any('SELECT "Careers".id as cId, "Universities".title as uTitle, \
   "Careers".title as cTitle, count(DISTINCT "Ponderations"."userId") as count \
   FROM "Universities", "Careers", "Ponderations" \
@@ -47,7 +47,7 @@ router.get('/stats', session.checkAdminQuery, (req, res, next) => {
     });
 });
 
-router.get('/excel', session.checkAdmin, async (req, res, next) => {
+router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
   if (req.query.ugm) {
     await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
   } else {
