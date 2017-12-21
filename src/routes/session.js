@@ -25,7 +25,25 @@ router.post('/', loginParams, (req, res, next) => {
       res.status(401).json({ message: 'Credenciales invalidas' });
     }
   }).catch((obj) => {
-    console.log(obj);
+    res.status(401).json({ message: 'Credenciales invalidas' });
+  });
+});
+
+router.post('/admin', loginParams, (req, res, next) => {
+  const j = req.body;
+  const paswd = session.encryptPasswd(j.password);
+  models.User.findOne({ where: { mail: j.mail } }).then((data) => {
+    // Comprobar password
+    if (data.password_digest === paswd && data.admin == true) {
+      // Generar nuevo token
+      const newToken = randomstring.generate();
+      data.token = newToken;
+      data.save();
+      res.status(201).json({ message: 'Sesión creada correctamente', token: newToken });
+    } else {
+      res.status(401).json({ message: 'Credenciales invalidas' });
+    }
+  }).catch((obj) => {
     res.status(401).json({ message: 'Credenciales invalidas' });
   });
 });
