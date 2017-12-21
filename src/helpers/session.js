@@ -32,6 +32,19 @@ function checkAdmin(req, res, next) {
     });
 }
 
+function checkAdminQuery(req, res, next) {
+  const { token } = req.query;
+  models.User.findOne({ where: { token } })
+    .then((data) => {
+      if (data && data.admin) {
+        req.user = data;
+        next();
+      } else {
+        res.status(401).json({ status: 'Unauthorized', message: 'Token invalido' });
+      }
+    });
+}
+
 function checkSuperadmin(req, res, next) {
   const token = req.get('Authorization');
   models.User.findOne({ where: { token } })
@@ -50,5 +63,6 @@ module.exports = {
   checkSession,
   checkAdmin,
   checkSuperadmin,
+  checkAdminQuery,
 };
 
