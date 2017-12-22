@@ -49,7 +49,7 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 });
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
-  if (req.query.ugm) {
+  if (true) {
     await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
   } else {
     await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
