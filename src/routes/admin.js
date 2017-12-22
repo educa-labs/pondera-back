@@ -33,7 +33,7 @@ router.post('/new', session.checkSuperadmin, (req, res, next) => {
 
 router.get('/stats', session.checkAdmin, (req, res, next) => {
   db.db_pond.any('SELECT "Careers".id as cId, "Universities".title as uTitle, \
-  "Careers".title as cTitle, count(DISTINCT "Ponderations"."userId") as count \
+  "Careers".title as cTitle, "Universities".id as uId, count(DISTINCT "Ponderations"."userId") as count \
   FROM "Universities", "Careers", "Ponderations" \
   WHERE "Universities".id = "Ponderations"."universityId"  \
   AND "Careers".id = "Ponderations"."careerId"  \
