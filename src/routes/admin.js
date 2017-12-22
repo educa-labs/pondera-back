@@ -57,4 +57,76 @@ router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
 });
 
+router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
+  const { id, ugmId } = req.body;
+  models.Career.findOne({ where: { id } })
+    .then((career) => {
+      if (career) {
+        career.UgmId = true;
+        career.save();
+        console.log(career);
+        res.status(201).json({ message: 'Nuevo admin creado' });
+      } else {
+        res.status(422).json({ message: 'Carrera no existe' });
+      }
+    })
+    .catch((error) => {
+      res.status(500).json({ message: 'Error' });
+    });
+});
+
+router.post('/newcareer', session.checkSuperadmin, (req, res, next) => {
+  const { id } = req.body;
+  db.db_tuni.any('SELECT title \
+  FROM carreers \
+  WHERE id =${id} \
+  ', { id })
+    .then((data) => {
+      const { title } = data[0];
+      console.log(data[0]);
+      models.Career.create({ 
+        id,
+        title,
+      })
+        .then((career) => {
+          if (career) {
+            console.log(career);
+            res.status(201).json({ message: 'Nuevo admin creado' });
+          } else {
+            res.status(422).json({ message: 'Carrera no existe' });
+          }
+        })
+        .catch((error) => {
+          model.Career.update({ where: id })
+          res.status(500).json({ message: 'Error' });
+        });
+    })
+});
+
+router.post('/sync', session.checkSuperadmin, (req, res, next) => {
+  const { id } = req.body;
+  db.db_tuni.any('SELECT title \
+  FROM carreers \
+  WHERE id =${id} \
+  ', { id })
+    .then((data) => {
+      const { title } = data[0];
+      console.log(data[0]);
+      models.Career.findOne({ where: { id } })
+        .then((career) => {
+          if (career) {
+            career.title = title;
+            console.log(career);
+            res.status(201).json({ message: 'Nuevo admin creado' });
+          } else {
+            res.status(422).json({ message: 'Carrera no existe' });
+          }
+        })
+        .catch((error) => {
+          model.Career.update({ where: id })
+          res.status(500).json({ message: 'Error' });
+        });
+    })
+});
+
 module.exports = router;
