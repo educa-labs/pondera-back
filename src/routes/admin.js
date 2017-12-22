@@ -65,7 +65,7 @@ router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
         career.UgmId = true;
         career.save();
         console.log(career);
-        res.status(201).json({ message: 'Nuevo admin creado' });
+        res.status(201).json({ message: 'Id de ugm cambiado' });
       } else {
         res.status(422).json({ message: 'Carrera no existe' });
       }
