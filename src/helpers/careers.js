@@ -53,7 +53,8 @@ async function sendMbo(user, body, idOptativa, ponderation) {
       optativa = body.history;
       break;
   }
-
+  let dt = new Date();
+  dt.setHours(dt.getHours() - 3);
   const options = {
     method: 'POST',
     uri: 'http://190.96.47.75:80/api/Psu/Insert',
@@ -71,7 +72,7 @@ async function sendMbo(user, body, idOptativa, ponderation) {
       idOptativa,
       ponderacion: Math.round(ponderation),
       carrera: parseInt(body.cId, 10),
-      hora: new Date(),
+      hora: dt,
     },
     json: true, // Automatically stringifies the body to JSON
   };
