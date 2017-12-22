@@ -37,12 +37,13 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
   FROM "Universities", "Careers", "Ponderations" \
   WHERE "Universities".id = "Ponderations"."universityId"  \
   AND "Careers".id = "Ponderations"."careerId"  \
-  GROUP BY cId, cTitle, uTitle;')
+  GROUP BY cId, cTitle, uTitle, uId;')
     .then((data) => {
       res.status(200).json({ data });
     })
 
     .catch((error) => {
+      console.log(error);
       res.status(500).json({ error });
     });
 });
