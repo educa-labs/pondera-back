@@ -69,7 +69,7 @@ async function sendMbo(user, body, idOptativa, ponderation) {
       lenguaje: parseInt(body.language, 10),
       optativa: parseInt(optativa, 10),
       idOptativa,
-      ponderacion: ponderation,
+      ponderacion: Math.round(ponderation),
       carrera: parseInt(body.cId, 10),
       hora: new Date(),
     },
