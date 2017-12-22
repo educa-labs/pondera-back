@@ -91,9 +91,9 @@ router.post('/newcareer', session.checkSuperadmin, (req, res, next) => {
         .then((career) => {
           if (career) {
             console.log(career);
-            res.status(201).json({ message: 'Nuevo admin creado' });
+            res.status(201).json({ message: 'Nueva carrera importada' });
           } else {
-            res.status(422).json({ message: 'Carrera no existe' });
+            res.status(422).json({ message: 'Carrera ya existe, use /sync' });
           }
         })
         .catch((error) => {
@@ -117,7 +117,7 @@ router.post('/sync', session.checkSuperadmin, (req, res, next) => {
           if (career) {
             career.title = title;
             console.log(career);
-            res.status(201).json({ message: 'Nuevo admin creado' });
+            res.status(201).json({ message: 'Carrera sincronizada' });
           } else {
             res.status(422).json({ message: 'Carrera no existe' });
           }
