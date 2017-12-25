@@ -53,7 +53,8 @@ async function sendMbo(user, body, idOptativa, ponderation) {
       optativa = body.history;
       break;
   }
-
+  let dt = new Date();
+  dt.setHours(dt.getHours() - 3);
   const options = {
     method: 'POST',
     uri: 'http://190.96.47.75:80/api/Psu/Insert',
@@ -63,15 +64,15 @@ async function sendMbo(user, body, idOptativa, ponderation) {
       rut: user.rut,
       region: user.regionId,
       telefono: user.phone,
-      nem: body.NEM,
-      ranking: body.ranking,
-      matematicas: body.math,
-      lenguaje: body.language,
-      optativa,
+      nem: parseInt(body.NEM, 10),
+      ranking: parseInt(body.ranking, 10),
+      matematicas: parseInt(body.math, 10),
+      lenguaje: parseInt(body.language, 10),
+      optativa: parseInt(optativa, 10),
       idOptativa,
-      ponderacion: ponderation,
-      carrera: body.cId,
-      hora: new Date(),
+      ponderacion: Math.round(ponderation),
+      carrera: parseInt(body.cId, 10),
+      hora: dt,
     },
     json: true, // Automatically stringifies the body to JSON
   };

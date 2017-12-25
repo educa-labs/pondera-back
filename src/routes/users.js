@@ -40,7 +40,7 @@ router.post('/', userParams, parameters.validateUserParams, (req, res) => {
     });
 });
 
-router.get('/count', checkAdmin, (req, res, next) => {
+router.get('/count', (req, res, next) => {
   const data = db.db_pond.any('SELECT COUNT(DISTINCT rut) as count FROM "Users";')
     .then((data) => {
       res.status(200).json({ data });

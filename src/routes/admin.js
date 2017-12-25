@@ -31,29 +31,102 @@ router.post('/new', session.checkSuperadmin, (req, res, next) => {
     });
 });
 
-router.get('/stats', session.checkAdminQuery, (req, res, next) => {
+router.get('/stats', session.checkAdmin, (req, res, next) => {
   db.db_pond.any('SELECT "Careers".id as cId, "Universities".title as uTitle, \
-  "Careers".title as cTitle, count(DISTINCT "Ponderations"."userId") as count \
+  "Careers".title as cTitle, "Universities".id as uId, count(DISTINCT "Ponderations"."userId") as count \
   FROM "Universities", "Careers", "Ponderations" \
   WHERE "Universities".id = "Ponderations"."universityId"  \
   AND "Careers".id = "Ponderations"."careerId"  \
-  GROUP BY cId, cTitle, uTitle;')
+  GROUP BY cId, cTitle, uTitle, uId;')
     .then((data) => {
       res.status(200).json({ data });
     })
 
     .catch((error) => {
+      console.log(error);
       res.status(500).json({ error });
     });
 });
 
-router.get('/excel', session.checkAdmin, async (req, res, next) => {
-  if (req.query.ugm) {
+router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
+  if (true) {
     await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
   } else {
     await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
   }
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
+});
+
+router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
+  const { id, ugmId } = req.body;
+  models.Career.findOne({ where: { id } })
+    .then((career) => {
+      if (career) {
+        career.UgmId = true;
+        career.save();
+        console.log(career);
+        res.status(201).json({ message: 'Id de ugm cambiado' });
+      } else {
+        res.status(422).json({ message: 'Carrera no existe' });
+      }
+    })
+    .catch((error) => {
+      res.status(500).json({ message: 'Error' });
+    });
+});
+
+router.post('/newcareer', session.checkSuperadmin, (req, res, next) => {
+  const { id } = req.body;
+  db.db_tuni.any('SELECT title \
+  FROM carreers \
+  WHERE id =${id} \
+  ', { id })
+    .then((data) => {
+      const { title } = data[0];
+      console.log(data[0]);
+      models.Career.create({ 
+        id,
+        title,
+      })
+        .then((career) => {
+          if (career) {
+            console.log(career);
+            res.status(201).json({ message: 'Nueva carrera importada' });
+          } else {
+            res.status(422).json({ message: 'Carrera ya existe, use /sync' });
+          }
+        })
+        .catch((error) => {
+          model.Career.update({ where: id })
+          res.status(500).json({ message: 'Error' });
+        });
+    })
+});
+
+router.post('/sync', session.checkSuperadmin, (req, res, next) => {
+  const { id } = req.body;
+  db.db_tuni.any('SELECT title \
+  FROM carreers \
+  WHERE id =${id} \
+  ', { id })
+    .then((data) => {
+      const { title } = data[0];
+      console.log(data[0]);
+      models.Career.findOne({ where: { id } })
+        .then((career) => {
+          if (career) {
+            career.title = title;
+            console.log(career);
+            res.status(201).json({ message: 'Carrera sincronizada' });
+          } else {
+            res.status(422).json({ message: 'Carrera no existe' });
+          }
+        })
+        .catch((error) => {
+          model.Career.update({ where: id })
+          res.status(500).json({ message: 'Error' });
+        });
+    })
 });
 
 module.exports = router;
