@@ -23,7 +23,10 @@ router.get('/universities', authHeader, session.checkSession, (req, res, next) =
 
 router.get('/universities/:id/careers', authHeader, session.checkSession, (req, res, next) => {
   const { id } = req.params;
-  db.db_tuni.any('SELECT DISTINCT carreers.title, MIN(carreers.id) as id FROM carreers,universities WHERE universities.id=${id} AND carreers.university_id = universities.id GROUP BY carreers.title ORDER BY carreers.title ASC;', { id })
+  db.db_tuni.any('SELECT carreers.title, campus.title as "campusTitle" \
+  FROM carreers,universities,campus WHERE universities.id=${id} \
+  AND carreers.university_id = universities.id AND campus.university_id = universities.id \
+  GROUP BY carreers.title, "campusTitle" ORDER BY carreers.title ASC;', { id })
     .then((data) => {
       res.status(200)
         .json({
