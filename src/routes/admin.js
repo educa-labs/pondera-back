@@ -83,7 +83,6 @@ router.post('/newcareer', session.checkSuperadmin, (req, res, next) => {
   ', { id })
     .then((data) => {
       const { title } = data[0];
-      console.log(data[0]);
       models.Career.create({ 
         id,
         title,
