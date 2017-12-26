@@ -1,5 +1,7 @@
 const models = require('../models');
 const XlsxPopulate = require('xlsx-populate');
+const Papa = require('papaparse');
+const fs = require('fs');
 
 const { Op } = models.Sequelize;
 
@@ -44,6 +46,45 @@ async function excelGen(file,outfile, ugm=false) {
     i += 1;
   }
   return workbook.toFileAsync(outfile);
+}
+
+
+async function csvGen(outfile, ugm=false) {
+  const data = await models.Ponderation.findAll({ include: { all: true } });
+  const filtered = data.map((element) => {
+    (element.createdAt.setHours(element.createdAt.getHours() - 3));
+    const user = element.User;
+    const opt = element.Opt;
+    const career = element.Career;
+    const university = element.University;
+    const obj = {
+      nombre: user.name,
+      mail: user.mail,
+      rut: user.rut,
+      Telefono: user.phone,
+      NEM: element.NEM,
+      ranking: element.ranking,
+      matematicas: element.math,
+      lenguaje: element.language,
+      Optativa: opt.title,
+      Puntaje: element.value,
+      Carrera: career.title,
+      Universidad: university.title,
+      Hora: element.createdAt.toString(),
+    };
+    if (ugm) {
+      obj.UgmId = career.UgmId;
+    } else {
+      obj.UgmId = '';
+    }
+    if (opt.id === 2) {
+      obj.ptjeOptativa = element.history;
+    } else {
+      obj.ptjeOptativa = element.science;
+    }
+    return obj;
+  });
+  fs.writeFileSync(outfile, Papa.unparse(filtered));
 }
 
 async function excelUcen(file, outfile) {
@@ -139,4 +180,4 @@ async function excelUcen2(file, outfile, ugm=false) {
 }
 
 
-module.exports = { excelGen, excelUcen, excelUcen2 };
+module.exports = { excelGen, excelUcen, excelUcen2, csvGen};

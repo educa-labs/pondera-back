@@ -54,16 +54,17 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 });
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
-  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.xlsx`));
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.csv`));
 });
 
 router.get('/exceld', async (req, res, next) => {
   if (true) {
-    excel.excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ugm.xlsx`, true);
+    await excel.csvGen('./src/public/ponderaciones_ugm.csv', true);
+    res.status(200).sendFile(path.resolve('src/public/ponderaciones_ugm.csv'));
   } else {
-    excel.excelGen('src/public/template.xlsx', `./src/public/ponderaciones_ucen.xlsx`);
+    await excel.csvGen(`./src/public/ponderaciones ${req.user.name}.csv`);
+    res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.csv`));
   }
-  res.status(200).json({ message: 'Creando excel' });
 });
 
 router.get('/excelucen', session.checkAdminQuery, async (req, res, next) => {
@@ -75,6 +76,7 @@ router.get('/excelucen', session.checkAdminQuery, async (req, res, next) => {
 router.get('/excelucen2', session.checkAdminQuery, async (req, res, next) => {
   // await excel.excelUcen2('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ucen2.csv`);
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ucen2.csv`));
+
 });
 
 router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
