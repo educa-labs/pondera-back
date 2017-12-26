@@ -18,8 +18,7 @@ module.exports = {
           replacements: r,
         });
       }
-    },
-    );
+    });
     return Promise.all(promises);
   },
 
