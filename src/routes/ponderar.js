@@ -29,15 +29,15 @@ router.get('/similar/:cId', (req, res, next) => {
 
 router.post('/', authHeader, session.checkSession, pondParams, (req, res, next) => {
   let {
-    NEM, math, language, ranking, history, science, cId, uId,
+    NEM, math, language, ranking, history, science, cId,
   } = req.body;
 
-  db.db_tuni.one('SELECT "NEM", ranking, language, math, science, history, last_cut as "lastCut" \
+  db.db_tuni.one('SELECT carreers.university_id as "uId", "NEM", ranking, language, math, science, history, last_cut as "lastCut" \
   FROM weighings,carreers WHERE carreer_id = ${cId} AND carreers.id = weighings.carreer_id', { cId })
     .then((data) => {
       // Verificar prueba correcta
       let opt = null;
-
+      const { uId } = data;
       if (science !== '') {
         opt = 1;
       } else if (history !== '') {
