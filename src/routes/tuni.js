@@ -9,12 +9,13 @@ const authHeader = parameters.permitHeaders(['authorization']);
 
 router.get('/universities', authHeader, session.checkSession, (req, res, next) => {
   // db.db_tuni.any('SELECT universities.id, institutions.title FROM universities,institutions WHERE institutions.id = universities.institution_id ORDER BY institutions.title ASC')
-  db.db_pond.any('SELECT id, title FROM "Universities" ORDER BY title ASC')
+  db.db_pond.any('SELECT id, title FROM "Universities" WHERE id NOT IN (42,35,51,48) ORDER BY title ASC')
     .then((data) => {
       if (!data) {
         res.status(404).json({ message: 'Universidad no encontrada' });
         return;
       }
+
       res.status(200)
         .json({
           data,
