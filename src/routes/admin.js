@@ -4,7 +4,7 @@ const models = require('../models');
 const config = require('../../config/config.js');
 const params = require('../helpers/parameters');
 const session = require('../helpers/session');
-const excelGen = require('../helpers/excel');
+const excel = require('../helpers/excel');
 const path = require('path');
 
 const router = express.Router();
@@ -55,10 +55,21 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
   if (true) {
-    await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
+    await excel.excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
   } else {
-    await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+    await excel.excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
   }
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
+});
+
+router.get('/excelucen', session.checkAdminQuery, async (req, res, next) => {
+  await excel.excelUcen('src/public/template_ucen.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
+});
+
+
+router.get('/excelucen2', session.checkAdminQuery, async (req, res, next) => {
+  await excel.excelUcen2('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
 });
 
