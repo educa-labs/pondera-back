@@ -51,6 +51,17 @@ router.get('/count', (req, res, next) => {
     });
 });
 
+router.get('/realcount', (req, res, next) => {
+  const data = db.db_pond.any('SELECT COUNT(DISTINCT rut) as count FROM "Users", "Ponderations" WHERE "Ponderations"."userId" = "Users".id;')
+    .then((data) => {
+      res.status(200).json({ data });
+    })
+
+    .catch((error) => {
+      res.status(500).json({ error });
+    });
+});
+
 router.get('/lostpassword', (req, res, next) => {
   const { mail } = req.query;
   const newPassword = randomstring.generate(8);
