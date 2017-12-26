@@ -60,25 +60,24 @@ router.get('/lostpassword', (req, res, next) => {
     .then((user) => {
       user.password_digest = encryptedPassword;
       user.save();
+      res.mailer.send('password', {
+        to: mail, // REQUIRED. This can be a comma delimited string just like a normal email to field. 
+        subject: 'Nueva contraseña Pondera.cl', // REQUIRED.
+        newPassword,
+      }, (err) => {
+        if (err) {
+          // handle error
+          console.log(err);
+          res.status(400).json({ message: 'Ha ocurrido un error' });
+          return;
+        }
+        res.status(200).json({ message: 'Email enviado' });
+      });
     })
     .catch((error) => {
       res.status(400).json({ message: 'Usuario no encontrado' });
-      return;
-    })
-
-  res.mailer.send('password', {
-    to: mail, // REQUIRED. This can be a comma delimited string just like a normal email to field. 
-    subject: 'Nueva contraseña Pondera.cl', // REQUIRED.
-    newPassword,
-  }, (err) => {
-    if (err) {
-      // handle error
-      console.log(err);
-      res.status(400).json({ message: 'Ha ocurrido un error' });
-      return;
-    }
-    res.status(200).json({ message: 'Email enviado' });
-  });
+    });
+  
 });
 
 router.post('/newpassword', checkSession, (req, res, next) => {
