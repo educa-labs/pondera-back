@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 const parameters = require('../helpers/parameters');
-const { encryptPasswd, checkAdmin, checkSession } = require('../helpers/session');
+const { encryptPasswd, checkAdmin, checkSession, checkSuperadmin } = require('../helpers/session');
 const models = require('../models');
 const randomstring = require('randomstring');
 const db = require('../database/db');
@@ -46,7 +46,7 @@ router.get('/count', (req, res, next) => {
       res.status(200).json({ data });
     })
 
-    .catch((error)=>{
+    .catch((error) => {
       res.status(500).json({ error });
     });
 });
@@ -96,17 +96,15 @@ router.post('/newpassword', checkSession, (req, res, next) => {
   }
 });
 
-/* RUTA DE PRUEBA: ruta para testear el modulo de google-sheets */
+router.get('/all', checkSuperadmin, (req, res, next) => {
+  db.db_pond.any('SELECT mail, phone FROM "Users";')
+    .then((data) => {
+      res.status(200).json({ data });
+    })
+    .catch((error) => {
+      res.status(500).json({ error });
+    });
+});
 
 
-// const controladorSheets = require('../controllers').google-sheets;
-
-
-// router.post('/test', userParams, (req, res, next) => {
-//   const jeison = req.body;
-//   const data = [jeison.name, jeison.mail, jeison.password];
-//   controladorSheets.uploadUser(data);
-// });
-
-/* FIN DE RUTA DE PRUEBA */
 module.exports = router;
