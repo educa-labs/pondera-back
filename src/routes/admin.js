@@ -15,11 +15,16 @@ router.get('/users', (req, res, next) => {
 });
 
 router.post('/new', session.checkSuperadmin, (req, res, next) => {
-  const { mail } = req.body;
+  const { mail, type } = req.body;
   models.User.findOne({ where: { mail } })
     .then((user) => {
       if (user) {
         user.admin = true;
+        if (type === 'ugm') {
+          user.ugm = true;
+        } else if (type === 'ucen') {
+          user.ucen = true;
+        }
         user.save();
         res.status(201).json({ message: 'Nuevo admin creado' });
       } else {
