@@ -74,10 +74,10 @@ router.get('/lostpassword', (req, res, next) => {
     if (err) {
       // handle error
       console.log(err);
-      res.send('Ha ocurrido un error');
+      res.status(400).json({ message: 'Ha ocurrido un error' });
       return;
     }
-    res.send('Email enviado');
+    res.status(200).json({ message: 'Email enviado' });
   });
 });
 
