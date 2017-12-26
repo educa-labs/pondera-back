@@ -4,7 +4,7 @@ const models = require('../models');
 const config = require('../../config/config.js');
 const params = require('../helpers/parameters');
 const session = require('../helpers/session');
-const excelGen = require('../helpers/excel');
+const { excelGen, csvGen } = require('../helpers/excel');
 const path = require('path');
 
 const router = express.Router();
@@ -50,11 +50,12 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
   if (true) {
-    await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
+    await csvGen('./src/public/ponderaciones_ugm.csv', true);
+    res.status(200).sendFile(path.resolve('src/public/ponderaciones_ugm.csv'));
   } else {
-    await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+    await csvGen(`./src/public/ponderaciones ${req.user.name}.csv`);
+    res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.csv`));
   }
-  res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
 });
 
 router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
