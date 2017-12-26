@@ -5,7 +5,6 @@ module.exports = {
     return queryInterface.addColumn('Careers', 'UcenId', {
       type: Sequelize.STRING,
       allowNull: true,
-      defaultValue: '',
     });
   },
   down: (queryInterface, Sequelize) => {

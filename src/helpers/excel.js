@@ -53,7 +53,14 @@ async function excelUcen(file, outfile) {
   let university;
   const workbook = await XlsxPopulate.fromFileAsync(file);
   const sheet = workbook.sheet('Ponderaciones');
-  const data = await models.Ponderation.findAll({ include: { all: true }, where: { universityId: [27, 25, 30, 14, 33] } });
+  const data = await models.Ponderation.findAll({
+    include: [
+      { model: models.User },
+      { model: models.Opt },
+      { model: models.University },
+      { model: models.Career, where: { UcenId: { [Op.ne]: null } } }],
+    where: { universityId: [27, 25, 30, 14, 33], value: { [Op.and]: { [Op.gte]: 450, [Op.lte]: 600 } } },
+  });
   for (let j in data) {
     user = data[j].User;
     opt = data[j].Opt;
@@ -79,7 +86,7 @@ async function excelUcen(file, outfile) {
     await sheet.cell(`M${i}`).value(career.title);
     await sheet.cell(`N${i}`).value(university.title);
     await sheet.cell(`O${i}`).value(data[j].createdAt.toString());
-    // await sheet.cell(`P${i}`).value(career.ucenId);
+    await sheet.cell(`P${i}`).value(career.UcenId);
     i += 1;
   }
   return workbook.toFileAsync(outfile);

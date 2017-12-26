@@ -9,7 +9,7 @@ module.exports = {
     const csv = Papa.parse(file, { header: true, delimeter: ',' });
     const { data } = csv;
     const promises = data.map((r) => {
-      if (r.UGM) {
+      if (r.UCEN) {
         return queryInterface.sequelize.query(`
           UPDATE "Careers"
           SET "UcenId" = '${r.UCEN}'
