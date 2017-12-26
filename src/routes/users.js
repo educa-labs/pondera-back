@@ -18,7 +18,7 @@ router.post('/', userParams, parameters.validateUserParams, (req, res) => {
   const pswd = encryptPasswd(body.password);
   models.User.create({
     name: body.name,
-    mail: body.mail,
+    mail: body.mail.toLowerCase(),
     password_digest: pswd,
     rut: body.rut,
     phone: body.phone,
