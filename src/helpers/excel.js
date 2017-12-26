@@ -136,7 +136,6 @@ async function excelUcen2(file, outfile, ugm=false) {
     i += 1;
   }
   return workbook.toFileAsync(outfile);
-  return workbook.toFileAsync(outfile);
 }
 
 
