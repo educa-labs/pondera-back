@@ -4,6 +4,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const mailer = require('express-mailer');
+
 
 const ENV = process.env.ENV || 'development';
 
@@ -23,6 +25,21 @@ const admin = require('./routes/admin');
 
 // Iniciar Aplicacion
 const app = express();
+
+mailer.extend(app, {
+  from: 'no-reply@educalabs.cl',
+  host: 'smtp.gmail.com', // hostname
+  secureConnection: true, // use SSL
+  port: 465, // port for secure SMTP
+  transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
+  auth: {
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASSWORD,
+  }
+});
+
+app.set('views', `${__dirname}/views`);
+app.set('view engine', 'pug');
 
 // Use CORS
 const whitelist = ['http://localhost', 'https://beta.pondera.cl', 'https://www.pondera.cl'];
