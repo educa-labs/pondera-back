@@ -4,7 +4,7 @@ const models = require('../models');
 const config = require('../../config/config.js');
 const params = require('../helpers/parameters');
 const session = require('../helpers/session');
-const excelGen = require('../helpers/excel');
+const excel = require('../helpers/excel');
 const path = require('path');
 
 const router = express.Router();
@@ -15,11 +15,16 @@ router.get('/users', (req, res, next) => {
 });
 
 router.post('/new', session.checkSuperadmin, (req, res, next) => {
-  const { mail } = req.body;
+  const { mail, type } = req.body;
   models.User.findOne({ where: { mail } })
     .then((user) => {
       if (user) {
         user.admin = true;
+        if (type === 'ugm') {
+          user.ugm = true;
+        } else if (type === 'ucen') {
+          user.ucen = true;
+        }
         user.save();
         res.status(201).json({ message: 'Nuevo admin creado' });
       } else {
@@ -49,12 +54,27 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 });
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.xlsx`));
+});
+
+router.get('/exceld', async (req, res, next) => {
   if (true) {
-    await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
+    excel.excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ugm.xlsx`, true);
   } else {
-    await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+    excel.excelGen('src/public/template.xlsx', `./src/public/ponderaciones_ucen.xlsx`);
   }
-  res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
+  res.status(200).json({ message: 'Creando excel' });
+});
+
+router.get('/excelucen', session.checkAdminQuery, async (req, res, next) => {
+  // await excel.excelUcen('src/public/template_ucen.xlsx', `./src/public/ponderaciones_ucen1.csv`);
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ucen1.csv`));
+});
+
+
+router.get('/excelucen2', session.checkAdminQuery, async (req, res, next) => {
+  // await excel.excelUcen2('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ucen2.csv`);
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ucen2.csv`));
 });
 
 router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
