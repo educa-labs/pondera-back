@@ -99,14 +99,20 @@ async function excelUcen2(file, outfile, ugm=false) {
   let university;
   const workbook = await XlsxPopulate.fromFileAsync(file);
   const sheet = workbook.sheet('Ponderaciones');
-  const data = await models.Ponderation.findAll({ include: { all: true } });
+  const data = await models.Ponderation.findAll({
+    include: [
+      { model: models.User },
+      { model: models.Opt },
+      { model: models.University },
+      { model: models.Career, where: { UcenId: { [Op.ne]: null } } }],
+    where: { value: { [Op.and]: { [Op.gte]: 450, [Op.lte]: 600 } } },
+  });
   for (let j in data) {
     user = data[j].User;
     opt = data[j].Opt;
     career = data[j].Career;
     university = data[j].University;
     (data[j].createdAt.setHours(data[j].createdAt.getHours() - 3));
-
     await sheet.cell(`A${i}`).value(user.name);
     await sheet.cell(`B${i}`).value(user.mail);
     await sheet.cell(`C${i}`).value(user.rut);
@@ -126,11 +132,10 @@ async function excelUcen2(file, outfile, ugm=false) {
     await sheet.cell(`M${i}`).value(career.title);
     await sheet.cell(`N${i}`).value(university.title);
     await sheet.cell(`O${i}`).value(data[j].createdAt.toString());
-    if (ugm){
-      await sheet.cell(`P${i}`).value(career.UgmId);
-    }
+    await sheet.cell(`P${i}`).value(career.UcenId);
     i += 1;
   }
+  return workbook.toFileAsync(outfile);
   return workbook.toFileAsync(outfile);
 }
 
