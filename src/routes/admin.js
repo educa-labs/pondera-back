@@ -54,12 +54,16 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 });
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.xlsx`));
+});
+
+router.get('/exceld', async (req, res, next) => {
   if (true) {
-    await excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
+    excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ugm.xlsx`, true);
   } else {
-    await excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+    excelGen('src/public/template.xlsx', `./src/public/ponderaciones_ucen.xlsx`);
   }
-  res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
+  res.status(200).json({ message: 'Creando excel' });
 });
 
 router.post('/ugmid', session.checkSuperadmin, (req, res, next) => {
