@@ -8,12 +8,14 @@ const session = require('../helpers/session');
 const authHeader = parameters.permitHeaders(['authorization']);
 
 router.get('/universities', authHeader, session.checkSession, (req, res, next) => {
-  db.db_tuni.any('SELECT universities.id, institutions.title FROM universities,institutions WHERE institutions.id = universities.institution_id ORDER BY institutions.title ASC')
+  // db.db_tuni.any('SELECT universities.id, institutions.title FROM universities,institutions WHERE institutions.id = universities.institution_id ORDER BY institutions.title ASC')
+  db.db_pond.any('SELECT id, title FROM "Universities" WHERE id NOT IN (42,35,51,48) ORDER BY title ASC')
     .then((data) => {
       if (!data) {
         res.status(404).json({ message: 'Universidad no encontrada' });
         return;
       }
+
       res.status(200)
         .json({
           data,
@@ -23,7 +25,11 @@ router.get('/universities', authHeader, session.checkSession, (req, res, next) =
 
 router.get('/universities/:id/careers', authHeader, session.checkSession, (req, res, next) => {
   const { id } = req.params;
-  db.db_tuni.any('SELECT DISTINCT carreers.title, MIN(carreers.id) as id FROM carreers,universities WHERE universities.id=${id} AND carreers.university_id = universities.id GROUP BY carreers.title ORDER BY carreers.title ASC;', { id })
+  db.db_tuni.any('SELECT carreers.id, carreers.title, campus.title as "campusTitle" \
+  FROM carreers,universities,campus WHERE universities.id=${id} \
+  AND carreers.university_id = universities.id AND campus.university_id = universities.id \
+  AND campus.id = carreers.campu_id \
+  GROUP BY carreers.id, carreers.title, "campusTitle" ORDER BY carreers.title ASC;', { id })
     .then((data) => {
       res.status(200)
         .json({

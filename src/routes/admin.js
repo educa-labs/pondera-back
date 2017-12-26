@@ -54,22 +54,26 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
 });
 
 router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
+  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.xlsx`));
+});
+
+router.get('/exceld', async (req, res, next) => {
   if (true) {
-    await excel.excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`,true);
+    excelGen('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ugm.xlsx`, true);
   } else {
-    await excel.excelGen('src/public/template.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+    excelGen('src/public/template.xlsx', `./src/public/ponderaciones_ucen.xlsx`);
   }
-  res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
+  res.status(200).json({ message: 'Creando excel' });
 });
 
 router.get('/excelucen', session.checkAdminQuery, async (req, res, next) => {
-  await excel.excelUcen('src/public/template_ucen.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+  await excel.excelUcen('src/public/template_ucen.xlsx', `./src/public/ponderaciones_ucen1.xlsx`);
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
 });
 
 
 router.get('/excelucen2', session.checkAdminQuery, async (req, res, next) => {
-  await excel.excelUcen2('src/public/template_ugm.xlsx', `./src/public/ponderaciones ${req.user.name}.xlsx`);
+  await excel.excelUcen2('src/public/template_ugm.xlsx', `./src/public/ponderaciones_ucen2.xlsx`);
   res.status(200).sendFile(path.resolve(`src/public/ponderaciones ${req.user.name}.xlsx`));
 });
 
@@ -99,7 +103,6 @@ router.post('/newcareer', session.checkSuperadmin, (req, res, next) => {
   ', { id })
     .then((data) => {
       const { title } = data[0];
-      console.log(data[0]);
       models.Career.create({ 
         id,
         title,
