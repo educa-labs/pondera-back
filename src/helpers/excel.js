@@ -84,7 +84,8 @@ async function csvGen(outfile, ugm=false) {
     }
     return obj;
   });
-  fs.writeFileSync(outfile, Papa.unparse(filtered));
+  return Papa.unparse(filtered);
+  // fs.writeFileSync(outfile, Papa.unparse(filtered));
 }
 
 async function excelUcen(file, outfile) {

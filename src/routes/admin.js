@@ -53,8 +53,11 @@ router.get('/stats', session.checkAdmin, (req, res, next) => {
     });
 });
 
-router.get('/excel', session.checkAdminQuery, async (req, res, next) => {
-  res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.csv`));
+router.get('/ponderaciones.csv', session.checkAdminQuery, async (req, res, next) => {
+  // res.status(200).sendFile(path.resolve(`src/public/ponderaciones_ugm.csv`));
+  const csvBody = await excel.csvGen('./src/public/ponderaciones_ugm.csv', true);
+  console.log('hola');
+  res.status(200).send(new Buffer(csvBody));
 });
 
 router.get('/exceld', session.checkAdminQuery, async (req, res, next) => {
